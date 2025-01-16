@@ -1,0 +1,151 @@
+/* Nastavení základního fontu */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    margin: 0 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.intro {}
+
+#uvod {
+    text-align: center;
+    background: url('images/sauna-uvodni.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px;
+    height: 80vh;
+}
+
+#uvod h1 {
+    font-size: 3rem;
+    margin-bottom: 100px;
+}
+
+.calendar {
+    background-color: #F1E3D3;
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    color: #4B3621;
+}
+
+section {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #4B3621;
+    ;
+
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.hlavni {
+    max-width: 800px;
+    margin: auto;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 5px;
+}
+
+.kontakt{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+
+iframe {
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 0 9px 30px #4B3621;
+}
+
+.kontakty{
+    width: 300px;
+    height: fit-content;
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+.kontakty p{
+    box-shadow: 0 9px 30px #4B3621;
+    padding: 20px 40px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #4B3621;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
