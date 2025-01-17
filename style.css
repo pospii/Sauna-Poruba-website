@@ -7,14 +7,19 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+    padding-top: 77px;
 }
 
 header {
     background-color: white;
-    color: black;
-    padding: 1rem 0;
+    padding: 10px 0;
     text-align: center;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(139, 69, 19, 0.3);
 }
 
 header img {
@@ -29,27 +34,28 @@ nav ul {
     display: flex;
     justify-content: center;
     margin-left: 250px;
+    align-items: center;
+    gap: 15px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
 
 nav ul li a {
-    color: black;
+    color: #333;
     text-decoration: none;
     font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: white;
+    background-color: #007BFF; /* Modré pozadí při najetí */
+    border-radius: 5px;
 }
-
-.intro {}
 
 #uvod {
     text-align: center;
-    background: url('images/sauna-uvodni.jpg') no-repeat center center/cover;
+    background: url('images/sauna-uvodni.jpeg') no-repeat center center/cover;
     color: white;
     padding: 50px;
     height: 80vh;
@@ -61,11 +67,26 @@ nav ul li a:hover {
 }
 
 .calendar {
-    background-color: #F1E3D3;
-    padding: 1rem;
-    border-radius: 5px;
-    display: inline-block;
+    background-color: #f1e3d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #4B3621;
+    width: fit-content;
+    margin: auto;
+}
+
+#calendar {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    font-size: 10px;
+}
+
+.calendar h2 {
+    font-size: 22px;
+    margin-top: 0;
 }
 
 section {
@@ -75,15 +96,15 @@ section {
 
 section h2 {
     color: #4B3621;
-    ;
-
+    font-size: 28px;
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 .hlavni {
     max-width: 800px;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .gallery {
@@ -97,7 +118,52 @@ section h2 {
     border-radius: 5px;
 }
 
-.kontakt{
+#cenik.hlavni {
+    box-shadow: 0 9px 30px #4B3621;
+
+    border: #4B3621;
+    max-width: 100%;
+    height: fit-content;
+    padding: 100px 450px;
+}
+
+#cenik li {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding-left: 25px;
+	/* Prostor pro ikonu vlevo od textu */
+	text-indent: -33px;
+	/* Zarovná text, aby se vyhnul ikoně */
+	line-height: 1.8em;
+	text-align: left;
+    list-style: none;
+}
+
+#cenik li.normal::before{
+    content: "\eaa0";
+    font-family: "IcoFont";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #8b4513; /* Jemná hnědá barva */
+}
+
+#cenik img {
+    height: 80px;
+    width: auto;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#cenik .doplneni{
+    font-size: 13px;
+    margin-top: -15px;
+    list-style-type: none;
+}
+
+.kontakt {
     display: flex;
     height: fit-content;
     align-items: center;
@@ -111,18 +177,24 @@ iframe {
     box-shadow: 0 9px 30px #4B3621;
 }
 
-.kontakty{
-    width: 300px;
+.kontakty {
+    width: 350px;
     height: fit-content;
     margin-left: 50px;
     font-weight: 700;
 }
 
-.kontakty p{
+.kontakty p {
     box-shadow: 0 9px 30px #4B3621;
-    padding: 20px 40px;
+    padding: 20px 25px;
     border-radius: 15px;
     margin-bottom: 25px;
+    text-align: center;
+}
+
+.kontakty a {
+    color: #333;
+    text-decoration: none;
 }
 
 footer {
@@ -148,4 +220,8 @@ footer ul li a {
 
 footer ul li a:hover {
     text-decoration: underline;
+}
+
+i {
+    margin-right: 6px;
 }

@@ -8,9 +8,16 @@
     <meta name="keywords" content="sauna, Poruba, relaxace, wellness, Sokol" />
     <title>Sauna Sokol Poruba</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/icofont.min.css" />
     <!-- Odkaz na externí CSS soubor -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <!-- Ikona stránky -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
   </head>
   <body>
     <header>
@@ -40,7 +47,7 @@
           </div>
           <div class="calendar">
             <h2>Kalendář akcí</h2>
-            <p>Aktuálně nejsou žádné plánované akce.</p>
+            <div id="calendar"></div>
           </div>
         </div>
       </section>
@@ -70,7 +77,6 @@
           <img src="images/sauna.jpg" alt="Interiér sauny" />
           <img src="images/bazenek.jpg" alt="Ochlazovací bazének" />
           <img src="images/odpocivarna.jpg" alt="Odpočívárna" />
-          <img src="images/bar.jpg" alt="Bar" />
         </div>
       </section>
 
@@ -78,13 +84,30 @@
       <section class="hlavni" id="cenik">
         <h2>Ceník</h2>
         <ul>
-          <li>Vstup (neomezeně): 300 Kč</li>
-          <li>
-            Děti do 15 let: (neomezeně): 200 Kč (pouze v doprovodu osoby starší
-            18-ti let)
+          <li class="normal">Vstup dospělý: <b>300 Kč</b></li>
+          <li class="doplneni">(neomezený vstup do sauny)</li>
+          <li class="normal">Děti do 15 let: <b>200 Kč</b></li>
+          <li class="doplneni">(pouze v doprovodu osoby starší 18-ti let)</li>
+          <li class="normal">Vstup 60 minut: <b>155 Kč</b></li>
+          <li class="doplneni">
+            (doplatek 60 Kč za každých započatých 30 min., max. 180 Kč)
           </li>
-          <li>Zapůjčení prostěradla a ručníku: 50 Kč</li>
+          <li class="normal">Studenti do 26 let, senioři od 65 let a ZTP: <b>250 Kč</b></li>
+          <li class="doplneni">
+            (vstup do sauny 120 min. / doplatek 30 Kč za každých započatých 15
+            min.)
+          </li>
+          <br />
+          <li class="normal">Zapůjčení prostěradla a ručníku: <b>50 Kč</b></li>
+          <li class="normal">
+            Přijímáme kartu <b>MultiSport</b> a benefit karty <b>Edenred</b> a
+            <b>eBenefity</b>.
+          </li>
         </ul>
+        <img src="images/multisport.png" alt="" /><img
+          src="images/edenred.png"
+          alt=""
+        /><img src="images/ebenefity.jpg" alt="" />
       </section>
 
       <!-- Kontakt -->
@@ -101,9 +124,18 @@
             >
           </p>
           <div class="kontakty">
-            <p>Adresa: Vřesinská 2156/101, 708 00 Ostrava 8</p>
-            <p>Telefon: +420 799 188 840</p>
-            <p>Email: info@sokolporuba.cz</p>
+            <p>
+              <i class="icofont-google-map"></i>Vřesinská 2156/101, 708 00
+              Ostrava 8
+            </p>
+            <p>
+              <i class="icofont-phone"></i
+              ><a href="tel:+420 799 188 840">+420 799 188 840</a>
+            </p>
+            <p>
+              <i class="icofont-email"></i
+              ><a href="mailto:info@sokolporuba.cz">info@sokolporuba.cz</a>
+            </p>
           </div>
         </div>
       </section>
@@ -116,5 +148,30 @@
         <li><a href="navstevni-rad.html">Návštěvní řád</a></li>
       </ul>
     </footer>
+    <script src="js/header.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth", // Zobrazení měsíčního kalendáře
+          locale: "cs", // Čeština
+          events: [
+            {
+              title: "Saunový večer",
+              start: "2025-01-20",
+              end: "2025-01-20",
+            },
+            {
+              title: "Relaxační hudba",
+              start: "2025-01-25",
+              end: "2025-01-25",
+            },
+          ],
+        });
+
+        calendar.render();
+      });
+    </script>
   </body>
 </html>
