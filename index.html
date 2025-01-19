@@ -28,10 +28,11 @@
         <nav>
           <ul>
             <li><a href="#uvod">Úvod</a></li>
-            <li><a href="#aktuality">Aktuality</a></li>
+            <li><a href="#o-saune">O sauně</a></li>
             <li><a href="#oteviraci-doba">Otevírací doba</a></li>
             <li><a href="#fotky">Fotky</a></li>
             <li><a href="#cenik">Ceník</a></li>
+            <li><a href="#aktuality">Aktuality</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </nav>
@@ -53,30 +54,48 @@
       </section>
 
       <!-- Aktuality -->
-      <section class="hlavni" id="aktuality">
-        <h2>Aktuality</h2>
-        <p>Buďte v obraze o dění v naší sauně. Sledujte naše aktuality!</p>
+      <section class="hlavni" id="o-saune">
+        <h2>O sauně</h2>
+        <p>
+          Naše sauna se nachází v Ostravě Porubě na ulici Vřesinská. <br />V
+          areálu se nachází finská sauna s kapacitou až 20 osob. Nechybí
+          venkovní bazének, ve kterém se můžete po saunování ochladit. Dále se
+          zde nachází dvě odpočivkové zóny, sprchy a šatny. <br>Sauna je společná.
+          <br />U vstupu je možné posedět v naší kavárně / baru.
+        </p>
       </section>
 
       <!-- Otevírací doba -->
       <section class="hlavni" id="oteviraci-doba">
         <h2>Otevírací doba</h2>
-        <p>Pondělí: ZAVŘENO</p>
-        <p>Úterý: 15:00 - 22:00</p>
-        <p>Středa: 15:00 - 22:00</p>
-        <p>Čtvrtek: 15:00 - 22:00</p>
-        <p>Pátek: 15:00 - 22:00</p>
-        <p>Sobota: 12:00 - 22:00</p>
-        <p>Neděle: 12:00 - 22:00</p>
+        <ul>
+          <li><span>Pondělí:</span> ZAVŘENO</li>
+          <li><span>Úterý:</span> 15:00 - 22:00</li>
+          <li><span>Středa:</span> 15:00 - 22:00</li>
+          <li><span>Čtvrtek:</span> 15:00 - 22:00</li>
+          <li><span>Pátek:</span> 15:00 - 22:00</li>
+          <li><span>Sobota:</span> 12:00 - 22:00</li>
+          <li><span>Neděle:</span> 12:00 - 22:00</li>
+        </ul>
       </section>
 
       <!-- Fotky sauny -->
       <section class="hlavni" id="fotky">
         <h2>Fotky sauny</h2>
         <div class="gallery">
-          <img src="images/sauna.jpg" alt="Interiér sauny" />
-          <img src="images/bazenek.jpg" alt="Ochlazovací bazének" />
-          <img src="images/odpocivarna.jpg" alt="Odpočívárna" />
+          <button class="gallery-button prev">&#8249;</button>
+          <div class="gallery-container">
+            <img src="images/sauna.jpg" alt="Interiér sauny" />
+            <img src="images/bazenek.jpg" alt="Ochlazovací bazének" />
+            <img src="images/odpocivarna.jpg" alt="Odpočívárna" />
+            <img src="images/20241205121023_IMG_3646-01.jpeg" alt="" />
+            <img src="images/20241205121049_IMG_3648-01.jpeg" alt="" />
+            <img src="images/20241205121217_IMG_3652-01.jpeg" alt="" />
+            <img src="images/20241205121522_IMG_3653-01.jpeg" alt="" />
+            <img src="images/20241205121636_IMG_3657-01.jpeg" alt="" />
+            <img src="images/20241205121732_IMG_3658-01.jpeg" alt="" />
+          </div>
+          <button class="gallery-button next">&#8250;</button>
         </div>
       </section>
 
@@ -92,7 +111,9 @@
           <li class="doplneni">
             (doplatek 60 Kč za každých započatých 30 min., max. 180 Kč)
           </li>
-          <li class="normal">Studenti do 26 let, senioři od 65 let a ZTP: <b>250 Kč</b></li>
+          <li class="normal">
+            Studenti do 26 let, senioři od 65 let a ZTP: <b>250 Kč</b>
+          </li>
           <li class="doplneni">
             (vstup do sauny 120 min. / doplatek 30 Kč za každých započatých 15
             min.)
@@ -108,6 +129,12 @@
           src="images/edenred.png"
           alt=""
         /><img src="images/ebenefity.jpg" alt="" />
+      </section>
+
+      <!-- Aktuality -->
+      <section class="hlavni" id="aktuality">
+        <h2>Aktuality</h2>
+        <p>Buďte v obraze o dění v naší sauně. Sledujte naše aktuality!</p>
       </section>
 
       <!-- Kontakt -->
@@ -150,5 +177,54 @@
     </footer>
     <script src="js/header.js"></script>
     <script src="js/calendar.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const galleryContainer = document.querySelector(".gallery-container");
+  const images = document.querySelectorAll(".gallery-container img");
+  const imageCount = images.length;
+  const visibleImages = 2.95; // Počet viditelných obrázků
+  let currentIndex = 0; // Aktuální index prvního viditelného obrázku
+  let interval; // Proměnná pro interval
+
+  const updateGallery = () => {
+    const offset = -(currentIndex * (100 / visibleImages));
+    galleryContainer.style.transform = `translateX(${offset}%)`;
+  };
+
+  const startInterval = () => {
+    interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % imageCount; // Cyklujeme index
+      updateGallery();
+    }, 5000);
+  };
+
+  const resetInterval = () => {
+    clearInterval(interval); // Zastavíme aktuální interval
+    startInterval(); // Spustíme nový
+  };
+
+  // Duplikujeme obrázky na začátek a konec pro plynulý přechod
+  for (let i = 0; i < visibleImages; i++) {
+    galleryContainer.appendChild(images[i].cloneNode(true));
+  }
+
+  updateGallery();
+  startInterval(); // Spustíme automatické posouvání
+
+  // Ruční posun pomocí tlačítek
+  document.querySelector(".gallery-button.prev").addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + imageCount) % imageCount; // Posun zpět
+    updateGallery();
+    resetInterval(); // Restartujeme automatické posouvání
+  });
+
+  document.querySelector(".gallery-button.next").addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % imageCount; // Posun vpřed
+    updateGallery();
+    resetInterval(); // Restartujeme automatické posouvání
+  });
+});
+
+    </script>
   </body>
 </html>
