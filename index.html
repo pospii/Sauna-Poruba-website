@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SaunaRelaxBar" />
+    <meta name="description" content="Sauna Relax Bar" />
     <meta name="author" content="Adam Pospíšek" />
     <meta name="keywords" content="sauna, Poruba, relaxace, wellness, Sokol" />
     <title>Sauna Sokol Poruba</title>
@@ -44,12 +44,20 @@
       <section id="uvod">
         <div class="intro">
           <div class="nadpis">
-            <h1>SaunaRelaxBar</h1>
+            <h1>Sauna Relax Bar</h1>
+            <p>
+              Sauna s příjemným prostředím a dlouholetou tradicí pod jménem
+              Sauna Sokol Poruba. Zažijte Relax.
+            </p>
           </div>
           <div class="calendar">
             <h2>Kalendář akcí</h2>
             <div id="calendar"></div>
           </div>
+        </div>
+        <div class="scroll-indicator">
+          <span class="arrow"></span>
+          <span class="arrow"></span>
         </div>
       </section>
 
@@ -60,14 +68,28 @@
           Naše sauna se nachází v Ostravě Porubě na ulici Vřesinská. <br />V
           areálu se nachází finská sauna s kapacitou až 20 osob. Nechybí
           venkovní bazének, ve kterém se můžete po saunování ochladit. Dále se
-          zde nachází dvě odpočivkové zóny, sprchy a šatny. <br>Sauna je společná.
-          <br />U vstupu je možné posedět v naší kavárně / baru.
+          zde nachází dvě odpočivkové zóny, sprchy a šatny. <br />Sauna je
+          společná. <br />U vstupu je možné posedět v naší kavárně / baru.
         </p>
+        <div class="fotky">
+          <div class="box">
+            <img src="images/uvod-sauna.jpeg" alt="" />
+            <h3>Finská sauna</h3>
+          </div>
+          <div class="box">
+            <img src="images/uvod-bazenek.jpeg" alt="" />
+            <h3>Ochlazovací bazének</h3>
+          </div>
+          <div class="box">
+            <img src="images/uvod-odpocivarna.jpeg" alt="" />
+            <h3>Odpočívárna v podkroví</h3>
+          </div>
+        </div>
       </section>
 
       <!-- Otevírací doba -->
       <section class="hlavni" id="oteviraci-doba">
-        <h2>Otevírací doba</h2>
+        <h2>Otevírací doba <i class="icofont-clock-time"></i></h2> 
         <ul>
           <li><span>Pondělí:</span> ZAVŘENO</li>
           <li><span>Úterý:</span> 15:00 - 22:00</li>
@@ -101,34 +123,38 @@
 
       <!-- Ceník -->
       <section class="hlavni" id="cenik">
-        <h2>Ceník</h2>
-        <ul>
-          <li class="normal">Vstup dospělý: <b>300 Kč</b></li>
-          <li class="doplneni">(neomezený vstup do sauny)</li>
-          <li class="normal">Děti do 15 let: <b>200 Kč</b></li>
-          <li class="doplneni">(pouze v doprovodu osoby starší 18-ti let)</li>
-          <li class="normal">Vstup 60 minut: <b>155 Kč</b></li>
-          <li class="doplneni">
-            (doplatek 60 Kč za každých započatých 30 min., max. 180 Kč)
-          </li>
-          <li class="normal">
-            Studenti do 26 let, senioři od 65 let a ZTP: <b>250 Kč</b>
-          </li>
-          <li class="doplneni">
-            (vstup do sauny 120 min. / doplatek 30 Kč za každých započatých 15
-            min.)
-          </li>
-          <br />
-          <li class="normal">Zapůjčení prostěradla a ručníku: <b>50 Kč</b></li>
-          <li class="normal">
-            Přijímáme kartu <b>MultiSport</b> a benefit karty <b>Edenred</b> a
-            <b>eBenefity</b>.
-          </li>
-        </ul>
-        <img src="images/multisport.png" alt="" /><img
-          src="images/edenred.png"
-          alt=""
-        /><img src="images/ebenefity.jpg" alt="" />
+        <div class="content">
+          <h2>Ceník</h2>
+          <ul>
+            <li class="normal">Vstup dospělý: <b>300 Kč</b></li>
+            <li class="doplneni">(neomezený vstup do sauny)</li>
+            <li class="normal">Děti do 15 let: <b>200 Kč</b></li>
+            <li class="doplneni">(pouze v doprovodu osoby starší 18-ti let)</li>
+            <li class="normal">Vstup 60 minut: <b>155 Kč</b></li>
+            <li class="doplneni">
+              (doplatek 60 Kč za každých započatých 30 min., max. 180 Kč)
+            </li>
+            <li class="normal">
+              Studenti do 26 let, senioři od 65 let a ZTP: <b>250 Kč</b>
+            </li>
+            <li class="doplneni">
+              (vstup do sauny 120 min. / doplatek 30 Kč za každých započatých 15
+              min.)
+            </li>
+            <br />
+            <li class="normal">
+              Zapůjčení prostěradla a ručníku: <b>50 Kč</b>
+            </li>
+            <li class="normal">
+              Přijímáme kartu <b>MultiSport</b> a benefit karty <b>Edenred</b> a
+              <b>eBenefity</b>.
+            </li>
+          </ul>
+          <img src="images/multisport.png" alt="" /><img
+            src="images/edenred.png"
+            alt=""
+          /><img src="images/ebenefity.jpg" alt="" />
+        </div>
       </section>
 
       <!-- Aktuality -->
@@ -144,7 +170,7 @@
           <div class="mapa"></div>
           <p>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.065845179225!2d18.15101757725901!3d49.82242763238265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e6b1f9b65be1%3A0x6a2c4493933f7d23!2sSaunaRelaxBar%20-%20Sauna%20Sokol!5e0!3m2!1scs!2scz!4v1737036662440!5m2!1scs!2scz"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.065845179225!2d18.15101757725901!3d49.82242763238265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e6b1f9b65be1%3A0x6a2c4493933f7d23!2sSauna Relax Bar%20-%20Sauna%20Sokol!5e0!3m2!1scs!2scz!4v1737036662440!5m2!1scs!2scz"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               >Adresa</iframe
@@ -169,7 +195,9 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 SaunaRelaxBar - Sokol Poruba. Všechna práva vyhrazena.</p>
+      <p>
+        &copy; 2025 Sauna Relax Bar - Sokol Poruba. Všechna práva vyhrazena.
+      </p>
       <ul>
         <li><a href="privacy.html">Ochrana osobních údajů</a></li>
         <li><a href="navstevni-rad.html">Návštěvní řád</a></li>
@@ -179,52 +207,55 @@
     <script src="js/calendar.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-  const galleryContainer = document.querySelector(".gallery-container");
-  const images = document.querySelectorAll(".gallery-container img");
-  const imageCount = images.length;
-  const visibleImages = 2.95; // Počet viditelných obrázků
-  let currentIndex = 0; // Aktuální index prvního viditelného obrázku
-  let interval; // Proměnná pro interval
+        const galleryContainer = document.querySelector(".gallery-container");
+        const images = document.querySelectorAll(".gallery-container img");
+        const imageCount = images.length;
+        const visibleImages = 2.95; // Počet viditelných obrázků
+        let currentIndex = 0; // Aktuální index prvního viditelného obrázku
+        let interval; // Proměnná pro interval
 
-  const updateGallery = () => {
-    const offset = -(currentIndex * (100 / visibleImages));
-    galleryContainer.style.transform = `translateX(${offset}%)`;
-  };
+        const updateGallery = () => {
+          const offset = -(currentIndex * (100 / visibleImages));
+          galleryContainer.style.transform = `translateX(${offset}%)`;
+        };
 
-  const startInterval = () => {
-    interval = setInterval(() => {
-      currentIndex = (currentIndex + 1) % imageCount; // Cyklujeme index
-      updateGallery();
-    }, 5000);
-  };
+        const startInterval = () => {
+          interval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % imageCount; // Cyklujeme index
+            updateGallery();
+          }, 5000);
+        };
 
-  const resetInterval = () => {
-    clearInterval(interval); // Zastavíme aktuální interval
-    startInterval(); // Spustíme nový
-  };
+        const resetInterval = () => {
+          clearInterval(interval); // Zastavíme aktuální interval
+          startInterval(); // Spustíme nový
+        };
 
-  // Duplikujeme obrázky na začátek a konec pro plynulý přechod
-  for (let i = 0; i < visibleImages; i++) {
-    galleryContainer.appendChild(images[i].cloneNode(true));
-  }
+        // Duplikujeme obrázky na začátek a konec pro plynulý přechod
+        for (let i = 0; i < visibleImages; i++) {
+          galleryContainer.appendChild(images[i].cloneNode(true));
+        }
 
-  updateGallery();
-  startInterval(); // Spustíme automatické posouvání
+        updateGallery();
+        startInterval(); // Spustíme automatické posouvání
 
-  // Ruční posun pomocí tlačítek
-  document.querySelector(".gallery-button.prev").addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + imageCount) % imageCount; // Posun zpět
-    updateGallery();
-    resetInterval(); // Restartujeme automatické posouvání
-  });
+        // Ruční posun pomocí tlačítek
+        document
+          .querySelector(".gallery-button.prev")
+          .addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + imageCount) % imageCount; // Posun zpět
+            updateGallery();
+            resetInterval(); // Restartujeme automatické posouvání
+          });
 
-  document.querySelector(".gallery-button.next").addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % imageCount; // Posun vpřed
-    updateGallery();
-    resetInterval(); // Restartujeme automatické posouvání
-  });
-});
-
+        document
+          .querySelector(".gallery-button.next")
+          .addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % imageCount; // Posun vpřed
+            updateGallery();
+            resetInterval(); // Restartujeme automatické posouvání
+          });
+      });
     </script>
   </body>
 </html>
