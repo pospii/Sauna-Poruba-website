@@ -89,7 +89,7 @@ nav ul li a.active {
     background: url('images/sauna-uvodni.jpeg') no-repeat center center/cover;
     color: white;
     padding: 50px;
-    height: 80vh;
+    height: 200px;
 }
 
 #uvod h1 {
@@ -102,66 +102,6 @@ nav ul li a.active {
     font-size: 20px;
 }
 
-.calendar {
-    background-color: #f1e3d3;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #4B3621;
-    width: fit-content;
-    margin: auto;
-}
-
-#calendar {
-    margin-top: 10px;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-    font-size: 10px;
-}
-
-.calendar h2 {
-    font-size: 22px;
-    margin-top: 0;
-}
-
-.scroll-indicator {
-    position: relative;
-    margin: 150px auto 0px;
-    text-align: center;
-  }
-  
-  .scroll-indicator .arrow {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-right: 2px solid #f1e3d3; /* Barva šipek */
-    border-bottom: 2px solid #f1e3d3;
-    transform: rotate(45deg);
-    margin: 10px auto;
-    animation: bounce 1.5s infinite ease-in-out;
-  }
-  
-  .scroll-indicator .arrow:nth-child(2) {
-    animation-delay: 0.3s;
-  }
-  
-  @keyframes bounce {
-    0%, 20% {
-      opacity: 0;
-      transform: translateY(-10px) rotate(45deg);
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0px) rotate(45deg);
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(10px) rotate(45deg);
-    }
-  }
-  
-
 section {
     padding-top: 77px;
     margin: 0 auto;
@@ -169,7 +109,7 @@ section {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -182,36 +122,131 @@ h2 {
     margin-bottom: 50px;
 }
 
-#o-saune h2{
-    margin-bottom: 0;
-}
-
-#o-saune p{
-    font-size: 18px;
-}
-
-.fotky{
-    margin-top: 120px;
-    display: block;
-    color: #4B3621;
-    font-size: 18px;
-}
-
-.fotky .box{
+#kalendar {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: left;
+  }
+  
+  .kalendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .kalendar-nav {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-btn {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn.active {
+    background-color: #ff8c00;
+    color: #fff;
+    border-color: #ff8c00;
+  }
+  
+  .nav-btn:hover {
+    background-color: #ffaf42;
+  }
+  
+  .kalendar-rozvrh .calendar-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .kalendar-rozvrh .calendar-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .kalendar-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .kalendar-content li {
     display: flex;
     align-items: center;
-    gap: 40px;
-    
-}
+    gap: 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .kalendar-content li img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .kalendar-content li .akce-info {
+    flex: 1;
+  }
+  
+  .kalendar-content li .akce-info h4 {
+    margin: 0 0 5px;
+    color: #333;
+    text-transform: capitalize;
+  }
+  
+  .kalendar-content li .akce-info p {
+    margin: 0;
+    color: #666;
+  }
+  
 
-.fotky .box:nth-child(2){
-    flex-direction: row-reverse;
-}
-
-.fotky .box img{
-    width: 250px;
-    border-radius: 5px;
+#o-saune.hlavni{
+    display: flex;
+    max-width: 100%;
+    height: fit-content;
+    align-items: center;
     box-shadow: 0 9px 30px #4B3621;
+    border: #4B3621;
+    padding: 0;
+    background-color: white;
+}
+
+#o-saune .text{
+    margin: auto;
+    width: 30%;
+}
+
+
+
+#o-saune p{
+    font-size: 20px;
+}
+
+.fotky {
+    display: flex;
+    position: relative;
+    width: 40%;
+}
+
+.fotky img {
+    width: 33.33%; /* Šířka každého obrázku s mezerami */
+    height: 700px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out; /* Plynulý přechod šířky a z-indexu */
+    position: relative;
+    z-index: 1;
 }
 
 #oteviraci-doba {
@@ -310,7 +345,7 @@ h2 {
     max-width: 100%;
     text-align: left;
     height: fit-content;
-    padding: 100px 700px;
+    padding: 100px;
     background: #fff; /* Hlavní pozadí */
     position: relative;
     overflow: hidden;
@@ -332,6 +367,8 @@ h2 {
   #cenik .content{
     position: relative;
     z-index: 1; /* Obsah bude nad pozadím */
+    width: 800px;
+    margin: auto;
   }
 
 #cenik li {

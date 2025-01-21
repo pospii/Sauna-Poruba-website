@@ -11,13 +11,6 @@
     <link rel="stylesheet" href="css/icofont.min.css" />
     <!-- Odkaz na externí CSS soubor -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-    <!-- Ikona stránky -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
   </head>
   <body>
     <header>
@@ -28,11 +21,11 @@
         <nav>
           <ul>
             <li><a href="#uvod">Úvod</a></li>
+            <li><a href="#kalendar">Kalendář</a></li>
             <li><a href="#o-saune">O sauně</a></li>
             <li><a href="#oteviraci-doba">Otevírací doba</a></li>
             <li><a href="#fotky">Fotky</a></li>
             <li><a href="#cenik">Ceník</a></li>
-            <li><a href="#aktuality">Aktuality</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </nav>
@@ -50,46 +43,50 @@
               Sauna Sokol Poruba. Zažijte Relax.
             </p>
           </div>
-          <div class="calendar">
-            <h2>Kalendář akcí</h2>
-            <div id="calendar"></div>
-          </div>
-        </div>
-        <div class="scroll-indicator">
-          <span class="arrow"></span>
-          <span class="arrow"></span>
         </div>
       </section>
 
-      <!-- Aktuality -->
+      <section id="kalendar">
+        <div class="kalendar-header">
+          <div class="kalendar-nav">
+            <button class="nav-btn" data-filter="dnes">Dnes</button>
+            <button class="nav-btn active" data-filter="tyden">
+              Tento týden
+            </button>
+            <button class="nav-btn" data-filter="mesic">Tento měsíc</button>
+          </div>
+          <div class="kalendar-rozvrh">
+            <button class="calendar-btn">Standardní kalendář</button>
+          </div>
+        </div>
+        <div class="kalendar-content">
+          <ul id="akce-list">
+            <!-- Dynamicky generovaný obsah -->
+          </ul>
+        </div>
+      </section>
+
       <section class="hlavni" id="o-saune">
-        <h2>O sauně</h2>
-        <p>
-          Naše sauna se nachází v Ostravě Porubě na ulici Vřesinská. <br />V
-          areálu se nachází finská sauna s kapacitou až 20 osob. Nechybí
-          venkovní bazének, ve kterém se můžete po saunování ochladit. Dále se
-          zde nachází dvě odpočivkové zóny, sprchy a šatny. <br />Sauna je
-          společná. <br />U vstupu je možné posedět v naší kavárně / baru.
-        </p>
+        <div class="text">
+          <h2>O sauně</h2>
+          <p>
+            Naše sauna se nachází v Ostravě Porubě na ulici Vřesinská. <br />V
+            areálu se nachází finská sauna s kapacitou až 20 osob. Nechybí
+            venkovní bazének, ve kterém se můžete po saunování ochladit. Dále se
+            zde nachází dvě odpočivkové zóny, sprchy a šatny. <br />Sauna je
+            společná. <br />U vstupu je možné posedět v naší kavárně / baru.
+          </p>
+        </div>
         <div class="fotky">
-          <div class="box">
-            <img src="images/uvod-sauna.jpeg" alt="" />
-            <h3>Finská sauna</h3>
-          </div>
-          <div class="box">
-            <img src="images/uvod-bazenek.jpeg" alt="" />
-            <h3>Ochlazovací bazének</h3>
-          </div>
-          <div class="box">
-            <img src="images/uvod-odpocivarna.jpeg" alt="" />
-            <h3>Odpočívárna v podkroví</h3>
-          </div>
+          <img src="images/uvod-sauna.jpeg" alt="" />
+          <img src="images/uvod-bazenek.jpeg" alt="" />
+          <img src="images/uvod-odpocivarna.jpeg" alt="" />
         </div>
       </section>
 
       <!-- Otevírací doba -->
       <section class="hlavni" id="oteviraci-doba">
-        <h2>Otevírací doba <i class="icofont-clock-time"></i></h2> 
+        <h2>Otevírací doba <i class="icofont-clock-time"></i></h2>
         <ul>
           <li><span>Pondělí:</span> ZAVŘENO</li>
           <li><span>Úterý:</span> 15:00 - 22:00</li>
@@ -157,12 +154,6 @@
         </div>
       </section>
 
-      <!-- Aktuality -->
-      <section class="hlavni" id="aktuality">
-        <h2>Aktuality</h2>
-        <p>Buďte v obraze o dění v naší sauně. Sledujte naše aktuality!</p>
-      </section>
-
       <!-- Kontakt -->
       <section class="hlavni" id="kontakt">
         <h2>Kontakt</h2>
@@ -204,7 +195,7 @@
       </ul>
     </footer>
     <script src="js/header.js"></script>
-    <script src="js/calendar.js"></script>
+    <script src="app.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const galleryContainer = document.querySelector(".gallery-container");
@@ -257,5 +248,37 @@
           });
       });
     </script>
+        <script>
+          // Najdeme všechny obrázky
+          const images = document.querySelectorAll(".fotky img");
+  
+          // Pro každou fotku nastavíme události
+          images.forEach((image, index) => {
+              image.addEventListener("mouseenter", () => {
+                  // Nastavíme šířku na základě pozice obrázku
+                  if (index === 0) {
+                      image.style.width = "70%"; // První obrázek se rozšíří doprava
+                  } else if (index === 1) {
+                      image.style.width = "70%"; // Druhý obrázek se rozšíří na obě strany
+                  } else if (index === 2) {
+                      image.style.width = "70%"; // Třetí obrázek se rozšíří doleva
+                  }
+  
+                  // Ostatním fotkám zmenšíme šířku
+                  images.forEach((otherImage, otherIndex) => {
+                      if (otherIndex !== index) {
+                          otherImage.style.width = "15%";
+                      }
+                  });
+              });
+  
+              image.addEventListener("mouseleave", () => {
+                  // Resetujeme šířku všech obrázků na původní hodnotu
+                  images.forEach((img) => {
+                      img.style.width = "33.33%";
+                  });
+              });
+          });
+      </script>
   </body>
 </html>
