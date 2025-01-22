@@ -15,6 +15,7 @@ header {
     padding: 0;
     text-align: center;
     display: flex;
+    justify-content: space-evenly;
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,7 +27,7 @@ header {
 header img {
     height: 50px;
     width: auto;
-    margin: 13.5px 150px;
+    margin: 13.5px 15px;
 }
 
 nav ul {
@@ -34,7 +35,6 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    margin-left: 250px;
     align-items: center;
     gap: 15px;
     height: 45px;
@@ -258,7 +258,7 @@ h2 {
 
 #o-saune .text{
     margin: auto;
-    width: 30%;
+    width: 40%;
 }
 
 
@@ -421,7 +421,7 @@ h2 {
   #cenik .content{
     position: relative;
     z-index: 1; /* Obsah bude nad pozadím */
-    width: 800px;
+    width: 900px;
     margin: auto;
   }
 

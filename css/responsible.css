@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px)  {
+    nav ul{
+        gap: 5px;
+    }
+
+    .kalendar-header, .kalendar-content{
+        max-width: 700px;
+    }
+
+
+}
