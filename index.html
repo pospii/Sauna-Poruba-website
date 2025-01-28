@@ -16,7 +16,7 @@
   <body>
     <header>
       <div class="logo">
-        <a href="index.html"><img src="images/logo.jpg" alt="" /></a>
+        <a href="index.html"><img src="images/logo1.jpg" alt="" /></a>
       </div>
       <div class="navigace">
         <nav>
@@ -50,23 +50,29 @@
       <section id="kalendar">
         <div class="kal-nadpis"><h2>Kalendář akcí</h2></div>
         <div class="kalendar-header">
-          <div class="kalendar-nav">
-            <button class="nav-btn" data-filter="dnes">Dnes</button>
-            <button class="nav-btn active" data-filter="tyden">
-              Tento týden
-            </button>
-            <button class="nav-btn" data-filter="mesic">Tento měsíc</button>
-          </div>
-          <div class="kalendar-rozvrh">
-            <button class="calendar-btn">Standardní kalendář</button>
-          </div>
+            <div class="timeline-wrapper">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <button class="nav-btn" data-filter="dnes">Dnes</button>
+                    </div>
+                    <div class="timeline-item">
+                        <button class="nav-btn active" data-filter="tyden">
+                            Tento týden
+                        </button>
+                    </div>
+                    <div class="timeline-item">
+                        <button class="nav-btn" data-filter="mesic">Tento měsíc</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="kalendar-content">
-          <ul id="akce-list">
-            <!-- Dynamicky generovaný obsah -->
-          </ul>
+            <ul id="akce-list">
+                <!-- Dynamicky generovaný obsah -->
+            </ul>
         </div>
-      </section>
+    </section>
+    
 
       <section class="hlavni" id="o-saune">
         <div class="text">
@@ -79,7 +85,7 @@
           <ul>
             <li>
               <img src="images/sauna-ikona.svg" alt="Ikona sauny" /> Finskou
-              saunu s kapacitou až 20 osob
+              saunu s kapacitou 15 osob
             </li>
             <li>
               <img src="images/bazenek-ikona.svg" alt="Ikona bazénku" />
@@ -203,8 +209,12 @@
             </p>
             <p>
               <i class="icofont-email"></i
-              ><a href="mailto:info@sokolporuba.cz">info@sokolporuba.cz</a>
+              ><a href="mailto:saunarelaxbar@gmail.com">saunarelaxbar@gmail.com</a>
             </p>
+            <div class="kontakt-soc">
+              <a href="https://www.instagram.com/saunarelaxbar/" target="_blank" rel="noopener noreferrer"><p><i class="icofont-instagram"></i></p></a>
+              <a href="https://www.facebook.com/people/Sauna-Relax-Bar/61569065091594/" target="_blank" rel="noopener noreferrer"><p><i class="icofont-facebook"></i></p></a>
+            </div>
           </div>
         </div>
       </section>
@@ -212,7 +222,7 @@
 
     <footer>
       <p>
-        &copy; 2025 Sauna Relax Bar - Sokol Poruba. Všechna práva vyhrazena.
+        &copy; 2025 SaunaRelaxBar - Sokol Poruba. Všechna práva vyhrazena.
       </p>
       <ul>
         <li><a href="privacy.html">Ochrana osobních údajů</a></li>

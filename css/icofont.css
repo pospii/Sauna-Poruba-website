@@ -58,6 +58,16 @@ url("../fonts/icofont.woff") format("woff");
   content: "\eedc";
 }
 
+.icofont-instagram:before
+{
+  content: "\ed46";
+}
+
+.icofont-facebook:before
+{
+  content: "\ed37";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {
