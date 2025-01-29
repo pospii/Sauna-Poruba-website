@@ -20,6 +20,11 @@
       </div>
       <div class="navigace">
         <nav>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <ul>
             <li><a href="#uvod">Úvod</a></li>
             <li><a href="#kalendar">Kalendář</a></li>
@@ -41,7 +46,7 @@
             <h1>SaunaRelaxBar</h1>
             <p>
               Sauna s příjemným prostředím a dlouholetou tradicí pod jménem
-              Sauna Sokol Poruba. Zažijte Relax.
+              Sauna Sokol Poruba. Zažijte&nbsp;Relax.
             </p>
           </div>
         </div>
@@ -108,9 +113,9 @@
           </p>
         </div>
         <div class="fotky">
-          <img src="images/uvod-sauna.jpeg" alt="" />
-          <img src="images/uvod-bazenek.jpeg" alt="" />
-          <img src="images/uvod-odpocivarna.jpeg" alt="" />
+          <img src="images/uvod-sauna1.jpg" alt="" />
+          <img src="images/uvod-bazenek1.jpg" alt="" />
+          <img src="images/uvod-odpocivarna1.jpg" alt="" />
         </div>
       </section>
 
@@ -314,6 +319,26 @@
           });
         });
       });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+    menuToggle.classList.toggle("open");
+  });
+
+  // Zavřít menu po kliknutí na odkaz
+  document.querySelectorAll("nav ul li a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+      menuToggle.classList.remove("open");
+    });
+  });
+});
+
     </script>
   </body>
 </html>
