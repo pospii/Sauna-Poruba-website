@@ -724,3 +724,8 @@ i {
 #rad{
   text-align: justify;
 }
+
+.gdpr{
+  text-align: left;
+  padding: 20px;
+}
