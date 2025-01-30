@@ -231,11 +231,13 @@ h2 {
   /* Tmavě hnědá */
   border: 2px solid #8B5E3B;
   /* Středně hnědá */
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 20px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  width: 115px;
+  text-align: center;
 }
 
 .nav-btn:hover {
@@ -260,7 +262,7 @@ h2 {
 }
 
 .kalendar-content {
-  max-width: 900px;
+  max-width: 700px;
   margin: auto;
   margin-bottom: 100px;
 }
@@ -362,6 +364,7 @@ h2 {
   max-width: 100%;
   background-color: white;
   background: url("images/oteviraci-doba.jpg") no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   padding: 77px;
@@ -448,28 +451,29 @@ h2 {
 
 #fotky.hlavni {
   max-width: 100%;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .gallery {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .gallery-container {
   display: flex;
-  gap: 15px;
+
   /* Rozestup mezi obrázky */
   transition: transform 0.5s ease-in-out;
 }
 
 .gallery img {
-  flex: 0 0 calc((100% - 30px) / 3);
-  width: calc((100% - 30px) / 3);
-  border-radius: 5px;
+  flex: 0 0 calc((100%) / 3);
+  width: calc((100%) / 3);
   object-fit: cover;
 }
 
@@ -670,26 +674,46 @@ iframe {
 }
 
 footer {
-  background-color: #4B3621;
-  color: white;
+  background-color: #2a1e13;
+  color: #f4e1c1;
   text-align: center;
-  padding: 1rem 0;
+  padding-top: 30px;
+  height: fit-content;
+}
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.footer-creator {
+  background-color: #4a3420; /* Jemnější hnědá */
+  font-size: 14px; /* O něco menší písmo */
+  opacity: 0.85;
+  padding: 10px;
+  margin-top: 4dvb;
+  transition: background 0.4s ease;
 }
 
-footer ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+.footer-creator:hover {
+  background-color: #5a3e25; /* Mírně světlejší hnědá */
 }
 
-footer ul li a {
-  color: white;
+.footer-creator a {
+  color: #d8b67a; /* Méně sytá zlatá */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-creator a:hover {
+  color: #e0c28d; /* Jemnější zesvětlení */
+  text-decoration: underline;
+}
+
+footer a {
+  color: #f4e1c1; /* Zlatá barva pro odkazy */
   text-decoration: none;
 }
 
-footer ul li a:hover {
+footer a:hover {
   text-decoration: underline;
 }
 

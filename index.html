@@ -176,15 +176,12 @@
         <div class="gallery">
           <button class="gallery-button prev">&#8249;</button>
           <div class="gallery-container">
-            <img src="images/sauna.jpg" alt="Interiér sauny" />
-            <img src="images/bazenek.jpg" alt="Ochlazovací bazének" />
-            <img src="images/odpocivarna.jpg" alt="Odpočívárna" />
-            <img src="images/20241205121023_IMG_3646-01.jpeg" alt="" />
-            <img src="images/20241205123850_IMG_3687-01.jpeg" alt="" />
-            <img src="images/20241205121217_IMG_3652-01.jpeg" alt="" />
-            <img src="images/20241205121522_IMG_3653-01.jpeg" alt="" />
-            <img src="images/20241205121636_IMG_3657-01.jpeg" alt="" />
-            <img src="images/20241205121732_IMG_3658-01.jpeg" alt="" />
+            <img src="images/fotka1.jpeg" alt="Interiér sauny" />
+            <img src="images/fotka2.jpeg" alt="Ochlazovací bazének" />
+            <img src="images/fotka3.jpeg" alt="Odpočívárna" />
+            <img src="images/fotka4.jpeg" alt="" />
+            <img src="images/fotka5.jpeg" alt="" />
+            
           </div>
           <button class="gallery-button next">&#8250;</button>
         </div>
@@ -226,13 +223,18 @@
     </main>
 
     <footer>
-      <p>
-        &copy; 2025 SaunaRelaxBar - Sokol Poruba. Všechna práva vyhrazena.
+      <div class="footer-content">
+        <p>© 2025 SaunaRelaxBar - Sokol Poruba</p>
+        <p>Moderní sauna s finskou saunou, relaxační zónou a venkovním bazénkem.</p>
+        <p>
+          <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a> | 
+          <a href="navstevni-rad.html">Návštěvní řád</a>
       </p>
-      <ul>
-        <li><a href="privacy.html">Ochrana osobních údajů</a></li>
-        <li><a href="navstevni-rad.html">Návštěvní řád</a></li>
-      </ul>
+      </div>
+      
+      <div class="footer-creator">
+        <p>Web vytvořil <a href="https://www.linkedin.com/in/adam-posp%C3%AD%C5%A1ek-329227123/" target="_blank" rel="noopener noreferrer">Adam Pospíšek</a></p>
+      </div>
     </footer>
     <script src="js/header.js"></script>
     <script src="app.js"></script>
@@ -241,7 +243,7 @@
         const galleryContainer = document.querySelector(".gallery-container");
         const images = document.querySelectorAll(".gallery-container img");
         const imageCount = images.length;
-        const visibleImages = 2.95; // Počet viditelných obrázků
+        const visibleImages = 3; // Počet viditelných obrázků
         let currentIndex = 0; // Aktuální index prvního viditelného obrázku
         let interval; // Proměnná pro interval
 
