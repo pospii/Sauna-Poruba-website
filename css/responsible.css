@@ -3,10 +3,142 @@
         gap: 5px;
     }
 
-    .kalendar-header, .kalendar-content {
-        max-width: 700px;
+    nav ul li a {
+        padding: 15px;
     }
 
+    .kalendar-header, .kalendar-content {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    #cenik .content {
+        width: 60%;
+        margin: 0;
+    }
+
+    #cenik.hlavni {
+        padding: 70px;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+    nav ul {
+        display: none;
+        /* Skryté menu defaultně */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 50%;
+        background: #faede0;
+        height: fit-content;
+        /* Pozadí pro celé menu */
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul li {
+        width: 90%;
+        padding: 2px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    /* Zobrazení menu při aktivaci */
+    nav ul.show {
+        display: flex;
+    }
+
+    /* Styl pro hamburger tlačítko */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        z-index: 1100;
+    }
+
+    .menu-toggle span {
+        background: #8b4513;
+        width: 30px;
+        height: 3px;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    /* Animace pro otevření menu */
+    .menu-toggle.open span:nth-child(1) {
+        transform: translateY(12.4px) rotate(45deg);
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+        transform: translateY(-12.4px) rotate(-45deg);
+    }
+
+    .timeline {
+        width: 80%;
+        padding-right: 50px;
+    }
+
+    .kalendar-content {
+        width: 90%;
+    }
+
+    #cenik .content {
+        width: 100%;
+    }
+
+    #o-saune.hlavni {
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 40px;
+        gap: 40px;
+    }
+
+    #o-saune .text {
+        width: 85%;
+    }
+
+    .fotky {
+        width: 100%;
+    }
+
+    #cenik.hlavni {
+        padding: 70px;
+    }
+
+    #cenik::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        bottom: 50%;
+        background: url(../images/pozadi-cenik-mob.webp) no-repeat center center;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+        z-index: 0;
+    }
+
+    .kontakt {
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 20px;
+    }
 
 }
 
@@ -86,118 +218,102 @@
         transform: translateY(-12.4px) rotate(-45deg);
     }
 
-#uvod h1{
-    margin-top: 0;
-    font-size: 40px;
+    #uvod {
+        background: url('../images/sauna-uvodni-mob.webp') no-repeat center center/cover;
+    }
+
+    #uvod h1 {
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .kal-nadpis {
+        margin-bottom: 0;
+    }
+
+    .timeline {
+        width: 80%;
+        padding-right: 30px;
+    }
+
+    .timeline::after {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 20px solid #8B5E3B;
+    }
+
+    .kalendar-content {
+        width: 90%;
+    }
+
+    .nav-btn {
+        padding: 10px;
+        width: fit-content;
+        min-width: 95px;
+    }
+
+
+
+    #oteviraci-doba.hlavni {
+        padding: 70px 10px;
+        background: url("../images/oteviraci-doba-mob.webp") no-repeat;
+        background-size: cover;
+    }
+
+    #cenik.hlavni {
+        padding: 70px 7px 70px 0px;
+    }
+
+    #cenik .content {
+        width: 100%;
+    }
+
+    #cenik h2 {
+        text-align: center;
+    }
+
+    #cenik::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        bottom: 70%;
+        background: url(../images/pozadi-cenik-mob.webp) no-repeat center center;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+        z-index: 0;
+    }
+
+    #cenik img {
+        height: 50px;
+        width: auto;
+        margin-top: 15px;
+        margin-left: 7px;
+    }
+
+    #fotky.hlavni {
+        padding-top: 0;
+    }
+
+
+    #kontakt.hlavni {
+        background: url(../images/kontakt-pozadi-mob.webp) no-repeat center;
+        background-size: cover;
+    }
+
+
+
+
+    iframe {
+        width: 100%;
+        height: 450px;
+        border-radius: 15px;
+        border: 0;
+    }
 }
-
-h2 {
-    font-size: 30px;
-}
-
-.kal-nadpis{
-    margin-bottom: 0;
-}
-
-.timeline{
-    width: 80%;
-    padding-right: 30px;
-}
-
-.timeline::after{
-    border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 20px solid #8B5E3B;
-}
-
-.kalendar-content{
-    width: 90%;
-}
-
-.nav-btn{
-    padding: 10px;
-    width: 95px;
-}
-
-#o-saune.hlavni{
-    flex-direction: column;
-    height: fit-content;
-    padding-top: 40px;
-    gap: 40px;
-}
-
-#o-saune .text {
-    width: 85%;
-}
-
-.fotky{
-    width: 100%;
-}
-
-#oteviraci-doba.hlavni{
-    padding: 70px 10px;
-    background: url("../images/oteviraci-doba-450px.jpg") no-repeat;
-    background-size: cover;
-}
-
-#cenik.hlavni{
-    padding: 70px 7px;
-}
-
-#cenik .content{
-    width: 100%;
-}
-
-#cenik h2{
-    text-align: center;
-}
-
-#cenik::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 50%;
-    background: url(../images/pozadi-cenik450.jpeg) no-repeat center center;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 500% 150%, 0 0);
-    z-index: 0;
-}
-
-#cenik img {
-    height: 60px
-  }
-
-  #fotky.hlavni{
-    padding-top: 0;
-  }
-
-  .gallery{
-    margin-bottom: 0;
-    width: 95%;
-  }
-
-  .gallery-container {
-    gap: 5px;
-  }
-
-  .gallery img {
-    flex: 0 0 calc((100% - 10px) / 3);
-    width: calc((100% - 10px) / 3);
-    border-radius: 5px;
-    object-fit: cover;
-  }
-
-.kontakt {
-    flex-direction: column-reverse;
-    width: 100%;
-    gap: 20px;
-}
-
-iframe {
-    width: 100%;
-    height: 450px;
-    border-radius: 15px;
-    border: 0;
-  }}

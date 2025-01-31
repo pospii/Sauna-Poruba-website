@@ -10,13 +10,27 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/responsible.css" />
     <link rel="stylesheet" href="css/icofont.min.css" />
-    <!-- Odkaz na externí CSS soubor -->
-    <link rel="icon" href="images/icon.webp" type="image/x-icon" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="SaunaRelaxBar" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <a href="index.html"><img src="images/logo1.jpg" alt="" /></a>
+        <a href="index.html" aria-label="Logo SaunaRelaxBar"><img src="images/logo.webp" alt="Logo SaunaRelaxBar" /></a>
       </div>
       <div class="navigace">
         <nav>
@@ -55,29 +69,28 @@
       <section id="kalendar">
         <div class="kal-nadpis"><h2>Kalendář akcí</h2></div>
         <div class="kalendar-header">
-            <div class="timeline-wrapper">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <button class="nav-btn" data-filter="dnes">Dnes</button>
-                    </div>
-                    <div class="timeline-item">
-                        <button class="nav-btn active" data-filter="tyden">
-                            Tento týden
-                        </button>
-                    </div>
-                    <div class="timeline-item">
-                        <button class="nav-btn" data-filter="mesic">Tento měsíc</button>
-                    </div>
-                </div>
+          <div class="timeline-wrapper">
+            <div class="timeline">
+              <div class="timeline-item">
+                <button class="nav-btn" data-filter="dnes">Dnes</button>
+              </div>
+              <div class="timeline-item">
+                <button class="nav-btn active" data-filter="tyden">
+                  Tento týden
+                </button>
+              </div>
+              <div class="timeline-item">
+                <button class="nav-btn" data-filter="mesic">Tento měsíc</button>
+              </div>
             </div>
+          </div>
         </div>
         <div class="kalendar-content">
-            <ul id="akce-list">
-                <!-- Dynamicky generovaný obsah -->
-            </ul>
+          <ul id="akce-list">
+            <!-- Dynamicky generovaný obsah -->
+          </ul>
         </div>
-    </section>
-    
+      </section>
 
       <section class="hlavni" id="o-saune">
         <div class="text">
@@ -113,9 +126,9 @@
           </p>
         </div>
         <div class="fotky">
-          <img src="images/uvod-sauna1.jpg" alt="" />
-          <img src="images/uvod-bazenek1.jpg" alt="" />
-          <img src="images/uvod-odpocivarna1.jpg" alt="" />
+          <img src="images/uvod-sauna.webp" alt="Finská sauna" />
+          <img src="images/uvod-bazenek.webp" alt="Ochlazovací bazének" />
+          <img src="images/uvod-odpocivarna.webp" alt="Odpočívárna" />
         </div>
       </section>
 
@@ -138,20 +151,20 @@
         <div class="content">
           <h2>Ceník</h2>
           <ul>
-            <li class="normal">Vstup dospělý: <b>300 Kč</b></li>
+            <li class="normal">Vstup dospělý: <b>330 Kč</b></li>
             <li class="doplneni">(neomezený vstup do sauny)</li>
             <li class="normal">Děti do 15 let: <b>200 Kč</b></li>
             <li class="doplneni">(pouze v doprovodu osoby starší 18-ti let)</li>
             <li class="normal">Vstup 60 minut: <b>155 Kč</b></li>
             <li class="doplneni">
-              (doplatek 60 Kč za každých započatých 30 min., max. 180 Kč)
+              (doplatek 60 Kč za každých započatých 30 min., max. 180&nbsp;Kč)
             </li>
             <li class="normal">
-              Studenti do 26 let, senioři od 65 let a ZTP: <b>250 Kč</b>
+              Studenti do 26 let, senioři od 65 let a ZTP: <b>250&nbsp;Kč</b>
             </li>
             <li class="doplneni">
-              (vstup do sauny 120 min. / doplatek 30 Kč za každých započatých 15
-              min.)
+              (vstup do sauny 120 min. / doplatek 30 Kč za každých započatých
+              15&nbsp;min.)
             </li>
           </ul>
           <br />
@@ -160,14 +173,16 @@
               Zapůjčení prostěradla a ručníku: <b>50 Kč</b>
             </li>
             <li class="normal">
-              Přijímáme kartu <b>MultiSport</b> a benefit karty <b>Edenred</b> a
-              <b>eBenefity</b>.
+              Přijímáme kartu <b>MultiSport</b> a benefit karty <b>Edenred</b>,
+              <b>Pluxee</b> a <b>eBenefity</b>.
             </li>
           </ul>
-          <img src="images/multisport.png" alt="" /><img
-            src="images/edenred.png"
-            alt=""
-          /><img src="images/ebenefity.jpg" alt="" />
+          <img src="images/multisport.webp" alt="MultiSport" />
+          <img src="images/edenred.webp" alt="Edenred" />
+          <img src="images/pluxee.webp" alt="Pluxee" /><img
+            src="images/ebenefity.webp"
+            alt="eBenefity"
+          />
         </div>
       </section>
 
@@ -176,12 +191,11 @@
         <div class="gallery">
           <button class="gallery-button prev">&#8249;</button>
           <div class="gallery-container">
-            <img src="images/fotka1.jpeg" alt="Interiér sauny" />
-            <img src="images/fotka2.jpeg" alt="Ochlazovací bazének" />
-            <img src="images/fotka3.jpeg" alt="Odpočívárna" />
-            <img src="images/fotka4.jpeg" alt="" />
-            <img src="images/fotka5.jpeg" alt="" />
-            
+            <img src="images/fotka1.webp" alt="Interiér sauny" />
+            <img src="images/fotka2.webp" alt="Ochlazovací bazének" />
+            <img src="images/fotka3.webp" alt="Odpočívárna" />
+            <img src="images/fotka4.webp" alt="Sauna" />
+            <img src="images/fotka5.webp" alt="Venkovní odpočívárna" />
           </div>
           <button class="gallery-button next">&#8250;</button>
         </div>
@@ -197,7 +211,8 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.065845179225!2d18.15101757725901!3d49.82242763238265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e6b1f9b65be1%3A0x6a2c4493933f7d23!2sSauna Relax Bar%20-%20Sauna%20Sokol!5e0!3m2!1scs!2scz!4v1737036662440!5m2!1scs!2scz"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              >Adresa</iframe
+              aria-label="Mapa SaunaRelaxBar"
+              ></iframe
             >
           </p>
           <div class="kontakty">
@@ -211,11 +226,25 @@
             </p>
             <p>
               <i class="icofont-email"></i
-              ><a href="mailto:saunarelaxbar@gmail.com">saunarelaxbar@gmail.com</a>
+              ><a href="mailto:saunarelaxbar@gmail.com"
+                >saunarelaxbar@gmail.com</a
+              >
             </p>
             <div class="kontakt-soc">
-              <a href="https://www.instagram.com/saunarelaxbar/" target="_blank" rel="noopener noreferrer"><p><i class="icofont-instagram"></i></p></a>
-              <a href="https://www.facebook.com/people/Sauna-Relax-Bar/61569065091594/" target="_blank" rel="noopener noreferrer"><p><i class="icofont-facebook"></i></p></a>
+              <a
+                href="https://www.instagram.com/saunarelaxbar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram SaunaRelaxBar"></a>
+                ><p><i class="icofont-instagram"></i></p
+              ></a>
+              <a
+                href="https://www.facebook.com/people/Sauna-Relax-Bar/61569065091594/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook SaunaRelaxBar"
+                ><p><i class="icofont-facebook"></i></p
+              ></a>
             </div>
           </div>
         </div>
@@ -225,17 +254,27 @@
     <footer>
       <div class="footer-content">
         <p>© 2025 SaunaRelaxBar - Sokol Poruba</p>
-        <p>Moderní sauna s finskou saunou, relaxační zónou a venkovním bazénkem.</p>
         <p>
-          <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a> | 
+          Moderní sauna s finskou saunou, relaxační zónou a venkovním bazénkem.
+        </p>
+        <p>
+          <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a> |
           <a href="navstevni-rad.html">Návštěvní řád</a>
-      </p>
+        </p>
       </div>
-      
+
       <div class="footer-creator">
-        <p>Web vytvořil <a href="https://www.linkedin.com/in/adam-posp%C3%AD%C5%A1ek-329227123/" target="_blank" rel="noopener noreferrer">Adam Pospíšek</a></p>
+        <p>
+          Web vytvořil
+          <a
+            href="https://www.linkedin.com/in/adam-posp%C3%AD%C5%A1ek-329227123/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Adam Pospíšek</a
+          >
+        </p>
       </div>
     </footer>
-    <script src="js/scripts.js"></script>    
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 /* Nastavení základního fontu */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
 body {
@@ -111,7 +111,7 @@ nav ul li a.active::after {
 
 #uvod {
   text-align: center;
-  background: url('images/sauna-uvodni.jpeg') no-repeat center center/cover;
+  background: url('images/sauna-uvodni.webp') no-repeat center center/cover;
   color: #f7e8d5;
   padding: 50px;
   height: 200px;
@@ -124,7 +124,7 @@ nav ul li a.active::after {
   left: 0;
   width: 100%;
   height: 377px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   /* Tmavý overlay */
   z-index: 1;
 }
@@ -302,7 +302,7 @@ h2 {
   display: flex;
   flex-direction: row;
   max-width: 100%;
-  height: 65vh;
+  height: 75vh;
   align-items: center;
   box-shadow: 0 9px 30px #4B3621;
   border: #4B3621;
@@ -352,7 +352,7 @@ h2 {
 .fotky img {
   width: 33.33%;
   /* Šířka každého obrázku s mezerami */
-  height: 65vh;
+  height: 75vh;
   object-fit: cover;
   transition: all 0.3s ease-in-out;
   /* Plynulý přechod šířky a z-indexu */
@@ -363,7 +363,7 @@ h2 {
 #oteviraci-doba.hlavni {
   max-width: 100%;
   background-color: white;
-  background: url("images/oteviraci-doba.jpg") no-repeat;
+  background: url("images/oteviraci-doba.webp") no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -523,7 +523,7 @@ h2 {
   bottom: 0;
   left: 50%;
   /* Šikmé pozadí začíná od poloviny sekce */
-  background: url('images/pozadi-cenik1.jpg') no-repeat center center;
+  background: url('images/pozadi-cenik.webp') no-repeat center center;
   background-size: cover;
   /* Přizpůsobení velikosti obrázku */
   clip-path: polygon(0 0, 100% 0, 100% 200%, 0 0);
@@ -565,7 +565,7 @@ h2 {
 }
 
 #cenik img {
-  height: 80px;
+  height: 70px;
   width: auto;
   margin-top: 15px;
   margin-left: 15px;
@@ -578,7 +578,7 @@ h2 {
 }
 
 #kontakt.hlavni {
-  background: url('images/kontakt-pozadi1.jpg') no-repeat center;
+  background: url('images/kontakt-pozadi.webp') no-repeat center;
   background-size: cover;
   max-width: 100%;
   height: fit-content;
@@ -614,7 +614,7 @@ h2 {
   width: 800px;
   margin: auto;
   gap: 40px;
-  
+
 }
 
 #kontakt h2 {
@@ -680,13 +680,17 @@ footer {
   padding-top: 30px;
   height: fit-content;
 }
+
 .footer-container {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .footer-creator {
-  background-color: #4a3420; /* Jemnější hnědá */
-  font-size: 14px; /* O něco menší písmo */
+  background-color: #4a3420;
+  /* Jemnější hnědá */
+  font-size: 14px;
+  /* O něco menší písmo */
   opacity: 0.85;
   padding: 10px;
   margin-top: 4dvb;
@@ -694,22 +698,26 @@ footer {
 }
 
 .footer-creator:hover {
-  background-color: #5a3e25; /* Mírně světlejší hnědá */
+  background-color: #5a3e25;
+  /* Mírně světlejší hnědá */
 }
 
 .footer-creator a {
-  color: #d8b67a; /* Méně sytá zlatá */
+  color: #d8b67a;
+  /* Méně sytá zlatá */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-creator a:hover {
-  color: #e0c28d; /* Jemnější zesvětlení */
+  color: #e0c28d;
+  /* Jemnější zesvětlení */
   text-decoration: underline;
 }
 
 footer a {
-  color: #f4e1c1; /* Zlatá barva pro odkazy */
+  color: #f4e1c1;
+  /* Zlatá barva pro odkazy */
   text-decoration: none;
 }
 
@@ -721,11 +729,11 @@ i {
   margin-right: 6px;
 }
 
-#rad{
+#rad {
   text-align: justify;
 }
 
-.gdpr{
+.gdpr {
   text-align: left;
   padding: 20px;
 }
