@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sauna Relax Bar" />
+    <meta
+      name="description"
+      content="SaunaRelaxBar Ostrava – finská sauna s venkovním ochlazovacím bazénkem a barem. Přijďte si odpočinout do Sokol Poruba."
+    />
     <meta name="author" content="Adam Pospíšek" />
-    <meta name="keywords" content="sauna, Poruba, relaxace, wellness, Sokol" />
-    <title>Sauna Sokol Poruba</title>
+    <meta
+      name="keywords"
+      content="sauna, finská sauna, ochlazovací bazének, sauna Sokol Poruba, relaxace, wellness, SaunaRelaxBar"
+    />
+    <title>SaunaRelaxBar | Finská sauna Ostrava | Sokol Poruba</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/responsible.css" />
     <link rel="stylesheet" href="css/icofont.min.css" />
@@ -30,10 +36,12 @@
   <body>
     <header>
       <div class="logo">
-        <a href="index.html" aria-label="Logo SaunaRelaxBar"><img src="images/logo.webp" alt="Logo SaunaRelaxBar" /></a>
+        <a href="index.html" aria-label="Logo SaunaRelaxBar"
+          ><img src="images/logo.webp" alt="Logo SaunaRelaxBar"
+        /></a>
       </div>
       <div class="navigace">
-        <nav>
+        <nav aria-label="Hlavní navigace">
           <div class="menu-toggle">
             <span></span>
             <span></span>
@@ -76,11 +84,11 @@
               </div>
               <div class="timeline-item">
                 <button class="nav-btn active" data-filter="tyden">
-                  Tento týden
+                  Týden
                 </button>
               </div>
               <div class="timeline-item">
-                <button class="nav-btn" data-filter="mesic">Tento měsíc</button>
+                <button class="nav-btn" data-filter="mesic">Měsíc</button>
               </div>
             </div>
           </div>
@@ -126,9 +134,17 @@
           </p>
         </div>
         <div class="fotky">
-          <img src="images/uvod-sauna.webp" alt="Finská sauna" />
-          <img src="images/uvod-bazenek.webp" alt="Ochlazovací bazének" />
-          <img src="images/uvod-odpocivarna.webp" alt="Odpočívárna" />
+          <img src="images/uvod-sauna.webp" alt="Finská sauna" loading="lazy" />
+          <img
+            src="images/uvod-bazenek.webp"
+            alt="Ochlazovací bazének"
+            loading="lazy"
+          />
+          <img
+            src="images/uvod-odpocivarna.webp"
+            alt="Odpočívárna"
+            loading="lazy"
+          />
         </div>
       </section>
 
@@ -189,15 +205,27 @@
       <!-- Fotky sauny -->
       <section class="hlavni" id="fotky">
         <div class="gallery">
-          <button class="gallery-button prev">&#8249;</button>
+          <button class="gallery-button prev" aria-label="Předchozí">
+            &#8249;
+          </button>
           <div class="gallery-container">
-            <img src="images/fotka1.webp" alt="Interiér sauny" />
-            <img src="images/fotka2.webp" alt="Ochlazovací bazének" />
-            <img src="images/fotka3.webp" alt="Odpočívárna" />
-            <img src="images/fotka4.webp" alt="Sauna" />
-            <img src="images/fotka5.webp" alt="Venkovní odpočívárna" />
+            <img src="images/fotka1.webp" alt="Interiér sauny" loading="lazy" />
+            <img
+              src="images/fotka2.webp"
+              alt="Ochlazovací bazének"
+              loading="lazy"
+            />
+            <img src="images/fotka3.webp" alt="Odpočívárna" loading="lazy" />
+            <img src="images/fotka4.webp" alt="Sauna" loading="lazy" />
+            <img
+              src="images/fotka5.webp"
+              alt="Venkovní odpočívárna"
+              loading="lazy"
+            />
           </div>
-          <button class="gallery-button next">&#8250;</button>
+          <button class="gallery-button next" aria-label="Další">
+            &#8250;
+          </button>
         </div>
       </section>
 
@@ -212,8 +240,8 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               aria-label="Mapa SaunaRelaxBar"
-              ></iframe
-            >
+              title="Mapa SaunaRelaxBar"
+            ></iframe>
           </p>
           <div class="kontakty">
             <p>
@@ -235,7 +263,7 @@
                 href="https://www.instagram.com/saunarelaxbar/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram SaunaRelaxBar"></a>
+                aria-label="Instagram SaunaRelaxBar"
                 ><p><i class="icofont-instagram"></i></p
               ></a>
               <a
@@ -248,6 +276,16 @@
             </div>
           </div>
         </div>
+      </section>
+      <section id="recenze">
+        <script
+          src="https://static.elfsight.com/platform/platform.js"
+          async
+        ></script>
+        <div
+          class="elfsight-app-80a59d40-46fb-4f26-a378-807879a49f1e"
+          data-elfsight-app-lazy
+        ></div>
       </section>
     </main>
 
