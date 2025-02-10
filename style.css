@@ -737,3 +737,8 @@ i {
   text-align: left;
   padding: 20px;
 }
+
+#chyba {
+  padding: 90px;
+  font-size: 1.8rem;
+}
