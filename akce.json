@@ -1,5 +1,4 @@
 [
-    { "date": "2025-02-08 17:30", "title": "Saunový ceremoniál", "description": "Zkušená instruktorka Kristýna vás provede pravidly a rituály", "image": "images/akce-sauna.webp" },
-    { "date": "2025-02-09 17:30", "title": "Saunový ceremoniál", "description": "Zkušená instruktorka Kristýna vás provede pravidly a rituály", "image": "images/akce-sauna.webp" },
-    { "date": "2025-02-21 17:30", "title": "Saunový ceremoniál", "description": "Ideální zakončení týdne v klidném prostředí.", "image": "images/akce-sauna.webp" }
+    { "date": "2025-02-11 15:00", "title": "Týden svatého Valentýna (11.-16.2.)", "description": "Celý týden neomezený vstup do sauny pouze za 250 Kč!", "image": "images/valentyn.png" },
+    { "date": "2025-02-21 17:30", "title": "Saunový ceremoniál", "description": "Ideální zakončení týdne v klidném prostředí. Zkušená instruktorka Kristýna vás provede pravidly a rituály", "image": "images/akce-sauna.webp" }
 ]
