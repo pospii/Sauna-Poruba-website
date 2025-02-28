@@ -41,6 +41,7 @@
     />
     <meta name="apple-mobile-web-app-title" content="SaunaRelaxBar" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   </head>
   <body>
     <header>
@@ -74,8 +75,8 @@
       <section id="uvod">
         <div class="intro">
           <div class="nadpis">
-            <h1>SaunaRelaxBar</h1>
-            <p>
+            <h1 data-aos="zoom-in">SaunaRelaxBar</h1>
+            <p data-aos="zoom-in" data-aos-delay="150">
               Sauna s příjemným prostředím a dlouholetou tradicí pod jménem
               Sauna Sokol Poruba. Zažijte&nbsp;Relax.
             </p>
@@ -84,8 +85,8 @@
       </section>
 
       <section id="kalendar">
-        <div class="kal-nadpis"><h2>Kalendář akcí</h2></div>
-        <div class="kalendar-header">
+        <div class="kal-nadpis" data-aos="fade" data-aos-delay="250"><h2>Kalendář akcí</h2></div>
+        <div class="kalendar-header" data-aos="fade" data-aos-delay="250">
           <div class="timeline-wrapper">
             <div class="timeline">
               <div class="timeline-item">
@@ -102,15 +103,15 @@
             </div>
           </div>
         </div>
-        <div class="kalendar-content">
+        <div class="kalendar-content" data-aos="fade-left" data-aos-delay="400">
           <ul id="akce-list">
             <!-- Dynamicky generovaný obsah -->
           </ul>
         </div>
       </section>
 
-      <section class="hlavni" id="o-saune">
-        <div class="text">
+      <section class="hlavni" id="o-saune" data-aos="fade-up" data-aos-delay="400">
+        <div class="text" data-aos="zoom-in" data-aos-delay="500">
           <h2>O sauně</h2>
           <p>
             Naše sauna se nachází v <strong>Ostravě Porubě</strong> na ulici
@@ -142,7 +143,7 @@
             U vstupu můžete posedět v naší <strong>kavárně / baru</strong>.
           </p>
         </div>
-        <div class="fotky">
+        <div class="fotky" data-aos="fade-right" data-aos-delay="500">
           <img src="images/uvod-sauna.webp" alt="Finská sauna" loading="lazy" />
           <img
             src="images/uvod-bazenek.webp"
@@ -159,21 +160,21 @@
 
       <!-- Otevírací doba -->
       <section class="hlavni" id="oteviraci-doba">
-        <h2>Otevírací doba <i class="icofont-clock-time"></i></h2>
+        <h2 data-aos="zoom-out">Otevírací doba <i class="icofont-clock-time"></i></h2>
         <ul>
-          <li><span>Pondělí:</span> ZAVŘENO</li>
-          <li><span>Úterý:</span> 15:00 - 22:00</li>
-          <li><span>Středa:</span> 15:00 - 22:00</li>
-          <li><span>Čtvrtek:</span> 15:00 - 22:00</li>
-          <li><span>Pátek:</span> 15:00 - 22:00</li>
-          <li><span>Sobota:</span> 12:00 - 22:00</li>
-          <li><span>Neděle:</span> 12:00 - 22:00</li>
+          <li data-aos="zoom-out" data-aos-delay="100"><span>Pondělí:</span> ZAVŘENO</li>
+          <li data-aos="zoom-out" data-aos-delay="150"><span>Úterý:</span> 15:00 - 22:00</li>
+          <li data-aos="zoom-out" data-aos-delay="200"><span>Středa:</span> 15:00 - 22:00</li>
+          <li data-aos="zoom-out" data-aos-delay="250"><span>Čtvrtek:</span> 15:00 - 22:00</li>
+          <li data-aos="zoom-out" data-aos-delay="300"><span>Pátek:</span> 15:00 - 22:00</li>
+          <li data-aos="zoom-out" data-aos-delay="350"><span>Sobota:</span> 12:00 - 22:00</li>
+          <li data-aos="zoom-out" data-aos-delay="400"><span>Neděle:</span> 12:00 - 22:00</li>
         </ul>
       </section>
 
       <!-- Ceník -->
       <section class="hlavni" id="cenik">
-        <div class="content">
+        <div class="content" data-aos="zoom-in" data-aos-delay="500">
           <h2>Ceník</h2>
           <ul>
             <li class="normal">Vstup dospělý: <b>330 Kč</b></li>
@@ -252,7 +253,7 @@
               title="Mapa SaunaRelaxBar"
             ></iframe>
           </p>
-          <div class="kontakty">
+          <div class="kontakty" data-aos="fade-up" data-aos-delay="400">
             <p>
               <i class="icofont-google-map"></i>Vřesinská 2156/101, 708 00
               Ostrava 8
@@ -267,7 +268,7 @@
                 >saunarelaxbar@gmail.com</a
               >
             </p>
-            <div class="kontakt-soc">
+            <div class="kontakt-soc" data-aos="fade-up" data-aos-delay="100">
               <a
                 href="https://www.instagram.com/saunarelaxbar/"
                 target="_blank"
@@ -291,7 +292,7 @@
           src="https://static.elfsight.com/platform/platform.js"
           async
         ></script>
-        <div
+        <div  data-aos="zoom-out" data-aos-delay="100"
           class="elfsight-app-80a59d40-46fb-4f26-a378-807879a49f1e"
           data-elfsight-app-lazy
         ></div>
@@ -314,7 +315,7 @@
         <p>
           Web vytvořil
           <a
-            href="https://www.linkedin.com/in/adam-posp%C3%AD%C5%A1ek-329227123/"
+            href="https://pospi.tode.cz/"
             target="_blank"
             rel="noopener noreferrer"
             >Adam Pospíšek</a
@@ -323,5 +324,27 @@
       </div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    function getOffset() {
+        return window.innerWidth > 768 ? 300 : 50; // Vyšší offset na PC, nižší na mobilu
+    }
+
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: getOffset(),
+        anchorPlacement: "top-bottom"
+    });
+
+    window.addEventListener("resize", () => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: getOffset(),
+            anchorPlacement: "top-bottom"
+        });
+    });
+</script>
   </body>
 </html>

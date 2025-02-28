@@ -673,6 +673,12 @@ iframe {
   margin: 0;
 }
 
+#recenze{
+  margin-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 footer {
   background-color: #2a1e13;
   color: #f4e1c1;

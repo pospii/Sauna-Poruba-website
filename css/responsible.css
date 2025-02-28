@@ -12,6 +12,10 @@
         margin: auto;
     }
 
+    .kalendar-content{
+        margin-bottom: 80px;
+    }
+
     #cenik .content {
         width: 60%;
         margin: 0;
@@ -233,6 +237,10 @@
 
     .kal-nadpis {
         margin-bottom: 0;
+    }
+
+    .kalendar-content{
+        margin-bottom: 60px;
     }
 
     .timeline {
