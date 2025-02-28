@@ -1,4 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // === ANIMACE AOS ===
+  function getOffset() {
+    return window.innerWidth > 768 ? 300 : 50;
+  }
+
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: getOffset(),
+    anchorPlacement: "top-bottom",
+  });
+
+  window.addEventListener("resize", () => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: getOffset(),
+      anchorPlacement: "top-bottom",
+    });
+  });
+
   // === GALERIE ===
   const galleryContainer = document.querySelector(".gallery-container");
   const galleryImages = document.querySelectorAll(".gallery-container img");
@@ -46,6 +67,50 @@ document.addEventListener("DOMContentLoaded", () => {
       updateGallery();
       resetInterval();
     });
+
+  // === ROTUJÍCÍ OBRÁZKY ===
+  const images = document.querySelectorAll(".foto-kavarna img");
+  let currentImageIndex = 0;
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.style.opacity = i === index ? "1" : "0";
+      img.style.transform = i === index ? "scale(1)" : "scale(1.1)";
+    });
+  }
+
+  function rotateImages() {
+    images[currentImageIndex].style.opacity = "0";
+    images[currentImageIndex].style.transform = "scale(1.1)";
+    setTimeout(() => {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      showImage(currentImageIndex);
+    }, 500);
+  }
+
+  showImage(currentImageIndex);
+  setInterval(rotateImages, 5000);
+
+  // === MODÁLNÍ OBRÁZEK ===
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const thumbnail = document.getElementById("thumbnail");
+  const closeBtn = document.querySelector(".close");
+
+  thumbnail.onclick = function () {
+    modal.style.display = "flex";
+    modalImg.src = "images/napojovy-listek-velky.webp";
+  };
+
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  modal.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
 
   // === INTERAKCE S OBRÁZKY ===
   const photoImages = document.querySelectorAll(".fotky img");

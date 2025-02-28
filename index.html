@@ -2,13 +2,18 @@
 <html lang="cs">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMHCM3VWJE"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FMHCM3VWJE"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-FMHCM3VWJE');
+      gtag("config", "G-FMHCM3VWJE");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +30,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/responsible.css" />
     <link rel="stylesheet" href="css/icofont.min.css" />
-
+    <link rel="stylesheet" href="css/aos.css" />
     <link
       rel="icon"
       type="image/png"
@@ -41,7 +46,6 @@
     />
     <meta name="apple-mobile-web-app-title" content="SaunaRelaxBar" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   </head>
   <body>
     <header>
@@ -63,7 +67,7 @@
             <li><a href="#o-saune">O sauně</a></li>
             <li><a href="#oteviraci-doba">Otevírací doba</a></li>
             <li><a href="#cenik">Ceník</a></li>
-            <li><a href="#fotky">Fotky</a></li>
+            <li><a href="#kavarna">Kavárna</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </nav>
@@ -85,7 +89,9 @@
       </section>
 
       <section id="kalendar">
-        <div class="kal-nadpis" data-aos="fade" data-aos-delay="250"><h2>Kalendář akcí</h2></div>
+        <div class="kal-nadpis" data-aos="fade" data-aos-delay="250">
+          <h2>Kalendář akcí</h2>
+        </div>
         <div class="kalendar-header" data-aos="fade" data-aos-delay="250">
           <div class="timeline-wrapper">
             <div class="timeline">
@@ -110,7 +116,12 @@
         </div>
       </section>
 
-      <section class="hlavni" id="o-saune" data-aos="fade-up" data-aos-delay="400">
+      <section
+        class="hlavni"
+        id="o-saune"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <div class="text" data-aos="zoom-in" data-aos-delay="500">
           <h2>O sauně</h2>
           <p>
@@ -160,15 +171,31 @@
 
       <!-- Otevírací doba -->
       <section class="hlavni" id="oteviraci-doba">
-        <h2 data-aos="zoom-out">Otevírací doba <i class="icofont-clock-time"></i></h2>
+        <h2 data-aos="zoom-out">
+          Otevírací doba <i class="icofont-clock-time"></i>
+        </h2>
         <ul>
-          <li data-aos="zoom-out" data-aos-delay="100"><span>Pondělí:</span> ZAVŘENO</li>
-          <li data-aos="zoom-out" data-aos-delay="150"><span>Úterý:</span> 15:00 - 22:00</li>
-          <li data-aos="zoom-out" data-aos-delay="200"><span>Středa:</span> 15:00 - 22:00</li>
-          <li data-aos="zoom-out" data-aos-delay="250"><span>Čtvrtek:</span> 15:00 - 22:00</li>
-          <li data-aos="zoom-out" data-aos-delay="300"><span>Pátek:</span> 15:00 - 22:00</li>
-          <li data-aos="zoom-out" data-aos-delay="350"><span>Sobota:</span> 12:00 - 22:00</li>
-          <li data-aos="zoom-out" data-aos-delay="400"><span>Neděle:</span> 12:00 - 22:00</li>
+          <li data-aos="zoom-out" data-aos-delay="100">
+            <span>Pondělí:</span> ZAVŘENO
+          </li>
+          <li data-aos="zoom-out" data-aos-delay="150">
+            <span>Úterý:</span> 15:00 - 22:00
+          </li>
+          <li data-aos="zoom-out" data-aos-delay="200">
+            <span>Středa:</span> 15:00 - 22:00
+          </li>
+          <li data-aos="zoom-out" data-aos-delay="250">
+            <span>Čtvrtek:</span> 15:00 - 22:00
+          </li>
+          <li data-aos="zoom-out" data-aos-delay="300">
+            <span>Pátek:</span> 15:00 - 22:00
+          </li>
+          <li data-aos="zoom-out" data-aos-delay="350">
+            <span>Sobota:</span> 12:00 - 22:00
+          </li>
+          <li data-aos="zoom-out" data-aos-delay="400">
+            <span>Neděle:</span> 12:00 - 22:00
+          </li>
         </ul>
       </section>
 
@@ -212,30 +239,47 @@
         </div>
       </section>
 
-      <!-- Fotky sauny -->
-      <section class="hlavni" id="fotky">
-        <div class="gallery">
-          <button class="gallery-button prev" aria-label="Předchozí">
-            &#8249;
-          </button>
-          <div class="gallery-container">
-            <img src="images/fotka1.webp" alt="Interiér sauny" loading="lazy" />
+      <section class="hlavni" id="kavarna">
+        <div class="text-kavarna">
+          <h2 data-aos="fade-up" data-aos-delay="200">Kavárna / Bar</h2>
+          <div data-aos="fade-up" data-aos-delay="300">
+            <p>
+              U vstupu do sauny se nachází naše útulná kavárna (bar). Můžete si
+              zde vychutnat čepovanou Plzeň a Radegast&nbsp;12, nebo si vybrat z
+              rozsáhlé nabídky nealkoholických i alkoholických nápojů. V
+              neposlední řadě nabízíme také něco malého na zub.
+            </p>
+            <p>
+              Po vstupu do prostor sauny je možné objednat si zde jakékoliv
+              občerstvení, po upozornění Vás naše obsluha mile ráda obslouží :).
+            </p>
+            <p>
+              V letních měsících je v provozu i naše zahrádka před hlavním
+              vstupem.
+            </p>
+          </div>
+          <img
+            data-aos="fade"
+            data-aos-delay="800"
+            id="thumbnail"
+            src="images/napojovy-listek-maly.webp"
+            alt="Nápojový lístek"
+          />
+          <!-- Modalní okno -->
+          <div id="modal" class="modal">
+            <span class="close">&times;</span>
             <img
-              src="images/fotka2.webp"
-              alt="Ochlazovací bazének"
-              loading="lazy"
-            />
-            <img src="images/fotka3.webp" alt="Odpočívárna" loading="lazy" />
-            <img src="images/fotka4.webp" alt="Sauna" loading="lazy" />
-            <img
-              src="images/fotka5.webp"
-              alt="Venkovní odpočívárna"
-              loading="lazy"
+              class="modal-content"
+              id="modal-img"
+              title="Nápojový lístek SaunaRelaxBar"
             />
           </div>
-          <button class="gallery-button next" aria-label="Další">
-            &#8250;
-          </button>
+        </div>
+        <div class="foto-kavarna" data-aos="fade" data-aos-delay="600">
+          <img src="images/kavarna.webp" alt="Kavárna" />
+          <img src="images/stul-kavarna.webp" alt="Stůl Kavárna" />
+          <img src="images/zahradka.webp" alt="Zahrádka" />
+          <img src="images/vycep.webp" alt="Výčep" />
         </div>
       </section>
 
@@ -256,7 +300,7 @@
           <div class="kontakty" data-aos="fade-up" data-aos-delay="400">
             <p>
               <i class="icofont-google-map"></i>Vřesinská 2156/101, 708 00
-              Ostrava 8
+              Ostrava&nbsp;8
             </p>
             <p>
               <i class="icofont-phone"></i
@@ -292,10 +336,39 @@
           src="https://static.elfsight.com/platform/platform.js"
           async
         ></script>
-        <div  data-aos="zoom-out" data-aos-delay="100"
+        <div
+          data-aos="zoom-out"
+          data-aos-delay="100"
           class="elfsight-app-80a59d40-46fb-4f26-a378-807879a49f1e"
           data-elfsight-app-lazy
         ></div>
+      </section>
+
+      <!-- Fotky sauny -->
+      <section class="hlavni" id="fotky">
+        <div class="gallery">
+          <button class="gallery-button prev" aria-label="Předchozí">
+            &#8249;
+          </button>
+          <div class="gallery-container">
+            <img src="images/fotka1.webp" alt="Interiér sauny" loading="lazy" />
+            <img
+              src="images/fotka2.webp"
+              alt="Ochlazovací bazének"
+              loading="lazy"
+            />
+            <img src="images/fotka3.webp" alt="Odpočívárna" loading="lazy" />
+            <img src="images/fotka4.webp" alt="Sauna" loading="lazy" />
+            <img
+              src="images/fotka5.webp"
+              alt="Venkovní odpočívárna"
+              loading="lazy"
+            />
+          </div>
+          <button class="gallery-button next" aria-label="Další">
+            &#8250;
+          </button>
+        </div>
       </section>
     </main>
 
@@ -324,27 +397,6 @@
       </div>
     </footer>
     <script src="js/scripts.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    function getOffset() {
-        return window.innerWidth > 768 ? 300 : 50; // Vyšší offset na PC, nižší na mobilu
-    }
-
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: getOffset(),
-        anchorPlacement: "top-bottom"
-    });
-
-    window.addEventListener("resize", () => {
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: getOffset(),
-            anchorPlacement: "top-bottom"
-        });
-    });
-</script>
+    <script src="js/aos.js"></script>
   </body>
 </html>

@@ -12,7 +12,7 @@
         margin: auto;
     }
 
-    .kalendar-content{
+    .kalendar-content {
         margin-bottom: 80px;
     }
 
@@ -25,9 +25,18 @@
         padding: 70px;
     }
 
+
+    #kavarna.hlavni {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .foto-kavarna {
+        height: 280px;
+    }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 872px) {
     nav ul {
         display: none;
         /* Skryté menu defaultně */
@@ -138,6 +147,15 @@
         z-index: 0;
     }
 
+    #kavarna.hlavni {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .foto-kavarna {
+        display: none;
+    }
+
     .kontakt {
         flex-direction: column-reverse;
         width: 100%;
@@ -239,7 +257,7 @@
         margin-bottom: 0;
     }
 
-    .kalendar-content{
+    .kalendar-content {
         margin-bottom: 60px;
     }
 

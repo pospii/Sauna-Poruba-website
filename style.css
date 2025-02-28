@@ -461,7 +461,6 @@ h2 {
   max-width: 2000px;
   margin: 0 auto;
   overflow: hidden;
-  margin-bottom: 50px;
 }
 
 .gallery-container {
@@ -577,6 +576,74 @@ h2 {
   list-style-type: none;
 }
 
+#kavarna.hlavni {
+  min-height: fit-content;
+  padding-bottom: 77px;
+  font-size: 18px;
+  max-width: 900px;
+}
+
+#kavarna {
+  display: flex;
+  gap: 35px;
+  align-items: baseline;
+}
+
+.text-kavarna img {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.foto-kavarna {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.foto-kavarna img {
+  position: absolute;
+  width: auto;
+  height: 300px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  border-radius: 5px;
+}
+
+.foto-kavarna img:first-child {
+  opacity: 1;
+}
+
 #kontakt.hlavni {
   background: url('images/kontakt-pozadi.webp') no-repeat center;
   background-size: cover;
@@ -673,7 +740,7 @@ iframe {
   margin: 0;
 }
 
-#recenze{
+#recenze {
   margin-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px;
