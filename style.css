@@ -31,9 +31,9 @@ header {
 }
 
 header img {
-  height: 50px;
+  height: calc(100% - 12px);
   width: auto;
-  margin: 13.5px 15px;
+  margin: 6px 15px;
 }
 
 /* ZÁKLADNÍ STYL NAVIGACE */
