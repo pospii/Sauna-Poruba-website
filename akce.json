@@ -1,8 +1,296 @@
 [
-    { "date": "2025-03-25 15:00", "title": "Výhodné úterý", "description": "Každé úterý neomezený vstup do sauny za pouhých 200Kč! S MultiSport kartou doplatek 45 Kč.", "image": "images/vyhodne-utery.webp" },
-    { "date": "2025-04-02 15:00", "title": "Středeční saunování pro ženy", "description": "Každou středu oddělené saunování pouze pro ženy v naší finské sauně. Neomezený vstup za 200 Kč, doplatek s MultiSport 45 Kč.", "image": "images/saunovani-zeny.webp" },
-    { "date": "2025-04-09 15:00", "title": "Středeční saunování pro ženy", "description": "Každou středu oddělené saunování pouze pro ženy v naší finské sauně. Neomezený vstup za 200 Kč, doplatek s MultiSport 45 Kč.", "image": "images/saunovani-zeny.webp" },
-    { "date": "2025-04-16 15:00", "title": "Středeční saunování pro ženy", "description": "Každou středu oddělené saunování pouze pro ženy v naší finské sauně. Neomezený vstup za 200 Kč, doplatek s MultiSport 45 Kč.", "image": "images/saunovani-zeny.webp" },
-    { "date": "2025-04-23 15:00", "title": "Středeční saunování pro ženy", "description": "Každou středu oddělené saunování pouze pro ženy v naší finské sauně. Neomezený vstup za 200 Kč, doplatek s MultiSport 45 Kč.", "image": "images/saunovani-zeny.webp" },
-    { "date": "2025-04-30 15:00", "title": "Středeční saunování pro ženy", "description": "Každou středu oddělené saunování pouze pro ženy v naší finské sauně. Neomezený vstup za 200 Kč, doplatek s MultiSport 45 Kč.", "image": "images/saunovani-zeny.webp" }
+    {
+        "date": "2025-05-11 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-05-13 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-05-15 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-05-18 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-05-20 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-05-22 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-05-25 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-05-27 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-05-29 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-06-01 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-06-03 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-06-05 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-06-08 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-06-10 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-06-12 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-06-15 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-06-17 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-06-19 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-06-22 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-06-24 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-06-26 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-06-29 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-07-01 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-07-03 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-07-06 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-07-08 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-07-10 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-07-13 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-07-15 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-07-17 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-07-20 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-07-22 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-07-24 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-07-27 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-07-29 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-07-31 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-08-03 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-08-05 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-08-07 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-08-10 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-08-12 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-08-14 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-08-17 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-08-19 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-08-21 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-08-24 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    },
+    {
+        "date": "2025-08-26 15:00",
+        "title": "Úterní saunování",
+        "description": "Každý úterní od 11.5. do 31.8. výhodná cena 200 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/utery.webp"
+    },
+    {
+        "date": "2025-08-28 15:00",
+        "title": "Čtvrteční saunování",
+        "description": "Každý čtvrteční od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/ctvrtek.webp"
+    },
+    {
+        "date": "2025-08-31 12:00",
+        "title": "Nedělní saunování",
+        "description": "Každý nedělní od 11.5. do 31.8. výhodná cena 250 Kč neomezený vstup do sauny, s MultiSport doplatek 45 Kč.",
+        "image": "images/nedele.webp"
+    }
 ]

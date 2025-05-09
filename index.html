@@ -88,6 +88,11 @@
         </div>
       </section>
 
+      <div id="popup" class="popup">
+        <img src="images/popup.webp" alt="Reklama">
+        <button class="popup-close-btn" onclick="closePopup()">Zavřít</button>
+    </div>
+
       <section id="kalendar">
         <div class="kal-nadpis" data-aos="fade" data-aos-delay="250">
           <h2>Kalendář akcí</h2>
@@ -243,7 +248,7 @@
 
       <section class="hlavni" id="kavarna">
         <div class="text-kavarna">
-          <h2 data-aos="fade-up" data-aos-delay="200">Kavárna / Bar</h2>
+          <h2 data-aos="fade-up" data-aos-delay="200">Kavárna - zahrádka</h2>
           <div data-aos="fade-up" data-aos-delay="300">
             <p>
               U vstupu do sauny se nachází naše útulná kavárna (bar). Můžete si
@@ -257,8 +262,9 @@
             </p>
             <p>
               V letních měsících je v provozu i naše zahrádka před hlavním
-              vstupem.
+              vstupem. Můžete si u nás dát např. pizzu nebo trojhrany.
             </p>
+            <p>Otevírací doba zahrádky je út-pá: 14-22 a so-ne: 11-22.</p>
           </div>
           <img
             data-aos="fade"
@@ -400,5 +406,16 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          setTimeout(() => {
+              document.getElementById("popup").classList.add("popup-visible");
+          }, 500);
+      });
+      
+      function closePopup() {
+          document.getElementById("popup").classList.remove("popup-visible");
+      }
+  </script>
   </body>
 </html>

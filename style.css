@@ -820,3 +820,39 @@ i {
   padding: 90px;
   font-size: 1.8rem;
 }
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  width: 400px;
+  max-width: 90%;
+  background: #f4e1c1;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+  border-radius: 10px;
+  transition: opacity 0.5s, transform 0.5s;
+  z-index: 0;
+}
+.popup img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.popup-close-btn {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #5a3e25;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.popup-visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 9999;
+}
