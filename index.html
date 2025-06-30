@@ -67,7 +67,7 @@
             <li><a href="#o-saune">O sauně</a></li>
             <li><a href="#oteviraci-doba">Otevírací doba</a></li>
             <li><a href="#cenik">Ceník</a></li>
-            <li><a href="#kavarna">Kavárna</a></li>
+            <li><a href="#kavarna">Hospůdka</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </nav>
@@ -89,9 +89,9 @@
       </section>
 
       <div id="popup" class="popup">
-        <img src="images/popup.webp" alt="Reklama">
+        <img src="images/popup.webp" alt="Reklama" />
         <button class="popup-close-btn" onclick="closePopup()">Zavřít</button>
-    </div>
+      </div>
 
       <section id="kalendar">
         <div class="kal-nadpis" data-aos="fade" data-aos-delay="250">
@@ -156,7 +156,7 @@
           </ul>
           <p>
             Sauna je <strong>společná</strong>.<br />
-            U vstupu můžete posedět v naší <strong>kavárně / baru</strong>.
+            U vstupu můžete posedět v naší <strong>hospůdce</strong>.
           </p>
         </div>
         <div class="fotky" data-aos="fade-right" data-aos-delay="500">
@@ -177,7 +177,7 @@
       <!-- Otevírací doba -->
       <section class="hlavni" id="oteviraci-doba">
         <h2 data-aos="zoom-out">
-          Otevírací doba <i class="icofont-clock-time"></i>
+          Otevírací doba sauny&nbsp;<i class="icofont-clock-time"></i>
         </h2>
         <ul>
           <li data-aos="zoom-out" data-aos-delay="100">
@@ -187,16 +187,16 @@
             <span>Úterý:</span> 15:00 - 22:00
           </li>
           <li data-aos="zoom-out" data-aos-delay="200">
-            <span>Středa:</span> 15:00 - 22:00
+            <span>Středa:</span> ZAVŘENO
           </li>
           <li data-aos="zoom-out" data-aos-delay="250">
             <span>Čtvrtek:</span> 15:00 - 22:00
           </li>
           <li data-aos="zoom-out" data-aos-delay="300">
-            <span>Pátek:</span> 15:00 - 22:00
+            <span>Pátek:</span> ZAVŘENO
           </li>
           <li data-aos="zoom-out" data-aos-delay="350">
-            <span>Sobota:</span> 12:00 - 22:00
+            <span>Sobota:</span> ZAVŘENO
           </li>
           <li data-aos="zoom-out" data-aos-delay="400">
             <span>Neděle:</span> 12:00 - 22:00
@@ -231,8 +231,9 @@
               Zapůjčení prostěradla a ručníku: <b>50 Kč</b>
             </li>
             <li class="normal">
-              Přijímáme platební karty, kartu <b>MultiSport</b> a benefit karty <br> <b>Edenred</b>,
-              <b>Pluxee</b>, <b>eBenefity</b> a <b>Benefity</b>.
+              Přijímáme platební karty, kartu <b>MultiSport</b> a benefit karty
+              <br />
+              <b>Edenred</b>, <b>Pluxee</b>, <b>eBenefity</b> a <b>Benefity</b>.
             </li>
           </ul>
           <div class="foto-cenik">
@@ -248,13 +249,16 @@
 
       <section class="hlavni" id="kavarna">
         <div class="text-kavarna">
-          <h2 data-aos="fade-up" data-aos-delay="200">Kavárna - zahrádka</h2>
+          <h2 data-aos="fade-up" data-aos-delay="200">Hospůdka - zahrádka</h2>
           <div data-aos="fade-up" data-aos-delay="300">
             <p>
+              <b>Otevírací doba zahrádky je út-pá: 14-22 a so-ne: 11-22.</b>
+            </p>
+            <p>
               U vstupu do sauny se nachází naše útulná kavárna (bar). Můžete si
-              zde vychutnat čepovanou Plzeň a Radegast&nbsp;12, nebo si vybrat z
-              rozsáhlé nabídky nealkoholických i alkoholických nápojů. V
-              neposlední řadě nabízíme také něco malého na zub.
+              zde vychutnat čepovanou Plzeň a Radegast&nbsp;10 a 12, nebo si
+              vybrat z rozsáhlé nabídky nealkoholických i alkoholických nápojů.
+              V neposlední řadě nabízíme také něco malého na zub.
             </p>
             <p>
               Po vstupu do prostor sauny je možné objednat si zde jakékoliv
@@ -264,22 +268,34 @@
               V letních měsících je v provozu i naše zahrádka před hlavním
               vstupem. Můžete si u nás dát např. pizzu nebo trojhrany.
             </p>
-            <p>Otevírací doba zahrádky je út-pá: 14-22 a so-ne: 11-22.</p>
           </div>
+          <!-- Nápojový lístek -->
           <img
             data-aos="fade"
             data-aos-delay="800"
-            id="thumbnail"
-            src="images/napojovy-listek-maly.webp"
+            class="thumbnail"
+            src="images/napojovy-maly.webp"
             alt="Nápojový lístek"
+            data-full="images/napojovy.webp"
           />
-          <!-- Modalní okno -->
+
+          <!-- Jídelní lístek -->
+          <img
+            data-aos="fade"
+            data-aos-delay="800"
+            class="thumbnail"
+            src="images/jidelni-maly.webp"
+            alt="Jídelní lístek"
+            data-full="images/jidelni.webp"
+          />
+
+          <!-- Jedno společné modalní okno -->
           <div id="modal" class="modal">
             <span class="close">&times;</span>
             <img
               class="modal-content"
               id="modal-img"
-              title="Nápojový lístek SaunaRelaxBar"
+              title="Lístek SaunaRelaxBar"
             />
           </div>
         </div>
@@ -407,15 +423,15 @@
     <script src="js/scripts.js"></script>
     <script src="js/aos.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          setTimeout(() => {
-              document.getElementById("popup").classList.add("popup-visible");
-          }, 500);
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          document.getElementById("popup").classList.add("popup-visible");
+        }, 500);
       });
-      
+
       function closePopup() {
-          document.getElementById("popup").classList.remove("popup-visible");
+        document.getElementById("popup").classList.remove("popup-visible");
       }
-  </script>
+    </script>
   </body>
 </html>

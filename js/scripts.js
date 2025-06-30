@@ -94,13 +94,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // === MODÁLNÍ OBRÁZEK ===
   const modal = document.getElementById("modal");
   const modalImg = document.getElementById("modal-img");
-  const thumbnail = document.getElementById("thumbnail");
   const closeBtn = document.querySelector(".close");
+  const thumbnails = document.querySelectorAll(".thumbnail");
 
-  thumbnail.onclick = function () {
-    modal.style.display = "flex";
-    modalImg.src = "images/napojovy-listek-velky.webp";
-  };
+  // Pro každý náhled (thumbnail) nastav klikací událost
+  thumbnails.forEach((thumb) => {
+    thumb.onclick = function () {
+      modal.style.display = "flex";
+      modalImg.src = thumb.dataset.full; // Načte obrázek z atributu data-full
+      modalImg.alt = thumb.alt;
+      modalImg.title = thumb.alt;
+    };
+  });
 
   closeBtn.onclick = function () {
     modal.style.display = "none";
