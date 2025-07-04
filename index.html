@@ -88,10 +88,11 @@
         </div>
       </section>
 
-      <div id="popup" class="popup">
+      <!-- POPUP
+       <div id="popup" class="popup">
         <img src="images/popup.webp" alt="Reklama" />
         <button class="popup-close-btn" onclick="closePopup()">Zavřít</button>
-      </div>
+      </div> -->
 
       <section id="kalendar">
         <div class="kal-nadpis" data-aos="fade" data-aos-delay="250">
@@ -177,31 +178,62 @@
       <!-- Otevírací doba -->
       <section class="hlavni" id="oteviraci-doba">
         <h2 data-aos="zoom-out">
-          Otevírací doba sauny&nbsp;<i class="icofont-clock-time"></i>
+          Otevírací doba&nbsp;<i class="icofont-clock-time"></i>
         </h2>
-        <ul>
-          <li data-aos="zoom-out" data-aos-delay="100">
-            <span>Pondělí:</span> ZAVŘENO
-          </li>
-          <li data-aos="zoom-out" data-aos-delay="150">
-            <span>Úterý:</span> 15:00 - 22:00
-          </li>
-          <li data-aos="zoom-out" data-aos-delay="200">
-            <span>Středa:</span> ZAVŘENO
-          </li>
-          <li data-aos="zoom-out" data-aos-delay="250">
-            <span>Čtvrtek:</span> 15:00 - 22:00
-          </li>
-          <li data-aos="zoom-out" data-aos-delay="300">
-            <span>Pátek:</span> ZAVŘENO
-          </li>
-          <li data-aos="zoom-out" data-aos-delay="350">
-            <span>Sobota:</span> ZAVŘENO
-          </li>
-          <li data-aos="zoom-out" data-aos-delay="400">
-            <span>Neděle:</span> 12:00 - 22:00
-          </li>
-        </ul>
+        <div class="oteviracky">
+          <div class="sauna-oteviracka">
+            <h3>Sauna</h3>
+            <ul>
+              <li data-aos="zoom-out" data-aos-delay="100">
+                <span>Pondělí:</span> ZAVŘENO
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="150">
+                <span>Úterý:</span> 15:00 - 22:00
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="200">
+                <span>Středa:</span> ZAVŘENO
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="250">
+                <span>Čtvrtek:</span> 15:00 - 22:00
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="300">
+                <span>Pátek:</span> ZAVŘENO
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="350">
+                <span>Sobota:</span> ZAVŘENO
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="400">
+                <span>Neděle:</span> 12:00 - 22:00
+              </li>
+            </ul>
+          </div>
+          <div class="zahradka-oteviracka">
+            <h3>Hospůdka - Zahrádka</h3>
+            <ul>
+              <li data-aos="zoom-out" data-aos-delay="100">
+                <span>Pondělí:</span> ZAVŘENO
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="150">
+                <span>Úterý:</span> 14:00 - 22:00
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="200">
+                <span>Středa:</span> 14:00 - 22:00
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="250">
+                <span>Čtvrtek:</span> 14:00 - 22:00
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="300">
+                <span>Pátek:</span> 14:00 - 22:00
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="350">
+                <span>Sobota:</span> 11:00 - 22:00
+              </li>
+              <li data-aos="zoom-out" data-aos-delay="400">
+                <span>Neděle:</span> 11:00 - 22:00
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!-- Ceník -->
@@ -251,9 +283,6 @@
         <div class="text-kavarna">
           <h2 data-aos="fade-up" data-aos-delay="200">Hospůdka - zahrádka</h2>
           <div data-aos="fade-up" data-aos-delay="300">
-            <p>
-              <b>Otevírací doba zahrádky je út-pá: 14-22 a so-ne: 11-22.</b>
-            </p>
             <p>
               U vstupu do sauny se nachází naše útulná kavárna (bar). Můžete si
               zde vychutnat čepovanou Plzeň a Radegast&nbsp;10 a 12, nebo si

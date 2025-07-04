@@ -369,7 +369,8 @@ h2 {
   background-attachment: fixed;
   padding: 77px;
   position: relative;
-  height: 65vh;
+  min-height: 55vh;
+  height: fit-content;
   display: flex;
   /* Aktivuje Flexbox */
   justify-content: center;
@@ -411,8 +412,8 @@ h2 {
   color: #faede0;
   /* Bílá pro lepší kontrast */
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-  margin-bottom: 20px;
   font-family: 'DM Serif Text', sans-serif;
+  margin: 0;
 }
 
 
@@ -447,6 +448,23 @@ h2 {
 #oteviraci-doba li:hover {
   transform: scale(1.05);
 }
+
+.oteviracky {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.oteviracky h3{
+  font-size: 25px;
+  color: #faede0;
+  /* Bílá pro lepší kontrast */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  font-family: 'DM Serif Text', sans-serif;
+  text-transform: uppercase;
+}
+
 
 
 #fotky.hlavni {
@@ -569,7 +587,7 @@ h2 {
   margin-top: 15px;
 }
 
-.foto-cenik{
+.foto-cenik {
   display: flex;
   gap: 10px;
   margin-left: 50px;
@@ -831,17 +849,19 @@ i {
   max-width: 90%;
   background: #f4e1c1;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   border-radius: 10px;
   transition: opacity 0.5s, transform 0.5s;
   z-index: 0;
 }
+
 .popup img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
+
 .popup-close-btn {
   cursor: pointer;
   margin-top: 10px;
@@ -851,6 +871,7 @@ i {
   border: none;
   border-radius: 5px;
 }
+
 .popup-visible {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
