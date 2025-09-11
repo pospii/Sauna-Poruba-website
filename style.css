@@ -111,7 +111,7 @@ nav ul li a.active::after {
 
 #uvod {
   text-align: center;
-  background: url('images/sauna-uvodni.webp') no-repeat center center/cover;
+  background: url('images/sauna-hlavni-nova.webp') no-repeat center center/cover;
   color: #f7e8d5;
   padding: 50px;
   height: 200px;
@@ -363,7 +363,7 @@ h2 {
 #oteviraci-doba.hlavni {
   max-width: 100%;
   background-color: white;
-  background: url("images/oteviraci-doba.webp") no-repeat;
+  background: url("images/oteviraci-doban.webp") no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -540,7 +540,7 @@ h2 {
   bottom: 0;
   left: 50%;
   /* Šikmé pozadí začíná od poloviny sekce */
-  background: url('images/pozadi-cenik.webp') no-repeat center center;
+  background: url('images/cenik-nova.webp') no-repeat center center;
   background-size: cover;
   /* Přizpůsobení velikosti obrázku */
   clip-path: polygon(0 0, 100% 0, 100% 200%, 0 0);

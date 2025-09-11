@@ -145,7 +145,7 @@
         bottom: 0;
         left: 50%;
         bottom: 50%;
-        background: url(../images/pozadi-cenik-mob.webp) no-repeat center center;
+        background: url(../images/cenik-nova.webp) no-repeat center center;
         background-size: cover;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
         z-index: 0;
@@ -250,7 +250,7 @@
     }
 
     #uvod {
-        background: url('../images/sauna-uvodni-mob.webp') no-repeat center center/cover;
+        background: url('../images/sauna-hlavni-nova-mobil.webp') no-repeat center center/cover;
     }
 
     #uvod h1 {
@@ -295,7 +295,7 @@
 
     #oteviraci-doba.hlavni {
         padding: 70px 10px;
-        background: url("../images/oteviraci-doba-mob.webp") no-repeat;
+        background: url("../images/oteviraci-doba-mobn.webp") no-repeat center;
         background-size: cover;
     }
 
@@ -319,7 +319,7 @@
         bottom: 0;
         left: 50%;
         bottom: 70%;
-        background: url(../images/pozadi-cenik-mob.webp) no-repeat center center;
+        background: url(../images/cenik-mobil.webp) no-repeat center center;
         background-size: cover;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
         z-index: 0;
