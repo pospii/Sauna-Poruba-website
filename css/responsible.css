@@ -155,6 +155,10 @@
         margin-left: 20px;
     }
 
+    table.cenik {
+    width: 80%
+    }
+
     #kavarna.hlavni {
         flex-direction: column;
         height: fit-content;
@@ -330,10 +334,18 @@
         width: auto;
     }
 
+    #cenik em{
+        margin-left: 40px;
+    }
+
     .foto-cenik{
         gap: 7px;
         justify-content: center;
         margin-left: 0;
+    }
+
+    table.cenik {
+    margin: auto;
     }
 
     #fotky.hlavni {

@@ -1,14 +1,20 @@
 [
     {
-        "date": "2025-09-20 14:00",
-        "title": "Sauna uzavřena",
-        "description": "Važení zákazníci, omlouváme se, ale v sobotu 20.9. je sauna uzavřena z důvodu konání soukromé akce. Děkujeme za pochopení.",
-        "image": "images/zavreno.webp"
+        "date": "2025-10-04 14:41",
+        "title": "Saunové rituály s Kristýnou",
+        "description": "V sobotu 4.10. jsme si pro vás připravili sérii tří saunových ceremoniálů. První z nich ponese název Srdeční záležitost.",
+        "image": "images/ceremonialy.webp"
     },
     {
-        "date": "2025-09-28 14:00",
-        "title": "Sauna uzavřena",
-        "description": "Važení zákazníci, omlouváme se, ale v neděli 28.9. je sauna uzavřena z důvodu konání soukromé akce. Děkujeme za pochopení.",
-        "image": "images/zavreno.webp"
+        "date": "2025-10-04 15:51",
+        "title": "Saunové rituály s Kristýnou",
+        "description": "V sobotu 4.10. jsme si pro vás připravili sérii tří saunových ceremoniálů. Druhý z nich ponese název Podzimní vánek.",
+        "image": "images/ceremonialy.webp"
+    },
+    {
+        "date": "2025-10-04 16:50",
+        "title": "Saunové rituály s Kristýnou",
+        "description": "V sobotu 4.10. jsme si pro vás připravili sérii tří saunových ceremoniálů. Třetí z nich ponese název Relax s bylinkami.",
+        "image": "images/ceremonialy.webp"
     }
 ]

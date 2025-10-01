@@ -538,7 +538,7 @@ h2 {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 50%;
+  left: 60%;
   /* Šikmé pozadí začíná od poloviny sekce */
   background: url('images/cenik-nova.webp') no-repeat center center;
   background-size: cover;
@@ -560,7 +560,7 @@ h2 {
 #cenik li {
   position: relative;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 25px;
   /* Prostor pro ikonu vlevo od textu */
   text-indent: -33px;
@@ -593,10 +593,43 @@ h2 {
   margin-left: 50px;
 }
 
-#cenik .doplneni {
-  font-size: 13px;
-  margin-top: -15px;
-  list-style-type: none;
+table.cenik small {
+  font-size: 12px;
+}
+
+table.cenik {
+width: fit-content;
+border-collapse: collapse;
+background: #fdfaf6; /* jemné béžové, ladí s pozadím */
+}
+
+table.cenik th,
+table.cenik td {
+border: 1px solid #ddd;
+padding: 10px 12px;
+text-align: center;
+}
+
+table.cenik th {
+background: #8c5a37; /* stejná hnědá jako nadpis */
+color: #fff;
+text-transform: uppercase;
+font-size: 14px;
+letter-spacing: 0.5px;
+}
+
+table.cenik td {
+font-size: 15px;
+color: #333;
+}
+
+table.cenik tr:nth-child(even) {
+background: #f7f3ef; /* jemný proužek pro čitelnost */
+}
+
+table.cenik td:first-child {
+text-align: left;
+font-weight: 600;
 }
 
 #kavarna.hlavni {
