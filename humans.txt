@@ -1,0 +1,19 @@
+/* TEAM */
+Developer: Adam Pospíšek
+Role: Web Developer & SEO
+Location: Klimkovice, Czech Republic
+
+/* SITE */
+Site: SaunaRelaxBar
+URL: https://saunarelaxbar.cz
+Language: Czech
+Technology: HTML, CSS, JavaScript
+
+/* THANKS */
+Design inspiration, coffee, and patience.
+
+/* CONTACT */
+Email: (doplň svůj nebo klienta)
+
+/* NOTE */
+Handcrafted website. No templates, no bullshit.

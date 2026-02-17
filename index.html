@@ -1,58 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FMHCM3VWJE"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMHCM3VWJE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-FMHCM3VWJE");
+  </script>
 
-      gtag("config", "G-FMHCM3VWJE");
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="SaunaRelaxBar Ostrava – finská sauna s venkovním ochlazovacím bazénkem a barem. Přijďte si odpočinout do Sokol Poruba."
-    />
-    <meta name="author" content="POSPI" />
-    <meta
-      name="keywords"
-      content="sauna, finská sauna, ochlazovací bazének, sauna Sokol Poruba, relaxace, wellness, SaunaRelaxBar"
-    />
-    <title>SaunaRelaxBar | Finská sauna Ostrava | Sokol Poruba</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/responsible.css" />
-    <link rel="stylesheet" href="css/icofont.min.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
-    <meta name="apple-mobile-web-app-title" content="SaunaRelaxBar" />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>SaunaRelaxBar | Finská sauna Ostrava | Sokol Poruba</title>
+  <meta name="description" content="SaunaRelaxBar Ostrava – finská sauna s venkovním ochlazovacím bazénkem a barem v areálu Sokol Poruba. Přijďte relaxovat." />
+  <link rel="canonical" href="https://saunarelaxbar.cz/" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph (Facebook, WhatsApp) -->
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SaunaRelaxBar | Finská sauna Ostrava | Sokol Poruba" />
+  <meta property="og:description" content="Finská sauna v Ostravě-Porubě s venkovním bazénkem, odpočinkem a hospůdkou." />
+  <meta property="og:url" content="https://saunarelaxbar.cz/" />
+  <meta property="og:image" content="https://saunarelaxbar.cz/images/saunar-header.webp" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SaunaRelaxBar | Finská sauna Ostrava | Sokol Poruba" />
+  <meta name="twitter:description" content="Finská sauna v Ostravě-Porubě s venkovním bazénkem, odpočinkem a hospůdkou." />
+  <meta name="twitter:image" content="https://saunarelaxbar.cz/images/saunar-header.webp" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#593c1f" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- PRELOAD HERO IMAGE (desktop + mobile) -->
+  <link rel="preload" as="image" href="/images/saunar-header.webp" media="(min-width: 451px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/sauna-hlavni-nova-mobil.webp" media="(max-width: 450px)" fetchpriority="high" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/css/responsible.css" />
+  <link rel="stylesheet" href="/css/icofont.min.css" />
+  <link rel="stylesheet" href="/css/aos.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+
+  <meta name="apple-mobile-web-app-title" content="SaunaRelaxBar" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "SaunaRelaxBar - Sauna Sokol Poruba",
+    "url": "https://saunarelaxbar.cz/",
+    "image": "https://saunarelaxbar.cz/images/saunar-header.webp",
+    "telephone": "+420799188840",
+    "email": "saunarelaxbar@gmail.com",
+    "priceRange": "$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vřesinská 2156/101",
+      "postalCode": "70800",
+      "addressLocality": "Ostrava",
+      "addressCountry": "CZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.8227267878424,
+      "longitude": 18.154637966419443
+    },
+    "sameAs": [
+      "https://www.instagram.com/saunarelaxbar/",
+      "https://www.facebook.com/people/Sauna-Relax-Bar/61569065091594/"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "16:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday","Sunday"],
+        "opens": "14:00",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
+</head>
+
   <body>
     <header>
       <div class="logo">
         <a href="/" aria-label="Logo SaunaRelaxBar"
-          ><img src="images/sauna-nove-logo.svg" alt="Logo SaunaRelaxBar"
-        /></a>
+          ><img src="images/sauna-nove-logo.svg" alt="Logo SaunaRelaxBar" loading="eager" fetchpriority="high"  width="360" height="120" /></a>
       </div>
       <div class="navigace">
         <nav aria-label="Hlavní navigace">
@@ -75,47 +134,87 @@
     </header>
 
     <main>
-      <!-- Úvodní fotka -->
       <section id="uvod">
-        <div class="intro">
-          <div class="nadpis">
-            <h1 data-aos="zoom-in">SaunaRelaxBar</h1>
-            <p data-aos="zoom-in" data-aos-delay="150">
-              Sauna s příjemným prostředím a dlouholetou tradicí pod jménem
-              Sauna Sokol Poruba. Zažijte&nbsp;Relax.
-            </p>
+        <div class="hero">
+          <div class="hero-inner">
+            <div class="hero-top">
+              <div class="hero-kicker">
+                <span class="dot"></span>
+                <span>Ostrava Poruba • Sauna Sokol</span>
+              </div>
+
+              <h1>SaunaRelaxBar</h1>
+
+              <p class="hero-lead">
+                Finská sauna s venkovním bazénkem a klidnými zónami. Přijďte
+                vypnout hlavu a zapnout relax.
+              </p>
+            </div>
+
+            <div class="hero-bottom">
+              <div class="hero-actions">
+                <div class="hero-cta">
+                  <a class="btn primary" href="#oteviraci-doba"
+                    >Otevírací doba</a
+                  >
+                  <a class="btn ghost" href="#cenik">Ceník</a>
+                </div>
+
+                <span id="openNow" class="open-now"></span>
+              </div>
+
+              <div class="hero-meta">
+                <span><strong>15</strong> osob</span>
+                <span class="sep">•</span>
+                <span><strong>venkovní</strong> bazén</span>
+                <span class="sep">•</span>
+                <span><strong>hospůdka</strong> u vstupu</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- POPUP-->
-       <div id="popup" class="popup">
-        <img src="images/popup.webp" alt="Reklama" />
+      <div id="popup" class="popup">
+        <img src="images/popup.webp" alt="Reklama" loading="lazy"  width="1000" height="750" />
         <button class="popup-close-btn" onclick="closePopup()">Zavřít</button>
-      </div> 
-      
+      </div>
+
       <section id="kalendar">
-        <div class="kal-nadpis" data-aos="fade" data-aos-delay="250">
+        <div class="kal-nadpis" data-aos="fade" data-aos-delay="80">
           <h2>Kalendář akcí</h2>
         </div>
-        <div class="kalendar-header" data-aos="fade" data-aos-delay="250">
-          <div class="timeline-wrapper">
-            <div class="timeline">
-              <div class="timeline-item">
-                <button class="nav-btn" data-filter="dnes">Dnes</button>
-              </div>
-              <div class="timeline-item">
-                <button class="nav-btn active" data-filter="tyden">
-                  Týden
-                </button>
-              </div>
-              <div class="timeline-item">
-                <button class="nav-btn" data-filter="mesic">Měsíc</button>
-              </div>
-            </div>
+        <div class="kalendar-header" data-aos="fade" data-aos-delay="140">
+          <div class="filter-bar" role="tablist" aria-label="Filtr kalendáře">
+            <button
+              class="nav-btn"
+              data-filter="dnes"
+              role="tab"
+              aria-selected="false"
+            >
+              Dnes
+            </button>
+            <button
+              class="nav-btn active"
+              data-filter="tyden"
+              role="tab"
+              aria-selected="true"
+            >
+              Týden
+            </button>
+            <button
+              class="nav-btn"
+              data-filter="mesic"
+              role="tab"
+              aria-selected="false"
+            >
+              Měsíc
+            </button>
           </div>
         </div>
-        <div class="kalendar-content" data-aos="fade-left" data-aos-delay="400">
+
+        <div class="kalendar-content" data-aos="fade-left" data-aos-delay="220">
           <ul id="akce-list">
             <!-- Dynamicky generovaný obsah -->
           </ul>
@@ -126,33 +225,33 @@
         class="hlavni"
         id="o-saune"
         data-aos="fade-up"
-        data-aos-delay="400"
+        data-aos-delay="120"
       >
-        <div class="text" data-aos="zoom-in" data-aos-delay="500">
+        <div class="text" data-aos="zoom-in" data-aos-delay="180">
           <h2>O sauně</h2>
           <p>
             Naše sauna se nachází v <strong>Ostravě Porubě</strong> na ulici
-            Vřesinská. <br />
-            V areálu najdete:
+            Vřesinská.
           </p>
+          <p class="subline">V areálu najdete:</p>
           <ul>
             <li>
-              <img src="images/sauna-ikona.svg" alt="Ikona sauny" /> Finskou
+              <img src="images/sauna-ikona.svg" alt="Ikona sauny" loading="lazy"  width="22" height="22" /> Finskou
               saunu s kapacitou 15 osob
             </li>
             <li>
-              <img src="images/bazenek-ikona.svg" alt="Ikona bazénku" />
+              <img src="images/bazenek-ikona.svg" alt="Ikona bazénku" loading="lazy"  width="22" height="22" />
               Venkovní bazének pro ochlazení po saunování
             </li>
             <li>
-              <img src="images/relax-ikona.svg" alt="Ikona odpočíárny" /> Dvě
+              <img src="images/relax-ikona.svg" alt="Ikona odpočíárny" loading="lazy"  width="22" height="22" /> Dvě
               odpočinkové zóny
             </li>
             <li>
-              <img src="images/sprcha-ikona.svg" alt="Ikona sprchy" /> Sprchy
+              <img src="images/sprcha-ikona.svg" alt="Ikona sprchy" loading="lazy"  width="22" height="22" /> Sprchy
             </li>
             <li>
-              <img src="images/skrinky-ikona.svg" alt="Ikona šatny" /> Šatny
+              <img src="images/skrinky-ikona.svg" alt="Ikona šatny" loading="lazy"  width="22" height="22" /> Šatny
             </li>
           </ul>
           <p>
@@ -160,22 +259,22 @@
             U vstupu můžete posedět v naší <strong>hospůdce</strong>.
           </p>
         </div>
-        <div class="fotky" data-aos="fade-right" data-aos-delay="500">
+        <div class="fotky" data-aos="fade-right" data-aos-delay="260">
           <img
             src="images/uvod-saunan.webp"
             alt="Finská sauna"
             loading="lazy"
-          />
+           width="1200" height="900" />
           <img
             src="images/uvod-bazenekn.webp"
             alt="Ochlazovací bazének"
             loading="lazy"
-          />
+           width="1200" height="900" />
           <img
             src="images/uvod-odpocivarna.webp"
             alt="Odpočívárna"
             loading="lazy"
-          />
+           width="1200" height="900" />
         </div>
       </section>
 
@@ -188,25 +287,25 @@
           <div class="sauna-oteviracka">
             <h3>Sauna</h3>
             <ul>
-              <li data-aos="zoom-out" data-aos-delay="100">
+              <li data-aos="zoom-out" data-aos-delay="60">
                 <span>Pondělí:</span> ZAVŘENO
               </li>
-              <li data-aos="zoom-out" data-aos-delay="150">
+              <li data-aos="zoom-out" data-aos-delay="100">
                 <span>Úterý:</span> 16:00 - 22:00
               </li>
-              <li data-aos="zoom-out" data-aos-delay="200">
+              <li data-aos="zoom-out" data-aos-delay="140">
                 <span>Středa:</span> 16:00 - 22:00
               </li>
-              <li data-aos="zoom-out" data-aos-delay="250">
+              <li data-aos="zoom-out" data-aos-delay="180">
                 <span>Čtvrtek:</span> 16:00 - 22:00
               </li>
-              <li data-aos="zoom-out" data-aos-delay="300">
+              <li data-aos="zoom-out" data-aos-delay="220">
                 <span>Pátek:</span> 16:00 - 22:00
               </li>
-              <li data-aos="zoom-out" data-aos-delay="350">
+              <li data-aos="zoom-out" data-aos-delay="260">
                 <span>Sobota:</span> 14:00 - 22:00
               </li>
-              <li data-aos="zoom-out" data-aos-delay="400">
+              <li data-aos="zoom-out" data-aos-delay="300">
                 <span>Neděle:</span> 14:00 - 22:00
               </li>
             </ul>
@@ -214,25 +313,25 @@
           <div class="zahradka-oteviracka">
             <h3>Hospůdka - Zahrádka</h3>
             <ul>
-              <li data-aos="zoom-out" data-aos-delay="100">
+              <li data-aos="zoom-out" data-aos-delay="120">
                 <span>Pondělí:</span> ZAVŘENO
               </li>
-              <li data-aos="zoom-out" data-aos-delay="150">
+              <li data-aos="zoom-out" data-aos-delay="160">
                 <span>Úterý:</span> 16:00 - 22:00
               </li>
               <li data-aos="zoom-out" data-aos-delay="200">
                 <span>Středa:</span> 16:00 - 22:00
               </li>
-              <li data-aos="zoom-out" data-aos-delay="250">
+              <li data-aos="zoom-out" data-aos-delay="240">
                 <span>Čtvrtek:</span> 16:00 - 22:00
               </li>
-              <li data-aos="zoom-out" data-aos-delay="300">
+              <li data-aos="zoom-out" data-aos-delay="280">
                 <span>Pátek:</span> 16:00 - 22:00
               </li>
-              <li data-aos="zoom-out" data-aos-delay="350">
+              <li data-aos="zoom-out" data-aos-delay="320">
                 <span>Sobota:</span> 14:00 - 22:00
               </li>
-              <li data-aos="zoom-out" data-aos-delay="400">
+              <li data-aos="zoom-out" data-aos-delay="360">
                 <span>Neděle:</span> 14:00 - 22:00
               </li>
             </ul>
@@ -242,156 +341,167 @@
 
       <!-- Ceník -->
       <section class="hlavni" id="cenik">
-        <div class="content" data-aos="zoom-in" data-aos-delay="500">
+        <div class="content" data-aos="zoom-in" data-aos-delay="160">
           <h2>Ceník</h2>
           <p><em>Platný od 1. 10. 2025</em></p>
-
-          <table class="cenik">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Běžná cena</th>
-                <th>Multisport</th>
-                <th>Doplatky</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Vstup 60 min.</td>
-                <td><b>155 Kč</b></td>
-                <td>0 Kč</td>
-                <td>
-                  90 Kč<br /><small class="doplneni"
-                    >každých započatých 30 min.<br />(max. 270 Kč)</small
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Neomezený vstup</td>
-                <td><b>370 Kč</b></td>
-                <td>250 Kč</td>
-                <td>0 Kč</td>
-              </tr>
-              <tr>
-                <td>
-                  Studenti do 26 let<br /><small class="doplneni"
-                    >(120 min.)</small
-                  >
-                </td>
-                <td><b>250 Kč</b></td>
-                <td>-</td>
-                <td>
-                  40 Kč <br /><small class="doplneni"
-                    >každých započatých 15 min.</small
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Senioři od 65 let a ZTP<br /><small class="doplneni"
-                    >(120 min.)</small
-                  >
-                </td>
-                <td><b>250 Kč</b></td>
-                <td>-</td>
-                <td>
-                  40 Kč <br /><small class="doplneni"
-                    >každých započatých 15 min.</small
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Dítě do 15 let<br /><small
-                    >(v doprovodu osoby starší 18 let)</small
-                  >
-                </td>
-                <td><b>200 Kč</b></td>
-                <td>-</td>
-                <td>0 Kč</td>
-              </tr>
-              <tr>
-                <td>Zapůjčení ručníku a prostěradla</td>
-                <td><b>50 Kč</b></td>
-                <td>50 Kč</td>
-                <td>0 Kč</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrap">
+            <table class="cenik">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Běžná cena</th>
+                  <th>Multisport</th>
+                  <th>Doplatky</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Vstup 60 min.</td>
+                  <td><b>155 Kč</b></td>
+                  <td>0 Kč</td>
+                  <td>
+                    90 Kč<br /><small class="doplneni"
+                      >každých započatých 30 min.<br />(max. 270 Kč)</small
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Neomezený vstup</td>
+                  <td><b>370 Kč</b></td>
+                  <td>250 Kč</td>
+                  <td>0 Kč</td>
+                </tr>
+                <tr>
+                  <td>
+                    Studenti do 26 let<br /><small class="doplneni"
+                      >(120 min.)</small
+                    >
+                  </td>
+                  <td><b>250 Kč</b></td>
+                  <td>-</td>
+                  <td>
+                    40 Kč <br /><small class="doplneni"
+                      >každých započatých 15 min.</small
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Senioři od 65 let a ZTP<br /><small class="doplneni"
+                      >(120 min.)</small
+                    >
+                  </td>
+                  <td><b>250 Kč</b></td>
+                  <td>-</td>
+                  <td>
+                    40 Kč <br /><small class="doplneni"
+                      >každých započatých 15 min.</small
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Dítě do 15 let<br /><small
+                      >(v doprovodu osoby starší 18 let)</small
+                    >
+                  </td>
+                  <td><b>200 Kč</b></td>
+                  <td>-</td>
+                  <td>0 Kč</td>
+                </tr>
+                <tr>
+                  <td>Zapůjčení ručníku a prostěradla</td>
+                  <td><b>50 Kč</b></td>
+                  <td>50 Kč</td>
+                  <td>0 Kč</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <br />
           <ul>
             <li class="normal">
-              Přijímáme platební karty, kartu <b>MultiSport</b> a benefit karty
-              <br />
-              <b>Edenred</b>, <b>Pluxee</b>, <b>eBenefity</b> a <b>Benefity</b>.
+              <span class="li-text">
+                Přijímáme platební karty, kartu <b>MultiSport</b> a benefit
+                karty<br />
+                <b>Edenred</b>, <b>Pluxee</b>, <b>eBenefity</b> a
+                <b>Benefity</b>.
+              </span>
             </li>
           </ul>
           <div class="foto-cenik">
-            <img src="images/multisport.webp" alt="MultiSport" />
-            <img src="images/edenred.webp" alt="Edenred" />
-            <img src="images/pluxee.webp" alt="Pluxee" />
-            <img src="images/ebenefity.webp" alt="eBenefity" />
-            <img src="images/benefity.webp" alt="Benefity" />
-            <img src="images/karty.webp" alt="Přijímáme tyto karty" />
+            <img src="images/multisport.webp" alt="MultiSport" loading="lazy"  width="120" height="44" />
+            <img src="images/edenred.webp" alt="Edenred" loading="lazy"  width="120" height="44" />
+            <img src="images/pluxee.webp" alt="Pluxee" loading="lazy"  width="120" height="44" />
+            <img src="images/ebenefity.webp" alt="eBenefity" loading="lazy"  width="120" height="44" />
+            <img src="images/benefity.webp" alt="Benefity" loading="lazy"  width="120" height="44" />
+            <img src="images/karty.webp" alt="Přijímáme tyto karty" loading="lazy"  width="120" height="44" />
           </div>
         </div>
       </section>
 
       <section class="hlavni" id="kavarna">
-        <div class="text-kavarna">
-          <h2 data-aos="fade-up" data-aos-delay="200">Hospůdka - zahrádka</h2>
-          <div data-aos="fade-up" data-aos-delay="300">
-            <p>
-              U vstupu do sauny se nachází naše útulná kavárna (bar). Můžete si
-              zde vychutnat čepovanou Plzeň a Radegast&nbsp;10 a 12, nebo si
-              vybrat z rozsáhlé nabídky nealkoholických i alkoholických nápojů.
-              V neposlední řadě nabízíme také něco malého na zub.
-            </p>
-            <p>
-              Po vstupu do prostor sauny je možné objednat si zde jakékoliv
-              občerstvení, po upozornění Vás naše obsluha mile ráda obslouží :).
-            </p>
-            <p>
-              V letních měsících je v provozu i naše zahrádka před hlavním
-              vstupem. Můžete si u nás dát např. pizzu nebo trojhrany.
-            </p>
-          </div>
-          <!-- Nápojový lístek -->
-          <img
-            data-aos="fade"
-            data-aos-delay="800"
-            class="thumbnail"
-            src="images/napojovy-maly.webp"
-            alt="Nápojový lístek"
-            data-full="images/napojovy.webp"
-          />
+        <div class="kavarna-wrap">
+          <div class="text-kavarna">
+            <h2 data-aos="fade-up" data-aos-delay="80">Hospůdka – zahrádka</h2>
 
-          <!-- Jídelní lístek -->
-          <img
-            data-aos="fade"
-            data-aos-delay="800"
-            class="thumbnail"
-            src="images/jidelni-maly.webp"
-            alt="Jídelní lístek"
-            data-full="images/jidelni.webp"
-          />
+            <div data-aos="fade-up" data-aos-delay="150" class="kavarna-copy">
+              <p>
+                U vstupu do sauny se nachází naše útulná kavárna (bar). Můžete
+                si zde vychutnat čepovanou Plzeň a Radegast&nbsp;10 a 12, nebo
+                si vybrat z nabídky nealko i alkoholických nápojů. V neposlední
+                řadě nabízíme také něco malého na zub.
+              </p>
+              <p>
+                Po vstupu do prostor sauny je možné objednat si zde jakékoliv
+                občerstvení, po upozornění Vás naše obsluha mile ráda obslouží
+                :).
+              </p>
+              <p>
+                V letních měsících je v provozu i naše zahrádka před hlavním
+                vstupem. Můžete si u nás dát např. pizzu nebo trojhrany.
+              </p>
+            </div>
 
-          <!-- Jedno společné modalní okno -->
-          <div id="modal" class="modal">
-            <span class="close">&times;</span>
-            <img
-              class="modal-content"
-              id="modal-img"
-              title="Lístek SaunaRelaxBar"
-            />
+            <div class="kavarna-menus">
+              <button
+                class="menu-chip thumbnail"
+                data-full="images/napojovy.webp"
+                aria-label="Napojovy listek"
+              >
+                <img src="images/napojovy-maly.webp" alt="Nápojový lístek" loading="lazy"  width="64" height="40" />
+                <span>Nápojový lístek</span>
+              </button>
+
+              <button
+                class="menu-chip thumbnail"
+                data-full="images/jidelni.webp"
+                aria-label="Jidelni listek"
+              >
+                <img src="images/jidelni-maly.webp" alt="Jídelní lístek" loading="lazy"  width="64" height="40" />
+                <span>Jídelní lístek</span>
+              </button>
+            </div>
+
+            <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+              <button type="button" class="close" aria-label="Zavrit dialog">&times;</button>
+              <img
+                class="modal-content"
+                id="modal-img"
+                title="Lístek SaunaRelaxBar" width="1200" height="900" loading="lazy" />
+              <span id="modal-title" class="sr-only">Nahled listku</span>
+            </div>
           </div>
-        </div>
-        <div class="foto-kavarna" data-aos="fade" data-aos-delay="600">
-          <img src="images/kavarna.webp" alt="Kavárna" />
-          <img src="images/venek.webp" alt="Venek" />
-          <img src="images/stul-kavarna.webp" alt="Stůl Kavárna" />
-          <img src="images/zahradka.webp" alt="Zahrádka" />
-          <img src="images/vycep.webp" alt="Výčep" />
+
+          <figure class="kavarna-media" data-aos="fade" data-aos-delay="240">
+            <div class="foto-kavarna">
+              <img src="images/interier-720.webp" alt="Kavárna" loading="lazy"  width="720" height="540" />
+              <img src="images/zahradka-720.webp" alt="Venek" loading="lazy"  width="720" height="540" />
+              <img src="images/vnitrni-zahradka-720.webp" alt="Stůl Kavárna" loading="lazy"  width="720" height="540" />
+              <img src="images/vycep.webp" alt="Výčep" loading="lazy"  width="720" height="540" />
+            </div>
+            <figcaption>Bar u vstupu + letní zahrádka</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -409,14 +519,14 @@
               title="Mapa SaunaRelaxBar"
             ></iframe>
           </p>
-          <div class="kontakty" data-aos="fade-up" data-aos-delay="400">
+          <div class="kontakty" data-aos="fade-up" data-aos-delay="180">
             <p>
               <i class="icofont-google-map"></i>Vřesinská 2156/101, 708 00
               Ostrava&nbsp;8
             </p>
             <p>
               <i class="icofont-phone"></i
-              ><a href="tel:+420 799 188 840">+420 799 188 840</a>
+              ><a href="tel:+420799188840">+420 799 188 840</a>
             </p>
             <p>
               <i class="icofont-email"></i
@@ -424,7 +534,7 @@
                 >saunarelaxbar@gmail.com</a
               >
             </p>
-            <div class="kontakt-soc" data-aos="fade-up" data-aos-delay="100">
+            <div class="kontakt-soc" data-aos="fade-up" data-aos-delay="260">
               <a
                 href="https://www.instagram.com/saunarelaxbar/"
                 target="_blank"
@@ -444,16 +554,18 @@
         </div>
       </section>
       <section id="recenze">
-        <script
-          src="https://static.elfsight.com/platform/platform.js"
-          async
-        ></script>
-        <div
-          data-aos="zoom-out"
-          data-aos-delay="100"
-          class="elfsight-app-80a59d40-46fb-4f26-a378-807879a49f1e"
-          data-elfsight-app-lazy
-        ></div>
+        <div class="recenze-wrap">
+          <script
+            src="https://static.elfsight.com/platform/platform.js"
+            async
+          ></script>
+          <div
+            data-aos="zoom-out"
+            data-aos-delay="120"
+            class="elfsight-app-80a59d40-46fb-4f26-a378-807879a49f1e"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
       </section>
 
       <!-- Fotky sauny -->
@@ -467,19 +579,19 @@
               src="images/fotka1n.webp"
               alt="Interiér sauny"
               loading="lazy"
-            />
+              />
             <img
               src="images/fotka2n.webp"
               alt="Ochlazovací bazének"
               loading="lazy"
-            />
-            <img src="images/fotka3.webp" alt="Odpočívárna" loading="lazy" />
-            <img src="images/fotka4n.webp" alt="Sauna" loading="lazy" />
+              />
+            <img src="images/fotka3.webp" alt="Odpočívárna" loading="lazy"   />
+            <img src="images/fotka4n.webp" alt="Sauna" loading="lazy"   />
             <img
               src="images/fotka5.webp"
               alt="Venkovní odpočívárna"
               loading="lazy"
-            />
+              />
           </div>
           <button class="gallery-button next" aria-label="Další">
             &#8250;
@@ -504,7 +616,7 @@
         <p>
           Web vytvořil
           <a
-            href="https://pospi.tode.cz/"
+            href="https://pospiweb.cz/"
             target="_blank"
             rel="noopener noreferrer"
             >POSPI</a
@@ -516,14 +628,31 @@
     <script src="js/aos.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        const popup = document.getElementById("popup");
+        if (!popup) return;
         setTimeout(() => {
-          document.getElementById("popup").classList.add("popup-visible");
-        }, 500);
+          popup.classList.add("popup-visible");
+        }, 4000);
       });
 
       function closePopup() {
-        document.getElementById("popup").classList.remove("popup-visible");
+        const popup = document.getElementById("popup");
+        if (popup) {
+          popup.classList.remove("popup-visible");
+        }
       }
     </script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

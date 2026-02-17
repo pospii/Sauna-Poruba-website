@@ -1,21 +1,33 @@
 [
     {
-        "date": "2026-02-01 10:00",
-        "title": "Dětské pohádkové sanování",
-        "description": "10-12 hod. Rezervace na tel. č. 725 451 170. Více info na FB.",
-        "image": "images/pohadkove.webp"
-    },
-    {
-        "date": "2026-02-14 12:00",
-        "title": "Valentýn",
-        "description": "Na valentýna otevřeno od 12 hod. Cena pro páry / neomezený vstup / 500&nbsp;Kč&nbsp;při vstupu do 15 hod. / 600&nbsp;Kč&nbsp;po 15 hod. + Speciální drik za 109 Kč 1+1&nbsp;ZDARMA.",
-        "image": "images/valentyn.webp"
+        "date": "2026-02-21 17:00",
+        "title": "Saunové rituály s Kristýnou",
+        "description": "Těště se na dva unikátní ceremoniály v 17:00 a 18:00, kterými vás provede zkušená saunérka Kristýna.",
+        "image": "images/kristyna.webp"
     },
     {
         "date": "2026-02-22 10:00",
         "title": "Dětské pohádkové sanování",
         "description": "10-12 hod. Rezervace na tel. č. 725 451 170. Více info na FB.",
         "image": "images/pohadkove.webp"
+    },
+    {
+        "date": "2026-03-08 10:00",
+        "title": "Dětské pohádkové sanování",
+        "description": "10-12 hod. Rezervace na tel. č. 725 451 170. Více info na FB.",
+        "image": "images/pohadkove.webp"
+    },
+    {
+        "date": "2026-03-08 14:00",
+        "title": "Mezinárodní den žen",
+        "description": "Speciální akce na MDŽ u nás v sauně.",
+        "image": "images/sauna-akce.webp"
+    },
+    {
+        "date": "2026-03-21 17:00",
+        "title": "Saunové rituály s Kristýnou",
+        "description": "Těště se na dva unikátní ceremoniály v 17:00 a 18:00, kterými vás provede zkušená saunérka Kristýna.",
+        "image": "images/kristyna.webp"
     },
     {
         "date": "2026-03-22 10:00",
