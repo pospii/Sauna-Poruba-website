@@ -27,42 +27,13 @@
         padding: 0 20px;
     }
 
-    table.cenik {
-        min-width: 0;
-        width: 100%;
-    }
-
-    table.cenik th,
-    table.cenik td {
-        padding: 8px 8px;
-        font-size: 13px;
-    }
-
-    table.cenik th {
-        font-size: 12px;
-    }
-
-    table.cenik small {
-        font-size: 11px;
-    }
-
-    table.cenik td:first-child,
-    table.cenik th:first-child {
-        width: 38%;
-    }
-
-    .doplneni br {
-        display: none;
-    }
-
-    .doplneni {
-        display: block;
-        line-height: 1.2;
-    }
-
     #kavarna.hlavni {
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .kavarna-wrap {
@@ -116,8 +87,8 @@
         text-align: center;
     }
 
-    #o-saune ul li {
-        justify-content: center;
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -215,6 +186,10 @@
         padding: 70px;
     }
 
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .foto-cenik {
         margin-left: 20px;
     }
@@ -255,6 +230,7 @@
 @media (max-width: 520px) {
     .hero-kicker {
         font-size: 12px;
+        margin-bottom: 10px;
     }
 
     .hero-meta {
@@ -262,16 +238,22 @@
     }
 
     .hero-actions {
-        gap: 10px;
+        gap: 8px;
     }
 
     .btn {
-        width: 100%;
+        width: auto;
+        padding: 12px 22px;
+        font-size: 14px;
         justify-content: center;
     }
 
     .hero-cta {
-        width: 100%;
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
     }
 
     .open-now {
@@ -372,7 +354,9 @@
 
     #uvod h1 {
         margin-top: 0;
+        margin-bottom: 18px;
         font-size: 40px;
+        line-height: 1.1;
     }
 
     h2 {
@@ -440,29 +424,9 @@
         margin-left: 0;
     }
 
-    table.cenik {
-        min-width: 0;
-        width: 100%;
-    }
-
-    table.cenik th,
-    table.cenik td {
-        padding: 8px 6px;
-        font-size: 12px;
-    }
-
-    table.cenik th {
-        font-size: 11px;
-        letter-spacing: 0.2px;
-    }
-
-    table.cenik small {
-        font-size: 10px;
-    }
-
-    table.cenik td:first-child,
-    table.cenik th:first-child {
-        width: auto;
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     #cenik li.normal {
@@ -476,8 +440,8 @@
         margin-top: 3px;
     }
 
-    #fotky.hlavni {
-        padding-top: 0;
+    .photo-grid img {
+        height: clamp(140px, 22vw, 300px);
     }
 
     #kontakt.hlavni {
@@ -515,8 +479,54 @@
     }
 
     .popup {
-        width: 75%;
-        padding: 15px;
+        width: 92%;
+        max-width: 340px;
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .popup-close-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-top: 12px;
+    }
+
+    .modal-content {
+        max-width: 96%;
+        max-height: 80vh;
+        border-radius: 12px;
+        object-fit: contain;
+    }
+
+    .close {
+        top: 12px;
+        right: 12px;
+        font-size: 32px;
+        background: rgba(0, 0, 0, 0.45);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-grid img:nth-child(4),
+    .photo-grid img:nth-child(5) {
+        grid-column: auto;
     }
 }
 

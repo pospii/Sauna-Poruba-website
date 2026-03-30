@@ -379,6 +379,62 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Animated counter in hero.
+  document.querySelectorAll("[data-count]").forEach((el) => {
+    const target = parseInt(el.dataset.count, 10);
+    let current = 0;
+    const step = Math.ceil(target / 20);
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = current;
+      if (current >= target) clearInterval(timer);
+    }, 55);
+  });
+
+  // Cookie banner.
+  const cookieBanner = document.getElementById("cookie-banner");
+  if (cookieBanner) {
+    if (!localStorage.getItem("cookieConsent")) {
+      setTimeout(() => {
+        cookieBanner.classList.add("visible");
+        cookieBanner.setAttribute("aria-hidden", "false");
+      }, 1800);
+
+      document.getElementById("cookie-accept").addEventListener("click", () => {
+        localStorage.setItem("cookieConsent", "accepted");
+        cookieBanner.classList.remove("visible");
+      });
+
+      document.getElementById("cookie-decline").addEventListener("click", () => {
+        localStorage.setItem("cookieConsent", "declined");
+        cookieBanner.classList.remove("visible");
+      });
+    } else {
+      cookieBanner.style.display = "none";
+    }
+  }
+
+  // Back to top button.
+  const backToTop = document.getElementById("back-to-top");
+  if (backToTop) {
+    window.addEventListener("scroll", () => {
+      backToTop.classList.toggle("visible", window.scrollY > 400);
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  // Highlight today in opening hours.
+  const dayNames = ["Neděle:", "Pondělí:", "Úterý:", "Středa:", "Čtvrtek:", "Pátek:", "Sobota:"];
+  const todayLabel = dayNames[new Date().getDay()];
+  document.querySelectorAll("#oteviraci-doba li").forEach((li) => {
+    const span = li.querySelector("span");
+    if (span && span.textContent.trim() === todayLabel) {
+      li.classList.add("today-highlight");
+    }
+  });
+
   // Open/closed badge in hero.
   const badge = document.getElementById("openNow");
   if (badge) {
