@@ -1,38 +1,62 @@
 [
     {
-        "date": "2026-02-21 17:00",
-        "title": "Saunové rituály s Kristýnou",
-        "description": "Těště se na dva unikátní ceremoniály v 17:00 a 18:00, kterými vás provede zkušená saunérka Kristýna.",
-        "image": "images/kristyna.webp"
+        "date": "2026-05-01 14:30",
+        "title": "Neomezený vstup 299 Kč / MultiSport 250 Kč",
+        "description": "Sváteční akce – celý den neomezený vstup za 299 Kč, držitelé MultiSport za 250 Kč.",
+        "image": "images/sauna-akce.webp"
     },
     {
-        "date": "2026-02-22 10:00",
-        "title": "Dětské pohádkové sanování",
-        "description": "10-12 hod. Rezervace na tel. č. 725 451 170. Více info na FB.",
-        "image": "images/pohadkove.webp"
+        "date": "2026-05-01 14:30",
+        "title": "RATAR – 3+1 zdarma",
+        "description": "Intenzivně hořký ležák, který stojí za ochutnání. Vychutnej si ho na naší zahrádce, v hospůdce nebo přímo v sauně.",
+        "image": "images/ratar.webp"
     },
     {
-        "date": "2026-03-08 10:00",
-        "title": "Dětské pohádkové sanování",
-        "description": "10-12 hod. Rezervace na tel. č. 725 451 170. Více info na FB.",
-        "image": "images/pohadkove.webp"
+        "date": "2026-05-02 14:30",
+        "title": "Neomezený vstup 299 Kč / MultiSport 250 Kč",
+        "description": "Sváteční akce – celý den neomezený vstup za 299 Kč, držitelé MultiSport za 250 Kč.",
+        "image": "images/sauna-akce.webp"
     },
     {
-        "date": "2026-03-08 14:00",
-        "title": "Mezinárodní den žen",
-        "description": "Speciální akce pro všechny ženy. Každá žena od nás 8. března dostane: 🥂 sklenku prosecca nebo 🥭 osvěžující Birgo Mango–Limetka",
-        "image": "images/sauna-mdz.webp"
+        "date": "2026-05-02 14:30",
+        "title": "RATAR – 3+1 zdarma",
+        "description": "Intenzivně hořký ležák, který stojí za ochutnání. Vychutnej si ho na naší zahrádce, v hospůdce nebo přímo v sauně.",
+        "image": "images/ratar.webp"
     },
     {
-        "date": "2026-03-21 17:00",
-        "title": "Saunové rituály s Kristýnou",
-        "description": "Těště se na dva unikátní ceremoniály v 17:00 a 18:00, kterými vás provede zkušená saunérka Kristýna.",
-        "image": "images/kristyna.webp"
+        "date": "2026-05-03 12:30",
+        "title": "RATAR – 3+1 zdarma",
+        "description": "Intenzivně hořký ležák, který stojí za ochutnání. Vychutnej si ho na naší zahrádce, v hospůdce nebo přímo v sauně.",
+        "image": "images/ratar.webp"
     },
     {
-        "date": "2026-03-22 10:00",
-        "title": "Dětské pohádkové sanování",
-        "description": "10-12 hod. Rezervace na tel. č. 725 451 170. Více info na FB.",
-        "image": "images/pohadkove.webp"
+        "date": "2026-05-08 14:30",
+        "title": "Neomezený vstup 299 Kč / MultiSport 250 Kč",
+        "description": "Celý den neomezený vstup za 299 Kč, držitelé MultiSport za 250 Kč.",
+        "image": "images/sauna-akce.webp"
+    },
+    {
+        "date": "2026-05-08 14:30",
+        "title": "RATAR – 3+1 zdarma",
+        "description": "Intenzivně hořký ležák, který stojí za ochutnání. Vychutnej si ho na naší zahrádce, v hospůdce nebo přímo v sauně.",
+        "image": "images/ratar.webp"
+    },
+    {
+        "date": "2026-05-09 14:30",
+        "title": "Neomezený vstup 299 Kč / MultiSport 250 Kč",
+        "description": "Celý den neomezený vstup za 299 Kč, držitelé MultiSport za 250 Kč.",
+        "image": "images/sauna-akce.webp"
+    },
+    {
+        "date": "2026-05-09 14:30",
+        "title": "RATAR – 3+1 zdarma",
+        "description": "Intenzivně hořký ležák, který stojí za ochutnání. Vychutnej si ho na naší zahrádce, v hospůdce nebo přímo v sauně.",
+        "image": "images/ratar.webp"
+    },
+    {
+        "date": "2026-05-10 12:30",
+        "title": "RATAR – 3+1 zdarma",
+        "description": "Intenzivně hořký ležák, který stojí za ochutnání. Vychutnej si ho na naší zahrádce, v hospůdce nebo přímo v sauně.",
+        "image": "images/ratar.webp"
     }
 ]

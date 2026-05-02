@@ -380,16 +380,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Animated counter in hero.
-  document.querySelectorAll("[data-count]").forEach((el) => {
-    const target = parseInt(el.dataset.count, 10);
-    let current = 0;
-    const step = Math.ceil(target / 20);
-    const timer = setInterval(() => {
-      current = Math.min(current + step, target);
-      el.textContent = current;
-      if (current >= target) clearInterval(timer);
-    }, 55);
-  });
+  const runCounters = () => {
+    document.querySelectorAll("[data-count]").forEach((el) => {
+      el.textContent = 0;
+      const target = parseInt(el.dataset.count, 10);
+      let current = 0;
+      const step = Math.ceil(target / 20);
+      const timer = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = current;
+        if (current >= target) clearInterval(timer);
+      }, 55);
+    });
+  };
+  runCounters();
+  window.addEventListener("pageshow", (e) => { if (e.persisted) runCounters(); });
 
   // Cookie banner.
   const cookieBanner = document.getElementById("cookie-banner");
@@ -446,9 +451,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (day === 1) {
       open = false;
     } else if (day >= 2 && day <= 5) {
-      open = minutes >= 16 * 60 && minutes < 22 * 60;
+      open = minutes >= 14 * 60 + 30 && minutes < 22 * 60;
     } else {
-      open = minutes >= 14 * 60 && minutes < 22 * 60;
+      open = minutes >= 12 * 60 + 30 && minutes < 22 * 60;
     }
 
     badge.textContent = open ? "Teď otevřeno" : "Teď zavřeno";
