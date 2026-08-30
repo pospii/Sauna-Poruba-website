@@ -530,21 +530,6 @@
     }
 }
 
-@media (max-width: 640px) {
-    .masaze-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .masaze-quote {
-        font-size: 16px;
-        padding: 14px 18px;
-    }
-
-    .masaze-tel {
-        font-size: 22px;
-    }
-}
-
 @media (hover: none) {
     #oteviraci-doba li:hover {
         transform: none;
