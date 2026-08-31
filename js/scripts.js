@@ -448,10 +448,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const minutes = now.getHours() * 60 + now.getMinutes();
     let open = false;
 
-    if (day === 1) {
-      open = false;
-    } else if (day >= 2 && day <= 5) {
-      open = minutes >= 14 * 60 + 30 && minutes < 22 * 60;
+    if (day >= 1 && day <= 5) {
+      open = minutes >= 14 * 60 && minutes < 22 * 60;
     } else {
       open = minutes >= 12 * 60 + 30 && minutes < 22 * 60;
     }
