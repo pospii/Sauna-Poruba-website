@@ -1,380 +1,26 @@
 [
     {
-        "date": "2026-06-25 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-06-28 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-06-30 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-06-30 14:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-01 14:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-02 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-02 14:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-03 14:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-04 12:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-05 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-05 12:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-07 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-07 14:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-07-08 14:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-07-09 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-09 14:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-07-10 14:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-07-11 12:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-07-12 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-12 12:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-07-14 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-14 14:30",
-        "title": "Pivní týden – Plzeňský Prazdroj za&nbsp;52&nbsp;Kč",
-        "description": "Tento týden si vychutnáte čepovaný Pilsner&nbsp;Urquell za&nbsp;52&nbsp;Kč.",
-        "image": "images/plzen.webp"
-    },
-    {
-        "date": "2026-07-15 14:30",
-        "title": "Pivní týden – Plzeňský Prazdroj za&nbsp;52&nbsp;Kč",
-        "description": "Tento týden si vychutnáte čepovaný Pilsner&nbsp;Urquell za&nbsp;52&nbsp;Kč.",
-        "image": "images/plzen.webp"
-    },
-    {
-        "date": "2026-07-16 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-16 14:30",
-        "title": "Pivní týden – Plzeňský Prazdroj za&nbsp;52&nbsp;Kč",
-        "description": "Tento týden si vychutnáte čepovaný Pilsner&nbsp;Urquell za&nbsp;52&nbsp;Kč.",
-        "image": "images/plzen.webp"
-    },
-    {
-        "date": "2026-07-17 14:30",
-        "title": "Pivní týden – Plzeňský Prazdroj za&nbsp;52&nbsp;Kč",
-        "description": "Tento týden si vychutnáte čepovaný Pilsner&nbsp;Urquell za&nbsp;52&nbsp;Kč.",
-        "image": "images/plzen.webp"
-    },
-    {
-        "date": "2026-07-18 12:30",
-        "title": "Pivní týden – Plzeňský Prazdroj za&nbsp;52&nbsp;Kč",
-        "description": "Tento týden si vychutnáte čepovaný Pilsner&nbsp;Urquell za&nbsp;52&nbsp;Kč.",
-        "image": "images/plzen.webp"
-    },
-    {
-        "date": "2026-07-19 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-19 12:30",
-        "title": "Pivní týden – Plzeňský Prazdroj za&nbsp;52&nbsp;Kč",
-        "description": "Tento týden si vychutnáte čepovaný Pilsner&nbsp;Urquell za&nbsp;52&nbsp;Kč.",
-        "image": "images/plzen.webp"
-    },
-    {
-        "date": "2026-07-21 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-21 14:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-22 14:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-23 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-23 14:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-24 14:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-25 12:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-26 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-26 12:30",
-        "title": "Pivní týden – RATAR&nbsp;11° za&nbsp;37&nbsp;Kč",
-        "description": "Osvěžte se u nás v létě čerstvě načepovaným RATAREM&nbsp;11° za speciální cenu&nbsp;37&nbsp;Kč.",
-        "image": "images/ratar.webp"
-    },
-    {
-        "date": "2026-07-28 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-28 14:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-07-29 14:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-07-30 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-07-30 14:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-07-31 14:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-08-01 12:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-08-02 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-02 12:30",
-        "title": "Pivní týden – Radegast Ryze Hořká&nbsp;12° za&nbsp;40&nbsp;Kč",
-        "description": "Tento týden vás čeká Radegast Ryze Hořká&nbsp;12° za skvělou cenu&nbsp;40&nbsp;Kč.",
-        "image": "images/radegast.webp"
-    },
-    {
-        "date": "2026-08-04 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-06 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-09 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-11 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-13 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-16 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-18 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-20 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-23 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-25 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-27 14:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
-        "date": "2026-08-30 12:30",
-        "title": "Sauna otevřena",
-        "description": "Po celé prázdninové období bude sauna otevřena pouze v úterý, čtvrtek a neděli.",
-        "image": "images/sauna-leto.webp"
-    },
-    {
         "date": "2026-09-01 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-02 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-03 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-04 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
@@ -392,25 +38,25 @@
     {
         "date": "2026-09-08 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-09 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-10 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-11 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
@@ -428,25 +74,25 @@
     {
         "date": "2026-09-15 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-16 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-17 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-18 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
@@ -464,25 +110,25 @@
     {
         "date": "2026-09-22 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-23 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-24 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-25 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
@@ -500,13 +146,13 @@
     {
         "date": "2026-09-29 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     },
     {
         "date": "2026-09-30 14:00",
         "title": "Zvýhodněný vstup",
-        "description": "Po–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
+        "description": "Út–Pá od 14:00 do 16:30: 60 min. za 155 Kč + 20 min. ZDARMA.",
         "image": "images/sauna-akce.webp"
     }
 ]
