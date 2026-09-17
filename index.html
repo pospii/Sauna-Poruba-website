@@ -308,6 +308,12 @@
           <ul id="akce-list">
             <!-- Dynamicky generovaný obsah -->
           </ul>
+          <div class="akce-more" id="akce-more" hidden>
+            <p class="akce-more-count" id="akce-more-count"></p>
+            <button type="button" class="akce-more-btn" id="akce-more-btn">
+              Zobrazit více
+            </button>
+          </div>
         </div>
       </section>
 
@@ -327,8 +333,17 @@
           <div class="feature-grid">
             <div class="feature-card">
               <img
+                class="feature-card-bg"
+                src="images/uvod-saunan.webp"
+                alt=""
+                loading="lazy"
+                width="720"
+                height="540"
+              />
+              <img
+                class="feature-card-icon"
                 src="images/sauna-ikona.svg"
-                alt="Finská sauna"
+                alt=""
                 loading="lazy"
                 width="34"
                 height="34"
@@ -338,8 +353,17 @@
             </div>
             <div class="feature-card">
               <img
+                class="feature-card-bg"
+                src="images/box-bazenek.webp"
+                alt=""
+                loading="lazy"
+                width="720"
+                height="540"
+              />
+              <img
+                class="feature-card-icon"
                 src="images/bazenek-ikona.svg"
-                alt="Venkovní bazének"
+                alt=""
                 loading="lazy"
                 width="34"
                 height="34"
@@ -349,8 +373,17 @@
             </div>
             <div class="feature-card">
               <img
+                class="feature-card-bg"
+                src="images/box-odpocivarna.webp"
+                alt=""
+                loading="lazy"
+                width="720"
+                height="540"
+              />
+              <img
+                class="feature-card-icon"
                 src="images/relax-ikona.svg"
-                alt="Odpočívárna"
+                alt=""
                 loading="lazy"
                 width="34"
                 height="34"
@@ -360,19 +393,17 @@
             </div>
             <div class="feature-card">
               <img
-                src="images/sprcha-ikona.svg"
-                alt="Sprchy"
+                class="feature-card-bg"
+                src="images/fotka6n.webp"
+                alt=""
                 loading="lazy"
-                width="34"
-                height="34"
+                width="720"
+                height="540"
               />
-              <strong>Sprchy</strong>
-              <small>&nbsp;</small>
-            </div>
-            <div class="feature-card">
               <img
+                class="feature-card-icon"
                 src="images/skrinky-ikona.svg"
-                alt="Šatny"
+                alt=""
                 loading="lazy"
                 width="34"
                 height="34"
@@ -382,8 +413,17 @@
             </div>
             <div class="feature-card">
               <img
+                class="feature-card-bg"
+                src="images/box-hospudka.webp"
+                alt=""
+                loading="lazy"
+                width="720"
+                height="540"
+              />
+              <img
+                class="feature-card-icon"
                 src="images/bar-ikona.svg"
-                alt="Hospůdka"
+                alt=""
                 loading="lazy"
                 width="34"
                 height="34"
@@ -391,31 +431,68 @@
               <strong>Občerstvení</strong>
               <small>v hospůdce</small>
             </div>
+            <div class="feature-card">
+              <img
+                class="feature-card-bg"
+                src="images/box-zahradka.webp"
+                alt=""
+                loading="lazy"
+                width="720"
+                height="540"
+              />
+              <img
+                class="feature-card-icon"
+                src="images/zahradka-ikona.svg"
+                alt=""
+                loading="lazy"
+                width="34"
+                height="34"
+              />
+              <strong>Posezení</strong>
+              <small>na zahrádce</small>
+            </div>
+            <div class="feature-card">
+              <img
+                class="feature-card-bg"
+                src="images/box-parkovani.webp"
+                alt=""
+                loading="lazy"
+                width="720"
+                height="540"
+              />
+              <img
+                class="feature-card-icon"
+                src="images/parkovani-ikona.svg"
+                alt=""
+                loading="lazy"
+                width="34"
+                height="34"
+              />
+              <strong>Parkování</strong>
+              <small>pro zákazníky</small>
+            </div>
+            <div class="feature-card">
+              <img
+                class="feature-card-bg"
+                src="images/box-konferencni.webp"
+                alt=""
+                loading="lazy"
+                width="720"
+                height="540"
+              />
+              <img
+                class="feature-card-icon"
+                src="images/konferencni-ikona.svg"
+                alt=""
+                loading="lazy"
+                width="34"
+                height="34"
+              />
+              <strong>Konferenční místnost</strong>
+              <small>&nbsp;</small>
+            </div>
           </div>
           <p>Sauna je <strong>společná</strong>.</p>
-        </div>
-        <div class="fotky" data-aos="fade-right" data-aos-delay="260">
-          <img
-            src="images/uvod-saunan.webp"
-            alt="Finská sauna"
-            loading="lazy"
-            width="1200"
-            height="900"
-          />
-          <img
-            src="images/uvod-bazenekn.webp"
-            alt="Ochlazovací bazének"
-            loading="lazy"
-            width="1200"
-            height="900"
-          />
-          <img
-            src="images/uvod-odpocivarna.webp"
-            alt="Odpočívárna"
-            loading="lazy"
-            width="1200"
-            height="900"
-          />
         </div>
       </section>
 
@@ -754,29 +831,36 @@
           <figure class="kavarna-media" data-aos="fade" data-aos-delay="240">
             <div class="foto-kavarna">
               <img
-                src="images/interier-720.webp"
-                alt="Kavárna"
+                src="images/hospudka-foto.webp"
+                alt="Kavárna u vstupu"
                 loading="lazy"
                 width="720"
                 height="540"
               />
               <img
-                src="images/zahradka-720.webp"
-                alt="Venek"
+                src="images/hospudka-foto2.webp"
+                alt="Bar s výčepem"
                 loading="lazy"
                 width="720"
                 height="540"
               />
               <img
-                src="images/vnitrni-zahradka-720.webp"
-                alt="Stůl Kavárna"
+                src="images/hospudka-foto3.webp"
+                alt="Salonek s posezením"
                 loading="lazy"
                 width="720"
                 height="540"
               />
               <img
-                src="images/vycep.webp"
-                alt="Výčep"
+                src="images/hospudka-foto4.webp"
+                alt="Letní zahrádka"
+                loading="lazy"
+                width="720"
+                height="540"
+              />
+              <img
+                src="images/hospudka-foto5.webp"
+                alt="Terasa s posezením"
                 loading="lazy"
                 width="720"
                 height="540"
@@ -864,7 +948,7 @@
         </div>
       </section>
 
-      <!-- Fotky sauny -->
+      <!-- Fotky sauny (galerie 6 fotek) – dočasně vypnuto
       <section id="fotky">
         <div class="photo-grid">
           <img
@@ -908,6 +992,51 @@
             loading="lazy"
             class="thumbnail"
             data-full="images/fotka6n.webp"
+          />
+        </div>
+      </section>
+      -->
+
+      <!-- Fotogalerie – rozevírací pás fotek -->
+      <section id="fotky-o-saune">
+        <div class="fotky-nadpis" data-aos="fade" data-aos-delay="80">
+          <h2>Fotogalerie</h2>
+        </div>
+        <div class="fotky" data-aos="fade-up" data-aos-delay="160">
+          <img
+            src="images/uvod-saunan.webp"
+            alt="Finská sauna"
+            loading="lazy"
+            width="972"
+            height="729"
+          />
+          <img
+            src="images/box-bazenek.webp"
+            alt="Venkovní bazének"
+            loading="lazy"
+            width="720"
+            height="540"
+          />
+          <img
+            src="images/box-odpocivarna.webp"
+            alt="Odpočívárna"
+            loading="lazy"
+            width="720"
+            height="540"
+          />
+          <img
+            src="images/box-zahradka.webp"
+            alt="Posezení na zahrádce"
+            loading="lazy"
+            width="720"
+            height="540"
+          />
+          <img
+            src="images/box-hospudka.webp"
+            alt="Hospůdka"
+            loading="lazy"
+            width="720"
+            height="540"
           />
         </div>
       </section>

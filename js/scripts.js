@@ -174,19 +174,52 @@ document.addEventListener("DOMContentLoaded", () => {
   const photoImages = document.querySelectorAll(".fotky img");
   const supportsHover = window.matchMedia("(hover: hover)").matches;
   if (photoImages.length > 0 && supportsHover) {
+    // Hovered photo expands, the rest share what is left. Works for any
+    // number of photos: 3 photos -> 70 % / 15 %, 5 photos -> 52 % / 12 %.
+    const photoCount = photoImages.length;
+    const collapsedShare = photoCount > 3 ? 0.12 : 0.15;
+    const expandedShare = 1 - collapsedShare * (photoCount - 1);
+
+    // Width available for the photos themselves (strip minus padding and gaps).
+    const availableWidth = (strip) => {
+      const styles = window.getComputedStyle(strip);
+      const gap = parseFloat(styles.columnGap) || 0;
+      return (
+        strip.clientWidth -
+        parseFloat(styles.paddingLeft) -
+        parseFloat(styles.paddingRight) -
+        gap * (photoCount - 1)
+      );
+    };
+
     photoImages.forEach((image, index) => {
       image.addEventListener("mouseenter", () => {
-        image.style.width = "70%";
+        const available = availableWidth(image.parentElement);
+
+        // The photo must only be *revealed*, never zoomed: with object-fit
+        // cover the browser starts scaling the image up as soon as the box
+        // gets wider than the photo rendered at the current height, so cap
+        // the expanded width at that rendered width.
+        const aspect =
+          image.naturalWidth && image.naturalHeight
+            ? image.naturalWidth / image.naturalHeight
+            : 4 / 3;
+        const renderedWidth = image.clientHeight * aspect;
+        const expandedPx = Math.min(available * expandedShare, renderedWidth);
+        const collapsedPx = (available - expandedPx) / (photoCount - 1);
+
+        image.style.width = `${expandedPx}px`;
         photoImages.forEach((otherImage, otherIndex) => {
           if (otherIndex !== index) {
-            otherImage.style.width = "15%";
+            otherImage.style.width = `${collapsedPx}px`;
           }
         });
       });
 
       image.addEventListener("mouseleave", () => {
+        // Clear inline width so the CSS default (equal split) applies again.
         photoImages.forEach((img) => {
-          img.style.width = "33.33%";
+          img.style.width = "";
         });
       });
     });
@@ -212,6 +245,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Event filtering on homepage only.
   const eventList = document.getElementById("akce-list");
   const filterButtons = document.querySelectorAll(".nav-btn[data-filter]");
+  const moreWrapper = document.getElementById("akce-more");
+  const moreButton = document.getElementById("akce-more-btn");
+  const moreCount = document.getElementById("akce-more-count");
+
+  // Pagination: show 3 events at a time, "Zobrazit více" reveals the next 3.
+  const EVENTS_PER_PAGE = 3;
+  let currentEvents = [];
+  let visibleCount = 0;
 
   if (eventList && filterButtons.length > 0) {
     const loadEvents = async (filter) => {
@@ -315,28 +356,82 @@ document.addEventListener("DOMContentLoaded", () => {
       ).padStart(2, "0")}`;
     };
 
+    const createEventItem = (event) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <img src="${event.image}" alt="${event.title}" loading="lazy">
+        <div class="akce-info">
+          <div class="akce-date">${formatDate(event.date)}</div>
+          <h4><strong>${event.title}</strong></h4>
+          <p>${event.description}</p>
+        </div>
+      `;
+      return li;
+    };
+
+    const updateMoreButton = () => {
+      if (!moreWrapper || !moreButton) return;
+
+      const total = currentEvents.length;
+      const remaining = total - visibleCount;
+
+      if (remaining <= 0) {
+        moreWrapper.hidden = true;
+        return;
+      }
+
+      moreWrapper.hidden = false;
+      if (moreCount) {
+        moreCount.textContent = `Zobrazeno ${visibleCount} z ${total}`;
+      }
+      moreButton.textContent = `Zobrazit více (${Math.min(
+        remaining,
+        EVENTS_PER_PAGE
+      )})`;
+    };
+
+    // Appends the next page of events to the list.
+    const showMoreEvents = () => {
+      const nextEvents = currentEvents.slice(
+        visibleCount,
+        visibleCount + EVENTS_PER_PAGE
+      );
+      if (nextEvents.length === 0) return;
+
+      const firstNewItem = createEventItem(nextEvents[0]);
+      eventList.appendChild(firstNewItem);
+      nextEvents.slice(1).forEach((event) => {
+        eventList.appendChild(createEventItem(event));
+      });
+
+      visibleCount += nextEvents.length;
+      updateMoreButton();
+
+      // Move focus to the first newly revealed event for keyboard users.
+      if (visibleCount > EVENTS_PER_PAGE) {
+        firstNewItem.setAttribute("tabindex", "-1");
+        firstNewItem.focus({ preventScroll: true });
+      }
+    };
+
     const renderEvents = (events) => {
       eventList.innerHTML = "";
+      currentEvents = events;
+      visibleCount = 0;
 
       if (events.length === 0) {
         eventList.innerHTML =
           "<p style='text-align: center;'>V tomto období nejsou žádné plánované akce.</p>";
+        updateMoreButton();
         return;
       }
 
-      events.forEach((event) => {
-        const li = document.createElement("li");
-        li.innerHTML = `
-          <img src="${event.image}" alt="${event.title}" loading="lazy">
-          <div class="akce-info">
-            <div class="akce-date">${formatDate(event.date)}</div>
-            <h4><strong>${event.title}</strong></h4>
-            <p>${event.description}</p>
-          </div>
-        `;
-        eventList.appendChild(li);
-      });
+      showMoreEvents();
     };
+
+    if (moreButton) {
+      moreButton.addEventListener("click", showMoreEvents);
+    }
 
     loadEvents("tyden");
   }

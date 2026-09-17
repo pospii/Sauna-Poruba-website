@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="#000000">
+  <!-- konferenční stůl (pohled shora) -->
+  <rect x="13" y="24" width="38" height="16" rx="5"/>
+  <!-- židle nahoře -->
+  <rect x="15" y="13" width="9.5" height="7" rx="2.5"/>
+  <rect x="27.25" y="13" width="9.5" height="7" rx="2.5"/>
+  <rect x="39.5" y="13" width="9.5" height="7" rx="2.5"/>
+  <!-- židle dole -->
+  <rect x="15" y="44" width="9.5" height="7" rx="2.5"/>
+  <rect x="27.25" y="44" width="9.5" height="7" rx="2.5"/>
+  <rect x="39.5" y="44" width="9.5" height="7" rx="2.5"/>
+  <!-- židle v čele -->
+  <rect x="3" y="27" width="6.5" height="10" rx="2.5"/>
+  <rect x="54.5" y="27" width="6.5" height="10" rx="2.5"/>
+</svg>

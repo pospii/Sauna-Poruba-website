@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="#000000">
+  <!-- rámeček dopravní značky -->
+  <path fill-rule="evenodd" d="M13 4 H51 A9 9 0 0 1 60 13 V51 A9 9 0 0 1 51 60 H13 A9 9 0 0 1 4 51 V13 A9 9 0 0 1 13 4 Z M13 9 A4 4 0 0 0 9 13 V51 A4 4 0 0 0 13 55 H51 A4 4 0 0 0 55 51 V13 A4 4 0 0 0 51 9 Z"/>
+  <!-- písmeno P -->
+  <path fill-rule="evenodd" d="M22 14 H35.5 C43.5 14 48.5 19 48.5 26 C48.5 33 43.5 38 35.5 38 H29.5 V50 H22 Z M29.5 20.5 V31.5 H35 C39 31.5 41 29.3 41 26 C41 22.7 39 20.5 35 20.5 Z"/>
+</svg>

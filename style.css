@@ -569,6 +569,61 @@ ul#akce-list{
 }
 
 
+/* Tlačítko "Zobrazit více" pod seznamem akcí */
+.akce-more{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.akce-more[hidden]{
+  display:none;
+}
+
+.akce-more-count{
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--clr-text-muted);
+}
+
+.akce-more-btn{
+  min-width: 190px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: 2px solid var(--clr-accent);
+  background: transparent;
+  color: #5a3b1c;
+  font-weight: 900;
+  letter-spacing: .2px;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.akce-more-btn:hover{
+  background: var(--clr-accent);
+  color: #faede0;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(160,90,36,0.25);
+}
+
+.akce-more-btn:focus-visible{
+  outline: 3px solid rgba(160,90,36,0.35);
+  outline-offset: 3px;
+}
+
+.kalendar-content li:focus{
+  outline: none;
+}
+
+.kalendar-content li:focus-visible{
+  outline: 3px solid rgba(160,90,36,0.35);
+  outline-offset: 3px;
+}
+
+
 #o-saune.hlavni {
   max-width: 1100px;
   margin: 0 auto;
@@ -597,7 +652,7 @@ ul#akce-list{
 
 
 #o-saune .text{
-  width: min(560px, 52%);
+  width: 100%;
   margin: 0;
 }
 
@@ -660,7 +715,9 @@ ul#akce-list{
 }
 
 .fotky img {
-  width: 33.33%;
+  width: 100%;
+  min-width: 0;
+  flex: 1 1 auto;            /* stejná šířka pro libovolný počet fotek, hover mění width */
   /* Šířka každého obrázku s mezerami */
   height: 520px;
   max-height: 75vh;
@@ -670,6 +727,56 @@ ul#akce-list{
   position: relative;
   z-index: 1;
   border-radius: 0;    
+}
+
+/* Trojice fotek – samostatná sekce na konci stránky */
+#fotky-o-saune {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: clamp(34px, 5vw, 70px) clamp(18px, 4vw, 56px) clamp(56px, 7vw, 100px);
+}
+
+/* jemná dělicí linka jako u sekce O sauně */
+#fotky-o-saune::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: min(1400px, calc(100% - 32px));
+  height: 1px;
+  background: rgba(75,54,33,0.10);
+}
+
+.fotky-nadpis {
+  text-align: center;
+  padding: 0 0 6px;
+}
+
+.fotky-nadpis h2 {
+  margin: 0 0 22px;
+}
+
+/* světlý rámeček kolem fotek ve stylu karet na stránce */
+#fotky-o-saune .fotky {
+  width: 100%;
+  gap: 6px;
+  padding: 6px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(90,59,28,0.14);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 18px 50px rgba(75,54,33,0.12);
+}
+
+#fotky-o-saune .fotky img {
+  /* výška je zvolená tak, aby se rozevřená fotka (cca 52 % šířky) vešla
+     v poměru 4:3 celá – jinak by ji object-fit: cover začal zvětšovat */
+  height: clamp(300px, 39vw, 540px);
+  max-height: none;
+  border-radius: calc(var(--radius-lg) - 6px);
+  transition: width 0.35s ease-in-out;   /* pouze rozevření, žádný další efekt */
 }
 
 
@@ -831,46 +938,86 @@ ul#akce-list{
 /* ── Feature grid (O sauně) ─────────────────────────── */
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin: 22px 0 28px;
 }
 
+/* Karta s fotkou na pozadí a ztmavujícím overlayem kvůli čitelnosti textu */
 .feature-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 18px 12px 14px;
-  background: var(--clr-surface);
-  border: 1px solid var(--clr-border);
+  min-height: 170px;
+  padding: 18px 12px 16px;
+  background: #3a2816;
+  border: 1px solid rgba(90, 59, 28, 0.25);
   border-radius: var(--radius-md);
   text-align: center;
+  color: #faede0;
+  box-shadow: 0 10px 28px rgba(75, 54, 33, 0.10);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .feature-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(90, 59, 28, 0.12);
+  box-shadow: 0 14px 34px rgba(75, 54, 33, 0.20);
 }
 
-.feature-card img {
+.feature-card-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.85);
+  transition: transform 0.45s ease;
+}
+
+.feature-card:hover .feature-card-bg {
+  transform: scale(1.06);
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(40, 24, 10, 0.45) 0%,
+    rgba(40, 24, 10, 0.62) 55%,
+    rgba(40, 24, 10, 0.78) 100%
+  );
+}
+
+.feature-card-icon {
   width: 34px;
   height: 34px;
-  opacity: 0.82;
+  /* ikony jsou černé – na tmavém pozadí je přebarvíme na bílo */
+  filter: brightness(0) invert(1) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+  opacity: 0.95;
 }
 
 .feature-card strong {
-  font-size: 14px;
-  color: var(--clr-text);
-  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
   line-height: 1.3;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
 }
 
 .feature-card small {
   font-size: 12px;
-  color: var(--clr-text-muted);
+  color: rgba(250, 237, 224, 0.88);
   line-height: 1.3;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* ── Fotky sekce ────────────────────────────────────── */
@@ -1232,7 +1379,7 @@ ul#akce-list{
 }
 
 #kontakt.hlavni {
-  background: url('images/kontakt-pozadi.webp') no-repeat center;
+  background: url('images/kontaktni-nova.webp') no-repeat center;
   background-size: cover;
   max-width: 100%;
   height: fit-content;
