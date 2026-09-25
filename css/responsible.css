@@ -512,8 +512,10 @@
     }
 
     .modal-content {
+        width: auto;
+        height: auto;
         max-width: 96%;
-        max-height: 80vh;
+        max-height: none;
         border-radius: 12px;
         object-fit: contain;
     }
