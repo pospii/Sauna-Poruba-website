@@ -304,6 +304,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
+    // "2026-10-13 14:00" -> ISO s "T", jinak to Safari neumí přečíst.
+    const parseEventDate = (value) => new Date(String(value).replace(" ", "T"));
+
     const filterEvents = (filter, events) => {
       const today = new Date();
       today.setHours(0, 0, 0, 0);
@@ -321,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const filteredEvents = events.filter((event) => {
-        const eventDate = new Date(event.date);
+        const eventDate = parseEventDate(event.date);
         if (filter === "dnes") {
           return eventDate.toDateString() === today.toDateString();
         }
@@ -338,7 +341,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const formatDate = (dateString) => {
-      const date = new Date(dateString);
+      const date = parseEventDate(dateString);
       const days = [
         "Neděle",
         "Pondělí",
