@@ -52,7 +52,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=3" />
+    <link rel="stylesheet" href="style.css?v=4" />
     <link rel="stylesheet" href="css/responsible.css?v=3" />
     <link rel="stylesheet" href="css/icofont.min.css" />
 
@@ -72,23 +72,8 @@
     <meta name="apple-mobile-web-app-title" content="SaunaRelaxBar" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
 
-    <!-- Meta Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1589270576235242');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1589270576235242&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    <!-- Cookies: GA a Meta Pixel se načtou až po souhlasu -->
+    <script src="/js/consent.js?v=1" defer></script>
   </head>
 
   <body>
@@ -123,9 +108,20 @@
 
         <h2>1. Obecné informace</h2>
         <p>
-          Tato stránka popisuje, jak SaunaRelaxBar - Sokol Poruba (dále jen
-          "provozovatel") zpracovává osobní údaje uživatelů a zákazníků v
-          souladu s nařízením GDPR a platnou českou legislativou.
+          Tato stránka popisuje, jak provozovatel SaunaRelaxBar - Sokol Poruba
+          (dále jen "provozovatel") zpracovává osobní údaje uživatelů a
+          zákazníků v souladu s nařízením GDPR a platnou českou legislativou.
+        </p>
+        <p>Správcem osobních údajů je:</p>
+        <p>
+          <strong>Tricio Invest s.r.o.</strong><br />
+          Soukenická 877/9, 702 00 Moravská Ostrava<br />
+          IČ: 21507236<br />
+          DIČ: CZ21507236<br />
+          Zapsaná v obchodním rejstříku vedeném Krajským soudem v Ostravě,
+          oddíl C, vložka 95894<br />
+          Telefon: <a href="tel:+420725451170">+420 725 451 170</a><br />
+          E-mail: <a href="mailto:info@tricio-invest.cz">info@tricio-invest.cz</a>
         </p>
 
         <h2>2. Jaké osobní údaje zpracováváme</h2>
@@ -180,7 +176,37 @@
           </li>
         </ul>
 
-        <h2>6. Kontakt pro žádosti a dotazy</h2>
+        <h2 id="cookies">6. Cookies</h2>
+        <p>
+          Web používá pouze cookies, ke kterým nám dáte souhlas v liště
+          zobrazené při první návštěvě. Bez souhlasu se žádné analytické ani
+          marketingové cookies neukládají.
+        </p>
+        <ul>
+          <li>
+            <strong>Google Analytics</strong> (Google Ireland Ltd.) – anonymní
+            měření návštěvnosti webu. Cookies <em>_ga</em> a <em>_ga_*</em>,
+            platnost až 2 roky.
+          </li>
+          <li>
+            <strong>Meta Pixel</strong> (Meta Platforms Ireland Ltd.) – měření
+            účinnosti reklam na Facebooku a Instagramu. Cookies <em>_fbp</em> a
+            <em>_fbc</em>, platnost až 90 dní.
+          </li>
+        </ul>
+        <p>
+          Údaje z těchto nástrojů mohou být předávány i mimo EU (do USA) na
+          základě rámce EU–USA pro ochranu osobních údajů. Pro ukládání volby
+          souhlasu používáme lokální úložiště prohlížeče (bez souhlasu, je
+          nezbytné pro fungování lišty).
+        </p>
+        <p>
+          Souhlas můžete kdykoliv změnit nebo odvolat přes odkaz
+          <a href="#" data-cookie-settings>Nastavení cookies</a> v patičce
+          webu.
+        </p>
+
+        <h2>7. Kontakt pro žádosti a dotazy</h2>
         <p>
           Pokud máte jakékoli dotazy nebo chcete uplatnit svá práva, kontaktujte
           nás na e-mailu:
@@ -188,7 +214,10 @@
         <p><strong>saunarelaxbar@gmail.com</strong></p>
 
         <hr />
-        <p>Tento dokument nabyl účinnosti dne <strong>30.1.2025</strong>.</p>
+        <p>
+          Tento dokument nabyl účinnosti dne <strong>30.1.2025</strong>,
+          poslední aktualizace <strong>12.10.2026</strong>.
+        </p>
       </section>
     </main>
 
@@ -202,6 +231,7 @@
           <h4 class="footer-heading">Informace</h4>
           <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
           <a href="navstevni-rad.html">Návštěvní řád</a>
+          <a href="#" data-cookie-settings>Nastavení cookies</a>
         </div>
         <div class="footer-social">
           <h4 class="footer-heading">Sledujte nás</h4>
@@ -211,11 +241,21 @@
           </div>
         </div>
       </div>
+      <div class="footer-operator">
+        <p>
+          <span>Provozovatel: Tricio Invest s.r.o.</span>
+          <span>Soukenická 877/9, 702 00 Moravská Ostrava</span>
+          <span>IČ: 21507236</span>
+          <span>DIČ: CZ21507236</span>
+          <span>C 95894 vedená u Krajského soudu v Ostravě</span>
+        </p>
+      </div>
+
       <div class="footer-bottom">
         <span>© 2026 SaunaRelaxBar – Sokol Poruba</span>
         <a class="pospi-link" href="https://pospiweb.cz/" target="_blank" rel="noopener noreferrer">pospiweb.cz</a>
       </div>
     </footer>
-    <script src="js/scripts.js?v=3"></script>
+    <script src="js/scripts.js?v=4"></script>
   </body>
 </html>

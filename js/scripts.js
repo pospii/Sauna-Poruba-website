@@ -491,29 +491,6 @@ document.addEventListener("DOMContentLoaded", () => {
   runCounters();
   window.addEventListener("pageshow", (e) => { if (e.persisted) runCounters(); });
 
-  // Cookie banner.
-  const cookieBanner = document.getElementById("cookie-banner");
-  if (cookieBanner) {
-    if (!localStorage.getItem("cookieConsent")) {
-      setTimeout(() => {
-        cookieBanner.classList.add("visible");
-        cookieBanner.setAttribute("aria-hidden", "false");
-      }, 1800);
-
-      document.getElementById("cookie-accept").addEventListener("click", () => {
-        localStorage.setItem("cookieConsent", "accepted");
-        cookieBanner.classList.remove("visible");
-      });
-
-      document.getElementById("cookie-decline").addEventListener("click", () => {
-        localStorage.setItem("cookieConsent", "declined");
-        cookieBanner.classList.remove("visible");
-      });
-    } else {
-      cookieBanner.style.display = "none";
-    }
-  }
-
   // Back to top button.
   const backToTop = document.getElementById("back-to-top");
   if (backToTop) {

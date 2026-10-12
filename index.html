@@ -1,20 +1,6 @@
 <!doctype html>
 <html lang="cs">
   <head>
-    <!-- Google Analytics (GA4) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FMHCM3VWJE"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-FMHCM3VWJE");
-    </script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -89,7 +75,7 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/style.css?v=3" />
+    <link rel="stylesheet" href="/style.css?v=4" />
     <link rel="stylesheet" href="/css/responsible.css?v=3" />
     <link rel="stylesheet" href="/css/icofont.min.css" />
     <link rel="stylesheet" href="/css/aos.css" />
@@ -194,23 +180,8 @@
       }
     </script>
 
-    <!-- Meta Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1589270576235242');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1589270576235242&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    <!-- Cookies: GA a Meta Pixel se načtou až po souhlasu -->
+    <script src="/js/consent.js?v=1" defer></script>
   </head>
 
   <body>
@@ -302,15 +273,33 @@
       </div>
 
       <!-- POPUP-->
-      <div id="popup" class="popup">
-        <img
-          src="images/popup7.webp"
-          alt="Reklama"
-          loading="lazy"
-          width="1000"
-          height="750"
-        />
-        <button class="popup-close-btn" onclick="closePopup()">Zavřít</button>
+      <div
+        id="popup"
+        class="popup"
+        data-popup-id="popup8"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Dárkový poukaz a nové permanentky 2027"
+        aria-hidden="true"
+      >
+        <div class="popup-backdrop" data-popup-close></div>
+        <div class="popup-dialog">
+          <button
+            type="button"
+            class="popup-x"
+            aria-label="Zavřít"
+            data-popup-close
+          >
+            &times;
+          </button>
+          <img
+            src="images/popup8.webp"
+            alt="Dárkový poukaz v hodnotě 1 200 Kč za 1 100 Kč a nové permanentky 2027"
+            loading="lazy"
+            width="1080"
+            height="1350"
+          />
+        </div>
       </div>
 
       <section id="kalendar">
@@ -1119,6 +1108,7 @@
           <h4 class="footer-heading">Informace</h4>
           <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
           <a href="navstevni-rad.html">Návštěvní řád</a>
+          <a href="#" data-cookie-settings>Nastavení cookies</a>
         </div>
 
         <div class="footer-social">
@@ -1142,6 +1132,16 @@
         </div>
       </div>
 
+      <div class="footer-operator">
+        <p>
+          <span>Provozovatel: Tricio Invest s.r.o.</span>
+          <span>Soukenická 877/9, 702 00 Moravská Ostrava</span>
+          <span>IČ: 21507236</span>
+          <span>DIČ: CZ21507236</span>
+          <span>C 95894 vedená u Krajského soudu v Ostravě</span>
+        </p>
+      </div>
+
       <div class="footer-bottom">
         <span>© 2026 SaunaRelaxBar – Sokol Poruba</span>
         <a
@@ -1162,45 +1162,47 @@
       &#8679;
     </button>
 
-    <div
-      id="cookie-banner"
-      class="cookie-banner"
-      role="alertdialog"
-      aria-label="Souhlas s cookies"
-      aria-hidden="true"
-    >
-      <p>
-        Tato stránka používá <strong>Google Analytics</strong> pro analýzu
-        návštěvnosti. Údaje jsou anonymizované a slouží ke zlepšení webu.
-        <a href="ochrana-osobnich-udaju.html">Více informací</a>
-      </p>
-      <div class="cookie-actions">
-        <button type="button" id="cookie-accept" class="cookie-btn primary">
-          Přijmout
-        </button>
-        <button type="button" id="cookie-decline" class="cookie-btn secondary">
-          Odmítnout
-        </button>
-      </div>
-    </div>
 
-    <script src="js/scripts.js?v=3"></script>
+    <script src="js/scripts.js?v=4"></script>
     <script src="js/aos.js?v=2"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const popup = document.getElementById("popup");
         if (!popup) return;
+
+        // Po zavření se stejný popup znovu ukáže až za 7 dní
+        // (nový popup = nové data-popup-id, ukáže se hned).
+        const storageKey = "popupSeen:" + popup.dataset.popupId;
+        const hideForMs = 7 * 24 * 60 * 60 * 1000;
+        let seenAt = 0;
+        try {
+          seenAt = Number(localStorage.getItem(storageKey)) || 0;
+        } catch (e) {}
+        if (Date.now() - seenAt < hideForMs) return;
+
+        function closePopup() {
+          popup.classList.remove("popup-visible");
+          popup.setAttribute("aria-hidden", "true");
+          document.removeEventListener("keydown", onKey);
+          try {
+            localStorage.setItem(storageKey, String(Date.now()));
+          } catch (e) {}
+        }
+
+        function onKey(e) {
+          if (e.key === "Escape") closePopup();
+        }
+
+        popup.querySelectorAll("[data-popup-close]").forEach((el) => {
+          el.addEventListener("click", closePopup);
+        });
+
         setTimeout(() => {
           popup.classList.add("popup-visible");
+          popup.setAttribute("aria-hidden", "false");
+          document.addEventListener("keydown", onKey);
         }, 4000);
       });
-
-      function closePopup() {
-        const popup = document.getElementById("popup");
-        if (popup) {
-          popup.classList.remove("popup-visible");
-        }
-      }
     </script>
   </body>
 </html>

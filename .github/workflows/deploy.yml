@@ -1,0 +1,36 @@
+# Po každém pushi do master nahraje změněné soubory na hosting Active24 (FTPS).
+# Přihlašovací údaje jsou v GitHub Secrets: FTP_USERNAME, FTP_PASSWORD.
+name: Deploy na Active24
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: # ruční spuštění z karty Actions
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Nahrání přes FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: saunarelaxbar.cz
+          port: 21
+          protocol: ftps
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ./saunarelaxbar.cz/web/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            .claude/**
+            .vscode/**
+            **/node_modules/**
+            **/*.md

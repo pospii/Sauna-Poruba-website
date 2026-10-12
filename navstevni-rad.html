@@ -52,7 +52,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=3" />
+    <link rel="stylesheet" href="style.css?v=4" />
     <link rel="stylesheet" href="css/responsible.css?v=3" />
     <link rel="stylesheet" href="css/icofont.min.css" />
 
@@ -72,23 +72,8 @@
     <meta name="apple-mobile-web-app-title" content="SaunaRelaxBar" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
 
-    <!-- Meta Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1589270576235242');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1589270576235242&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    <!-- Cookies: GA a Meta Pixel se načtou až po souhlasu -->
+    <script src="/js/consent.js?v=1" defer></script>
   </head>
   <body>
     <header>
@@ -191,6 +176,10 @@
           Prosíme všechny návštěvníky o dodržování tohoto návštěvního řádu. Při
           jeho nerespektování mohou být návštěvníci ze sauny vykázáni.
         </p>
+        <p>
+          Provozovatel: Tricio Invest s.r.o., Soukenická 877/9, 702 00 Moravská
+          Ostrava, IČ: 21507236
+        </p>
       </section>
     </main>
 
@@ -204,6 +193,7 @@
           <h4 class="footer-heading">Informace</h4>
           <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
           <a href="navstevni-rad.html">Návštěvní řád</a>
+          <a href="#" data-cookie-settings>Nastavení cookies</a>
         </div>
         <div class="footer-social">
           <h4 class="footer-heading">Sledujte nás</h4>
@@ -213,6 +203,16 @@
           </div>
         </div>
       </div>
+      <div class="footer-operator">
+        <p>
+          <span>Provozovatel: Tricio Invest s.r.o.</span>
+          <span>Soukenická 877/9, 702 00 Moravská Ostrava</span>
+          <span>IČ: 21507236</span>
+          <span>DIČ: CZ21507236</span>
+          <span>C 95894 vedená u Krajského soudu v Ostravě</span>
+        </p>
+      </div>
+
       <div class="footer-bottom">
         <span>© 2026 SaunaRelaxBar – Sokol Poruba</span>
         <a class="pospi-link" href="https://pospiweb.cz/" target="_blank" rel="noopener noreferrer">pospiweb.cz</a>

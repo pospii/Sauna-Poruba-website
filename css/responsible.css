@@ -496,19 +496,9 @@
         height: 44px;
     }
 
-    .popup {
-        width: 92%;
-        max-width: 340px;
-        padding: 14px;
-        border-radius: 16px;
-    }
-
-    .popup-close-btn {
-        width: 100%;
-        padding: 12px;
-        font-size: 15px;
-        border-radius: 10px;
-        margin-top: 12px;
+    .popup-x {
+        top: -10px;
+        right: -10px;
     }
 
     .modal-content {
