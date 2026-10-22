@@ -17,6 +17,7 @@
 
     <!-- Open Graph (Facebook, WhatsApp) -->
     <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:site_name" content="SaunaRelaxBar" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
@@ -29,8 +30,11 @@
     <meta property="og:url" content="https://saunarelaxbar.cz/" />
     <meta
       property="og:image"
-      content="https://saunarelaxbar.cz/images/saunar-header.webp"
+      content="https://saunarelaxbar.cz/images/og-hlavni.jpg"
     />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Interiér finské sauny SaunaRelaxBar" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -44,8 +48,9 @@
     />
     <meta
       name="twitter:image"
-      content="https://saunarelaxbar.cz/images/saunar-header.webp"
+      content="https://saunarelaxbar.cz/images/og-hlavni.jpg"
     />
+    <meta name="twitter:image:alt" content="Interiér finské sauny SaunaRelaxBar" />
 
     <!-- Theme -->
     <meta name="theme-color" content="#593c1f" />
@@ -135,6 +140,11 @@
             "closes": "22:00"
           }
         ],
+        "department": {
+          "@type": "BarOrPub",
+          "name": "Hospůdka SaunaRelaxBar",
+          "url": "https://saunarelaxbar.cz/hospudka.html"
+        },
         "amenityFeature": [
           {
             "@type": "LocationFeatureSpecification",
@@ -181,7 +191,7 @@
     </script>
 
     <!-- Cookies: GA a Meta Pixel se načtou až po souhlasu -->
-    <script src="/js/consent.js?v=1" defer></script>
+    <script src="/js/consent.js?v=2" defer></script>
 
     <!-- Booqito: rezervační widget (sekce #objednat) -->
     <script>var sccz_id = '1664/c1840e35dee32b3cdd4e1ca3157f5c9e938892b1';</script>
@@ -209,11 +219,11 @@
             <span></span>
           </div>
           <ul>
-            <li><a href="#uvod">Úvod</a></li>
-            <li><a href="#kalendar">Kalendář</a></li>
             <li><a href="#o-saune">O sauně</a></li>
             <li><a href="#oteviraci-doba">Otevírací doba</a></li>
             <li><a href="#cenik">Ceník</a></li>
+            <li><a class="nav-cta" href="#objednat">Objednat</a></li>
+            <li><a href="#kalendar">Kalendář</a></li>
             <li><a href="hospudka.html">Hospůdka</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
@@ -307,52 +317,6 @@
           />
         </div>
       </div>
-
-      <section id="kalendar">
-        <div class="kal-nadpis" data-aos="fade" data-aos-delay="80">
-          <h2>Kalendář akcí</h2>
-        </div>
-        <div class="kalendar-header" data-aos="fade" data-aos-delay="140">
-          <div class="filter-bar" role="tablist" aria-label="Filtr kalendáře">
-            <button
-              class="nav-btn"
-              data-filter="dnes"
-              role="tab"
-              aria-selected="false"
-            >
-              Dnes
-            </button>
-            <button
-              class="nav-btn active"
-              data-filter="tyden"
-              role="tab"
-              aria-selected="true"
-            >
-              Týden
-            </button>
-            <button
-              class="nav-btn"
-              data-filter="mesic"
-              role="tab"
-              aria-selected="false"
-            >
-              Měsíc
-            </button>
-          </div>
-        </div>
-
-        <div class="kalendar-content" data-aos="fade-left" data-aos-delay="220">
-          <ul id="akce-list">
-            <!-- Dynamicky generovaný obsah -->
-          </ul>
-          <div class="akce-more" id="akce-more" hidden>
-            <p class="akce-more-count" id="akce-more-count"></p>
-            <button type="button" class="akce-more-btn" id="akce-more-btn">
-              Zobrazit více
-            </button>
-          </div>
-        </div>
-      </section>
 
       <section
         class="hlavni"
@@ -448,7 +412,7 @@
               <strong>Šatny</strong>
               <small>&nbsp;</small>
             </div>
-            <div class="feature-card">
+            <a class="feature-card" href="hospudka.html">
               <img
                 class="feature-card-bg"
                 src="images/box-hospudka.webp"
@@ -467,8 +431,8 @@
               />
               <strong>Občerstvení</strong>
               <small>v hospůdce</small>
-            </div>
-            <div class="feature-card">
+            </a>
+            <a class="feature-card" href="hospudka.html">
               <img
                 class="feature-card-bg"
                 src="images/box-zahradka.webp"
@@ -487,7 +451,7 @@
               />
               <strong>Posezení</strong>
               <small>na zahrádce</small>
-            </div>
+            </a>
             <div class="feature-card">
               <img
                 class="feature-card-bg"
@@ -529,7 +493,63 @@
               <small>&nbsp;</small>
             </div>
           </div>
-          <p>Sauna je <strong>společná</strong>.</p>
+
+          <div class="prvni-navsteva">
+            <h3>Než přijdete poprvé</h3>
+            <ul>
+              <li><span><strong>Sauna je společná</strong> a&nbsp;vstupuje se do ní bez plavek.</span></li>
+              <li><span><strong>Ručník a prostěradlo</strong> si vezměte vlastní, nebo si je u&nbsp;nás půjčte za 50&nbsp;Kč.</span></li>
+              <li><span><strong>Zaplatíte</strong> kartou, MultiSportem i&nbsp;benefitními kartami Edenred, Pluxee, eBenefity a&nbsp;Benefity.</span></li>
+              <li><span><strong>Parkovat</strong> můžete přímo u&nbsp;nás.</span></li>
+            </ul>
+            <a class="arrow-link" href="navstevni-rad.html"
+              >Celý návštěvní řád <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Fotogalerie – rozevírací pás fotek -->
+      <section id="fotky-o-saune">
+        <div class="fotky-nadpis" data-aos="fade" data-aos-delay="80">
+          <h2>Fotogalerie</h2>
+        </div>
+        <div class="fotky" data-aos="fade-up" data-aos-delay="160">
+          <img
+            src="images/uvod-saunan.webp"
+            alt="Finská sauna"
+            loading="lazy"
+            width="972"
+            height="729"
+          />
+          <img
+            src="images/box-bazenek.webp"
+            alt="Venkovní bazének"
+            loading="lazy"
+            width="720"
+            height="540"
+          />
+          <img
+            src="images/box-odpocivarna.webp"
+            alt="Odpočívárna"
+            loading="lazy"
+            width="720"
+            height="540"
+          />
+          <img
+            src="images/box-zahradka.webp"
+            alt="Posezení na zahrádce"
+            loading="lazy"
+            width="720"
+            height="540"
+          />
+          <img
+            src="images/box-hospudka.webp"
+            alt="Hospůdka"
+            loading="lazy"
+            width="720"
+            height="540"
+          />
         </div>
       </section>
 
@@ -540,7 +560,7 @@
         </h2>
         <div class="oteviracky">
           <div class="sauna-oteviracka">
-            <h3>Sauna</h3>
+            <h3>Sauna a hospůdka</h3>
             <ul>
               <li data-aos="zoom-out" data-aos-delay="60">
                 <span>Pondělí:</span> ZAVŘENO
@@ -564,32 +584,12 @@
                 <span>Neděle:</span> 12:30 - 22:00
               </li>
             </ul>
-          </div>
-          <div class="zahradka-oteviracka">
-            <h3>Hospůdka - Zahrádka</h3>
-            <ul>
-              <li data-aos="zoom-out" data-aos-delay="120">
-                <span>Pondělí:</span> ZAVŘENO
-              </li>
-              <li data-aos="zoom-out" data-aos-delay="160">
-                <span>Úterý:</span> 14:00 - 22:00
-              </li>
-              <li data-aos="zoom-out" data-aos-delay="200">
-                <span>Středa:</span> 14:00 - 22:00
-              </li>
-              <li data-aos="zoom-out" data-aos-delay="240">
-                <span>Čtvrtek:</span> 14:00 - 22:00
-              </li>
-              <li data-aos="zoom-out" data-aos-delay="280">
-                <span>Pátek:</span> 14:00 - 22:00
-              </li>
-              <li data-aos="zoom-out" data-aos-delay="320">
-                <span>Sobota:</span> 12:30 - 22:00
-              </li>
-              <li data-aos="zoom-out" data-aos-delay="360">
-                <span>Neděle:</span> 12:30 - 22:00
-              </li>
-            </ul>
+            <p class="oteviracka-pozn">
+              Hospůdka má otevřeno ve stejných časech, zahrádka v&nbsp;letních měsících.
+              <a class="arrow-link" href="hospudka.html"
+                >Více o hospůdce <span aria-hidden="true">→</span></a
+              >
+            </p>
           </div>
         </div>
       </section>
@@ -602,7 +602,7 @@
         >
           <path
             d="M0,28 C360,70 1080,70 1440,28 L1440,70 L0,70 Z"
-            fill="#faede0"
+            fill="#f7e8d5"
           />
         </svg>
       </div>
@@ -835,65 +835,118 @@
         </div>
       </section>
 
-      <section class="hlavni" id="kavarna">
-        <div class="kavarna-wrap">
-          <div class="text-kavarna">
-            <h2 data-aos="fade-up" data-aos-delay="80">Hospůdka – zahrádka</h2>
-
-            <div data-aos="fade-up" data-aos-delay="150" class="kavarna-copy">
-              <p>
-                Hned u vstupu do sauny najdete naši hospůdku s&nbsp;čepovanou
-                Plzní a Radegastem, pizzou a&nbsp;panini. V&nbsp;létě je otevřená
-                i&nbsp;zahrádka. Zajít můžete i&nbsp;bez návštěvy sauny – a&nbsp;oslavu
-                pro až 30 lidí u&nbsp;nás uspořádáte taky.
-              </p>
-            </div>
-
-            <a class="arrow-link" href="hospudka.html" data-aos="fade-up" data-aos-delay="200"
-              >Více o hospůdce <span aria-hidden="true">→</span></a
+      <section id="kalendar">
+        <div class="kal-nadpis" data-aos="fade" data-aos-delay="80">
+          <h2>Kalendář akcí</h2>
+        </div>
+        <div class="kalendar-header" data-aos="fade" data-aos-delay="140">
+          <div class="filter-bar" role="tablist" aria-label="Filtr kalendáře">
+            <button
+              class="nav-btn"
+              data-filter="dnes"
+              role="tab"
+              aria-selected="false"
             >
+              Dnes
+            </button>
+            <button
+              class="nav-btn active"
+              data-filter="tyden"
+              role="tab"
+              aria-selected="true"
+            >
+              Týden
+            </button>
+            <button
+              class="nav-btn"
+              data-filter="mesic"
+              role="tab"
+              aria-selected="false"
+            >
+              Měsíc
+            </button>
           </div>
+        </div>
 
-          <figure class="kavarna-media" data-aos="fade" data-aos-delay="240">
-            <div class="foto-kavarna">
-              <img
-                src="images/hospudka-foto.webp"
-                alt="Kavárna u vstupu"
-                loading="lazy"
-                width="720"
-                height="540"
-              />
-              <img
-                src="images/hospudka-foto2.webp"
-                alt="Bar s výčepem"
-                loading="lazy"
-                width="720"
-                height="540"
-              />
-              <img
-                src="images/hospudka-foto3.webp"
-                alt="Salonek s posezením"
-                loading="lazy"
-                width="720"
-                height="540"
-              />
-              <img
-                src="images/hospudka-foto4.webp"
-                alt="Letní zahrádka"
-                loading="lazy"
-                width="720"
-                height="540"
-              />
-              <img
-                src="images/hospudka-foto5.webp"
-                alt="Terasa s posezením"
-                loading="lazy"
-                width="720"
-                height="540"
-              />
+        <div class="kalendar-content" data-aos="fade-left" data-aos-delay="220">
+          <ul id="akce-list">
+            <!-- Dynamicky generovaný obsah -->
+          </ul>
+          <div class="akce-more" id="akce-more" hidden>
+            <p class="akce-more-count" id="akce-more-count"></p>
+            <button type="button" class="akce-more-btn" id="akce-more-btn">
+              Zobrazit více
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hlavni" id="kavarna">
+        <img
+          class="kavarna-bg"
+          src="images/hospudka-sekce.webp"
+          srcset="images/hospudka-sekce-960.webp 960w, images/hospudka-sekce.webp 1920w"
+          sizes="100vw"
+          alt=""
+          loading="lazy"
+          width="1920"
+          height="1080"
+        />
+        <div class="kavarna-obsah">
+          <h2 data-aos="fade-up" data-aos-delay="80">Hospůdka – zahrádka</h2>
+          <p data-aos="fade-up" data-aos-delay="150">
+            Hned u&nbsp;vstupu do sauny najdete naši hospůdku s&nbsp;čepovanou
+            Plzní a&nbsp;Radegastem, pizzou a&nbsp;panini. V&nbsp;létě je otevřená
+            i&nbsp;zahrádka. Zajít můžete i&nbsp;bez návštěvy sauny – a&nbsp;oslavu
+            pro až 30 lidí u&nbsp;nás uspořádáte taky.
+          </p>
+          <a class="arrow-link" href="hospudka.html" data-aos="fade-up" data-aos-delay="200"
+            >Více o hospůdce <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </section>
+
+      <div class="wave-divider" aria-hidden="true">
+        <svg
+          viewBox="0 0 1440 70"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,28 C360,70 1080,70 1440,28 L1440,70 L0,70 Z"
+            fill="#f7e8d5"
+          />
+        </svg>
+      </div>
+
+      <section id="recenze">
+        <div class="recenze-wrap">
+          <!-- Widget Elfsight ukládá cookies – načte ho až consent.js po souhlasu -->
+          <div
+            class="elfsight-app-80a59d40-46fb-4f26-a378-807879a49f1e"
+            data-elfsight-app-lazy
+            data-recenze
+            hidden
+          ></div>
+          <div class="recenze-souhlas" data-recenze-souhlas>
+            <h2>Recenze</h2>
+            <p>
+              Recenze z&nbsp;Google zobrazujeme přes službu Elfsight, která
+              ukládá cookies. Uvidíte je po přijetí cookies.
+            </p>
+            <div class="recenze-souhlas-akce">
+              <button type="button" class="btn primary" data-cookie-settings>
+                Povolit cookies
+              </button>
+              <a
+                class="arrow-link"
+                href="https://www.google.com/maps/search/?api=1&amp;query=Sauna%20Relax%20Bar%20-%20Sauna%20Sokol"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Přečíst recenze na Google <span aria-hidden="true">→</span></a
+              >
             </div>
-            <figcaption>Bar u vstupu + letní zahrádka</figcaption>
-          </figure>
+          </div>
         </div>
       </section>
 
@@ -943,127 +996,6 @@
               ></a>
             </div>
           </div>
-        </div>
-      </section>
-
-      <div class="wave-divider" aria-hidden="true">
-        <svg
-          viewBox="0 0 1440 70"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0,28 C360,70 1080,70 1440,28 L1440,70 L0,70 Z"
-            fill="#f7e8d5"
-          />
-        </svg>
-      </div>
-
-      <section id="recenze">
-        <div class="recenze-wrap">
-          <script
-            src="https://static.elfsight.com/platform/platform.js"
-            async
-          ></script>
-          <div
-            data-aos="zoom-out"
-            data-aos-delay="120"
-            class="elfsight-app-80a59d40-46fb-4f26-a378-807879a49f1e"
-            data-elfsight-app-lazy
-          ></div>
-        </div>
-      </section>
-
-      <!-- Fotky sauny (galerie 6 fotek) – dočasně vypnuto
-      <section id="fotky">
-        <div class="photo-grid">
-          <img
-            src="images/fotka1n.webp"
-            alt="Interiér sauny"
-            loading="lazy"
-            class="thumbnail"
-            data-full="images/fotka1n.webp"
-          />
-          <img
-            src="images/fotka2n.webp"
-            alt="Ochlazovací bazének"
-            loading="lazy"
-            class="thumbnail"
-            data-full="images/fotka2n.webp"
-          />
-          <img
-            src="images/fotka3.webp"
-            alt="Odpočívárna"
-            loading="lazy"
-            class="thumbnail"
-            data-full="images/fotka3.webp"
-          />
-          <img
-            src="images/fotka4n.webp"
-            alt="Sauna"
-            loading="lazy"
-            class="thumbnail"
-            data-full="images/fotka4n.webp"
-          />
-          <img
-            src="images/fotka5.webp"
-            alt="Venkovní odpočívárna"
-            loading="lazy"
-            class="thumbnail"
-            data-full="images/fotka5.webp"
-          />
-          <img
-            src="images/fotka6n.webp"
-            alt="Šatny"
-            loading="lazy"
-            class="thumbnail"
-            data-full="images/fotka6n.webp"
-          />
-        </div>
-      </section>
-      -->
-
-      <!-- Fotogalerie – rozevírací pás fotek -->
-      <section id="fotky-o-saune">
-        <div class="fotky-nadpis" data-aos="fade" data-aos-delay="80">
-          <h2>Fotogalerie</h2>
-        </div>
-        <div class="fotky" data-aos="fade-up" data-aos-delay="160">
-          <img
-            src="images/uvod-saunan.webp"
-            alt="Finská sauna"
-            loading="lazy"
-            width="972"
-            height="729"
-          />
-          <img
-            src="images/box-bazenek.webp"
-            alt="Venkovní bazének"
-            loading="lazy"
-            width="720"
-            height="540"
-          />
-          <img
-            src="images/box-odpocivarna.webp"
-            alt="Odpočívárna"
-            loading="lazy"
-            width="720"
-            height="540"
-          />
-          <img
-            src="images/box-zahradka.webp"
-            alt="Posezení na zahrádce"
-            loading="lazy"
-            width="720"
-            height="540"
-          />
-          <img
-            src="images/box-hospudka.webp"
-            alt="Hospůdka"
-            loading="lazy"
-            width="720"
-            height="540"
-          />
         </div>
       </section>
     </main>
@@ -1159,7 +1091,7 @@
     </button>
 
 
-    <script src="js/scripts.js?v=5"></script>
+    <script src="js/scripts.js?v=6"></script>
     <script src="js/aos.js?v=2"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {

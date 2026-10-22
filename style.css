@@ -145,6 +145,40 @@ nav ul li a.active::after {
   height: 0px;
 }
 
+/* položka Objednat – ohraničená, odlišná od aktivní položky */
+nav ul li a.nav-cta {
+  color: #8b4513;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid #a05a24;
+  border-radius: 999px;
+  padding: 8px 18px;
+}
+
+nav ul li a.nav-cta:hover {
+  color: #8b4513;
+  background-color: rgba(160, 90, 36, 0.1);
+}
+
+nav ul li a.nav-cta.active {
+  color: #8b4513;
+  background-color: rgba(160, 90, 36, 0.14);
+}
+
+/* v rozbaleném mobilním menu jako tlačítko, ne přes celou šířku */
+@media (max-width: 872px) {
+  nav ul li a.nav-cta {
+    display: inline-block;
+    width: auto;
+    margin: 6px auto 12px;
+    padding: 10px 28px;
+  }
+}
+
+nav ul li a.nav-cta::after {
+  display: none;
+}
+
 /* HAMBURGER MENU STYL */
 .menu-toggle {
   display: none;
@@ -407,7 +441,7 @@ h2::after {
 
 #kalendar {
   padding: 0;
-  background-color: #f7e8d5;
+  background-color: var(--clr-bg);
   border-radius: 8px;
   text-align: left;
   /* animace fade-left jinak na mobilu rozšíří stránku do strany */
@@ -645,16 +679,6 @@ ul#akce-list{
 #o-saune{
   position: relative;
 }
-#o-saune::before{
-  content:'';
-  position:absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  width: min(1100px, calc(100% - 32px));
-  height: 1px;
-  background: rgba(75,54,33,0.10);
-}
 
 
 #o-saune .text{
@@ -852,8 +876,7 @@ ul#akce-list{
   align-items: flex-start;
 }
 
-.sauna-oteviracka,
-.zahradka-oteviracka {
+.sauna-oteviracka {
   background: rgba(250, 237, 224, 0.94);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -917,6 +940,21 @@ ul#akce-list{
 
 #oteviraci-doba li.today-highlight span {
   color: #8b4513;
+}
+
+.oteviracka-pozn {
+  margin: 0;
+  padding: 14px 22px 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--clr-text-muted);
+  border-top: 1px solid rgba(90, 59, 28, 0.12);
+}
+
+.oteviracka-pozn .arrow-link {
+  display: flex;
+  width: fit-content;
+  margin-top: 4px;
 }
 
   @supports (-webkit-touch-callout: none){
@@ -1026,6 +1064,57 @@ ul#akce-list{
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
+a.feature-card {
+  text-decoration: none;
+}
+
+/* Než přijdete poprvé (O sauně) */
+.prvni-navsteva {
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  text-align: left;
+}
+
+.prvni-navsteva h3 {
+  margin: 0;
+  font-size: 17px;
+  color: var(--clr-heading-light);
+}
+
+#o-saune .prvni-navsteva ul {
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 28px;
+  margin: 8px 0 10px;
+}
+
+#o-saune .prvni-navsteva li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.prvni-navsteva .arrow-link {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#o-saune .prvni-navsteva li::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 7px;
+  height: 7px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--clr-gold);
+}
+
+@media (max-width: 700px) {
+  #o-saune .prvni-navsteva ul {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Fotky sekce ────────────────────────────────────── */
 #fotky {
   width: 100%;
@@ -1069,7 +1158,7 @@ ul#akce-list{
 #cenik.hlavni {
   max-width: 100%;
   padding: clamp(42px, 6vw, 90px) clamp(16px, 5vw, 80px);
-  background: #faede0;
+  background: var(--clr-bg);
   position: relative;
   overflow: hidden;
 
@@ -1233,7 +1322,7 @@ ul#akce-list{
 #objednat.hlavni {
   max-width: 100%;
   padding: clamp(42px, 6vw, 90px) clamp(16px, 5vw, 80px);
-  background: #f7e8d5;
+  background: var(--clr-bg);
   text-align: center;
 }
 
@@ -1263,83 +1352,71 @@ ul#akce-list{
   font-weight: 600;
 }
 
-#kavarna.hlavni{
+/* HOSPŮDKA – tmavý pás s fotkou baru v pozadí */
+#kavarna.hlavni {
   max-width: 100%;
-  padding: clamp(48px, 6vw, 90px) clamp(16px, 5vw, 80px);
-  background: #faede0;
-  box-shadow: none;
-  border: none;
-  position: relative;
-  margin-bottom: 0;
-}
-
-#kavarna.hlavni::before{
-  content:'';
-  position:absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  width: min(1100px, calc(100% - 32px));
-  height: 1px;
-  background: rgba(75,54,33,0.10);
-}
-
-.kavarna-wrap{
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: clamp(20px, 4vw, 56px);
-  align-items: center;
-}
-
-.text-kavarna{
-  min-width: 0;
-  max-width: 620px;
-}
-
-.kavarna-copy{
-  text-align:justify;
-}
-
-.kavarna-copy p{
-  margin: 0 0 14px;
-  font-size: 16px;
-  line-height: 1.75;
-  color: var(--clr-text);
-}
-
-.kavarna-media{
   margin: 0;
-  transform: translateY(6px); /* jemný posun dolů */
-}
-
-.kavarna-media figcaption{
-  margin-top: 10px;
-  font-size: 13px;
-  opacity: .8;
-  text-align: center;
-}
-
-.foto-kavarna{
   position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border-radius: 16px;
+  isolation: isolate;
   overflow: hidden;
-  background: rgba(0,0,0,0.08);
+  padding: clamp(90px, 11vw, 150px) clamp(16px, 5vw, 80px);
+  background: #17100b;
+  text-align: left;
 }
 
-.foto-kavarna img{
+.kavarna-bg {
   position: absolute;
   inset: 0;
+  z-index: -2;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0;
-  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
-.foto-kavarna img:first-child{ opacity: 1; }
+
+/* ztmavení, vlevo víc kvůli čitelnosti textu */
+#kavarna.hlavni::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to right,
+    rgba(17, 11, 7, 0.9) 0%,
+    rgba(17, 11, 7, 0.75) 55%,
+    rgba(17, 11, 7, 0.6) 100%
+  );
+}
+
+.kavarna-obsah {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#kavarna h2 {
+  color: #fff;
+}
+
+#kavarna h2::after {
+  margin-left: 0;
+}
+
+#kavarna p {
+  max-width: 52ch;
+  margin: 0 0 22px;
+  font-size: clamp(16px, 1.5vw, 18px);
+  line-height: 1.75;
+  color: #f1e2cf;
+}
+
+#kavarna .arrow-link {
+  color: #e9b872;
+  text-decoration-color: rgba(233, 184, 114, 0.5);
+}
+
+#kavarna .arrow-link:hover {
+  color: #fff;
+  text-decoration-color: #d9a15c;
+}
 
 /* Textový odkaz se šipkou (hero, hospůdka) */
 .arrow-link {
@@ -1569,6 +1646,45 @@ iframe {
   will-change: transform;
   animation: skeleton-shimmer 1.8s infinite ease-in-out;
   pointer-events: none;
+}
+
+/* náhrada za recenze, dokud návštěvník nepřijme cookies */
+.recenze-souhlas {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 40px) clamp(18px, 4vw, 36px);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+}
+
+.recenze-souhlas[hidden] {
+  display: none;
+}
+
+.recenze-souhlas h2 {
+  margin-bottom: 18px;
+}
+
+.recenze-souhlas p {
+  margin: 0 auto 20px;
+  max-width: 46ch;
+  color: var(--clr-text);
+}
+
+.recenze-souhlas-akce {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px 24px;
+}
+
+.recenze-souhlas .btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
 }
 
 @keyframes skeleton-shimmer {

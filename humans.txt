@@ -1,7 +1,7 @@
 /* TEAM */
 Developer: Adam Pospíšek
 Role: Web Developer & SEO
-Location: Klimkovice, Czech Republic
+Location: Ostrava, Czech Republic
 
 /* SITE */
 Site: SaunaRelaxBar
@@ -10,10 +10,10 @@ Language: Czech
 Technology: HTML, CSS, JavaScript
 
 /* THANKS */
-Design inspiration, coffee, and patience.
+Design inspiration, coffee, and patience. And Claude. 
 
 /* CONTACT */
-Email: (doplň svůj nebo klienta)
+Email: info@pospiweb.cz
 
 /* NOTE */
 Handcrafted website. No templates, no bullshit.

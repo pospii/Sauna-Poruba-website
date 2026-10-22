@@ -1,10 +1,12 @@
-// Souhlas s cookies: Google Analytics a Meta Pixel se načtou až po kliknutí na "Přijmout".
+// Souhlas s cookies: Google Analytics, Meta Pixel a recenze Elfsight se načtou až po kliknutí na "Přijmout".
 (function () {
   const GA_ID = "G-FMHCM3VWJE";
   const PIXEL_ID = "1589270576235242";
   // Nový klíč: dřívější souhlas se týkal jen GA, ne Meta Pixelu.
   const STORAGE_KEY = "cookieConsent2";
+  const ELFSIGHT_SRC = "https://static.elfsight.com/platform/platform.js";
   let trackingLoaded = false;
+  let reviewsLoaded = false;
 
   function getConsent() {
     try {
@@ -49,6 +51,21 @@
     window.fbq("track", "PageView");
   }
 
+  // Recenze z Google (Elfsight) ukládají cookies, proto až po souhlasu.
+  function loadReviews() {
+    if (reviewsLoaded) return;
+    const widget = document.querySelector("[data-recenze]");
+    if (!widget) return;
+    reviewsLoaded = true;
+    widget.hidden = false;
+    const notice = document.querySelector("[data-recenze-souhlas]");
+    if (notice) notice.hidden = true;
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = ELFSIGHT_SRC;
+    document.body.appendChild(script);
+  }
+
   // Při odvolání souhlasu smaže cookies GA a Meta Pixelu z naší domény.
   function clearTrackingCookies() {
     const host = location.hostname;
@@ -75,7 +92,8 @@
     banner.innerHTML =
       "<p>Rádi bychom používali cookies <strong>Google Analytics</strong> " +
       "(měření návštěvnosti) a <strong>Meta Pixel</strong> (měření reklam " +
-      "na Facebooku a Instagramu). Spustí se jen s vaším souhlasem, který " +
+      "na Facebooku a Instagramu) a zobrazovali <strong>recenze z Google</strong> " +
+      "přes službu Elfsight. Spustí se jen s vaším souhlasem, který " +
       "můžete kdykoliv změnit v patičce webu. " +
       '<a href="/ochrana-osobnich-udaju.html#cookies">Více informací</a></p>' +
       '<div class="cookie-actions">' +
@@ -92,6 +110,7 @@
         hideBanner(banner);
         if (value === "accepted") {
           loadTracking();
+          loadReviews();
         } else if (wasAccepted) {
           clearTrackingCookies();
           // Už načtené měřicí skripty zastaví až nové načtení stránky.
@@ -116,6 +135,7 @@
   if (getConsent() === "accepted") loadTracking();
 
   function init() {
+    if (getConsent() === "accepted") loadReviews();
     const banner = buildBanner();
     if (!getConsent()) {
       setTimeout(() => showBanner(banner), 1800);

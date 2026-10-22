@@ -26,36 +26,6 @@
         max-width: 100%;
         padding: 0 20px;
     }
-
-    #kavarna.hlavni {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .kavarna-wrap {
-        grid-template-columns: 1fr;
-        gap: clamp(18px, 3.4vw, 40px);
-    }
-
-    .kavarna-media {
-        order: -1;
-        max-width: min(360px, 100%);
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .text-kavarna,
-    .kavarna-copy {
-        text-align: center;
-        margin: auto;
-    }
-
-    .kavarna-copy p {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 62ch;
-    }
 }
 
 @media (max-width: 900px) {
@@ -176,12 +146,6 @@
 
     .foto-cenik {
         margin-left: 20px;
-    }
-
-    .kavarna-media {
-        max-width: 320px;
-        width: 100%;
-        margin: 0 auto;
     }
 
     .kontakt {
@@ -472,14 +436,6 @@
 
     #recenze .recenze-wrap {
         padding: 0;
-    }
-
-    .kavarna-media {
-        max-width: min(360px, 92vw);
-    }
-
-    .kavarna-copy p {
-        max-width: 34ch;
     }
 
     .popup-x {

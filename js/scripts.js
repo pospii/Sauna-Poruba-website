@@ -73,31 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Rotating images in cafe section.
-  const rotatingImages = document.querySelectorAll(".foto-kavarna img");
-  if (rotatingImages.length > 0) {
-    let currentImageIndex = 0;
-
-    const showImage = (index) => {
-      rotatingImages.forEach((img, i) => {
-        img.style.opacity = i === index ? "1" : "0";
-        img.style.transform = i === index ? "scale(1)" : "scale(1.1)";
-      });
-    };
-
-    const rotateImages = () => {
-      rotatingImages[currentImageIndex].style.opacity = "0";
-      rotatingImages[currentImageIndex].style.transform = "scale(1.1)";
-      window.setTimeout(() => {
-        currentImageIndex = (currentImageIndex + 1) % rotatingImages.length;
-        showImage(currentImageIndex);
-      }, 500);
-    };
-
-    showImage(currentImageIndex);
-    window.setInterval(rotateImages, 5000);
-  }
-
   // Modal with keyboard support.
   const modal = document.getElementById("modal");
   const modalImg = document.getElementById("modal-img");
