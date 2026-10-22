@@ -44,10 +44,6 @@
         margin: 0 auto;
     }
 
-    .kavarna-menus {
-        justify-content: center;
-    }
-
     .text-kavarna,
     .kavarna-copy {
         text-align: center;
@@ -484,16 +480,6 @@
 
     .kavarna-copy p {
         max-width: 34ch;
-    }
-
-    .menu-chip {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .menu-chip img {
-        width: 72px;
-        height: 44px;
     }
 
     .popup-x {

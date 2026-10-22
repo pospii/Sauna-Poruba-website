@@ -1229,6 +1229,40 @@ ul#akce-list{
   display: block;
 }
 
+/* OBJEDNAT ONLINE (Booqito widget) */
+#objednat.hlavni {
+  max-width: 100%;
+  padding: clamp(42px, 6vw, 90px) clamp(16px, 5vw, 80px);
+  background: #f7e8d5;
+  text-align: center;
+}
+
+#objednat .content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.objednat-lead {
+  margin: -12px 0 24px;
+}
+
+#objednat .sccz-widget {
+  text-align: left;
+}
+
+.objednat-poukaz {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.objednat-poukaz p {
+  margin: 0;
+  font-weight: 600;
+}
+
 #kavarna.hlavni{
   max-width: 100%;
   padding: clamp(48px, 6vw, 90px) clamp(16px, 5vw, 80px);
@@ -1307,43 +1341,46 @@ ul#akce-list{
 }
 .foto-kavarna img:first-child{ opacity: 1; }
 
-.kavarna-menus{
-  margin-top: 18px;
-  gap: 14px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.menu-chip{
+/* Textový odkaz se šipkou (hero, hospůdka) */
+.arrow-link {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 14px;
-  min-height: 56px;
-  background: rgba(255,255,255,0.65);
-  border: 1px solid rgba(90,59,28,0.20);
-  transition: transform .15s ease, background .15s ease, border-color .15s ease;
-  cursor: pointer;
-}
-
-.menu-chip:hover{
-  transform: translateY(-1px);
-  background: rgba(255,255,255,0.78);
-  border-color: rgba(90,59,28,0.28);
-}
-
-.menu-chip img{
-  width: 64px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.menu-chip span{
+  gap: 8px;
+  margin-top: 6px;
   font-weight: 700;
-  font-size: 14px;
-  color: #5a3b1c;
+  color: var(--clr-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 6px;
+  transition: color var(--transition);
+}
+
+.arrow-link span {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform var(--transition);
+}
+
+.arrow-link:hover {
+  color: #8b4513;
+}
+
+.arrow-link:hover span {
+  transform: translateX(4px);
+}
+
+.hero-link {
+  order: 3;
+  flex-basis: 100%;
+  justify-content: center;
+  margin-top: 4px;
+  color: #f7e8d5;
+  text-decoration-color: rgba(247, 232, 213, 0.5);
+}
+
+.hero-link:hover {
+  color: #fff;
+  text-decoration-color: #d9a15c;
 }
 
 .modal {
@@ -1869,6 +1906,41 @@ i {
 
 #rad ol > li {
   padding-left: 4px;
+}
+
+/* Dárkové poukazy (Booqito widget) */
+#poukazy {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(48px, 6vw, 80px) clamp(16px, 4vw, 48px) clamp(60px, 8vw, 100px);
+  text-align: left;
+}
+
+#poukazy h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--clr-heading-light);
+  margin: 0 0 20px;
+}
+
+#poukazy p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--clr-text);
+}
+
+.poukazy-lead {
+  margin: 0 0 32px;
+}
+
+.poukazy-zpet {
+  margin: 40px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--clr-border);
+}
+
+.poukazy-zpet a {
+  color: var(--clr-accent);
+  font-weight: 700;
 }
 
 .gdpr hr {

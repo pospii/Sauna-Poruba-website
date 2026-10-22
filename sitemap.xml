@@ -4,9 +4,25 @@
   <!-- Domovská stránka -->
   <url>
     <loc>https://saunarelaxbar.cz/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Hospůdka -->
+  <url>
+    <loc>https://saunarelaxbar.cz/hospudka.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dárkové poukazy -->
+  <url>
+    <loc>https://saunarelaxbar.cz/darkove-poukazy.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Návštěvní řád -->
